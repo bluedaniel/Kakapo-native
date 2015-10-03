@@ -23,6 +23,22 @@
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
 		146834051AC3E58100842450 /* libReact.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 146834041AC3E56700842450 /* libReact.a */; };
 		832341BD1AAA6AB300B99B32 /* libRCTText.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 832341B51AAA6A8300B99B32 /* libRCTText.a */; };
+		B132B8911BC0466200B85BED /* SwiftAudio.swift in Sources */ = {isa = PBXBuildFile; fileRef = B132B8901BC0466200B85BED /* SwiftAudio.swift */; settings = {ASSET_TAGS = (); }; };
+		B132B8931BC048BC00B85BED /* SwiftAudio.m in Sources */ = {isa = PBXBuildFile; fileRef = B132B8921BC048BC00B85BED /* SwiftAudio.m */; settings = {ASSET_TAGS = (); }; };
+		B132B8BF1BC059C400B85BED /* bonfire.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B132B8B21BC059C400B85BED /* bonfire.mp3 */; settings = {ASSET_TAGS = (); }; };
+		B132B8C01BC059C400B85BED /* cafe.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B132B8B31BC059C400B85BED /* cafe.mp3 */; settings = {ASSET_TAGS = (); }; };
+		B132B8C11BC059C400B85BED /* cat-purr.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B132B8B41BC059C400B85BED /* cat-purr.mp3 */; settings = {ASSET_TAGS = (); }; };
+		B132B8C21BC059C400B85BED /* chimes.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B132B8B51BC059C400B85BED /* chimes.mp3 */; settings = {ASSET_TAGS = (); }; };
+		B132B8C31BC059C400B85BED /* leaves.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B132B8B61BC059C400B85BED /* leaves.mp3 */; settings = {ASSET_TAGS = (); }; };
+		B132B8C41BC059C400B85BED /* paris-cafe.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B132B8B71BC059C400B85BED /* paris-cafe.mp3 */; settings = {ASSET_TAGS = (); }; };
+		B132B8C51BC059C400B85BED /* paris-street-corner.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B132B8B81BC059C400B85BED /* paris-street-corner.mp3 */; settings = {ASSET_TAGS = (); }; };
+		B132B8C61BC059C400B85BED /* rain.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B132B8B91BC059C400B85BED /* rain.mp3 */; settings = {ASSET_TAGS = (); }; };
+		B132B8C71BC059C400B85BED /* stream.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B132B8BA1BC059C400B85BED /* stream.mp3 */; settings = {ASSET_TAGS = (); }; };
+		B132B8C81BC059C400B85BED /* thunder.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B132B8BB1BC059C400B85BED /* thunder.mp3 */; settings = {ASSET_TAGS = (); }; };
+		B132B8C91BC059C400B85BED /* train.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B132B8BC1BC059C400B85BED /* train.mp3 */; settings = {ASSET_TAGS = (); }; };
+		B132B8CA1BC059C400B85BED /* waves.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B132B8BD1BC059C400B85BED /* waves.mp3 */; settings = {ASSET_TAGS = (); }; };
+		B132B8CB1BC059C400B85BED /* wind.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B132B8BE1BC059C400B85BED /* wind.mp3 */; settings = {ASSET_TAGS = (); }; };
+		B132B8CD1BC0607700B85BED /* fan.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B132B8CC1BC0607700B85BED /* fan.mp3 */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -127,6 +143,23 @@
 		146833FF1AC3E56700842450 /* React.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = React.xcodeproj; path = "../node_modules/react-native/React/React.xcodeproj"; sourceTree = "<group>"; };
 		78C398B01ACF4ADC00677621 /* RCTLinking.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTLinking.xcodeproj; path = "../node_modules/react-native/Libraries/LinkingIOS/RCTLinking.xcodeproj"; sourceTree = "<group>"; };
 		832341B01AAA6A8300B99B32 /* RCTText.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTText.xcodeproj; path = "../node_modules/react-native/Libraries/Text/RCTText.xcodeproj"; sourceTree = "<group>"; };
+		B132B88F1BC0466200B85BED /* kakapoNative-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "kakapoNative-Bridging-Header.h"; sourceTree = "<group>"; };
+		B132B8901BC0466200B85BED /* SwiftAudio.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SwiftAudio.swift; path = kakapoNative/SwiftAudio.swift; sourceTree = "<group>"; };
+		B132B8921BC048BC00B85BED /* SwiftAudio.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SwiftAudio.m; path = kakapoNative/SwiftAudio.m; sourceTree = "<group>"; };
+		B132B8B21BC059C400B85BED /* bonfire.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = bonfire.mp3; path = ../app/sounds/bonfire.mp3; sourceTree = "<group>"; };
+		B132B8B31BC059C400B85BED /* cafe.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = cafe.mp3; path = ../app/sounds/cafe.mp3; sourceTree = "<group>"; };
+		B132B8B41BC059C400B85BED /* cat-purr.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "cat-purr.mp3"; path = "../app/sounds/cat-purr.mp3"; sourceTree = "<group>"; };
+		B132B8B51BC059C400B85BED /* chimes.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = chimes.mp3; path = ../app/sounds/chimes.mp3; sourceTree = "<group>"; };
+		B132B8B61BC059C400B85BED /* leaves.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = leaves.mp3; path = ../app/sounds/leaves.mp3; sourceTree = "<group>"; };
+		B132B8B71BC059C400B85BED /* paris-cafe.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "paris-cafe.mp3"; path = "../app/sounds/paris-cafe.mp3"; sourceTree = "<group>"; };
+		B132B8B81BC059C400B85BED /* paris-street-corner.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "paris-street-corner.mp3"; path = "../app/sounds/paris-street-corner.mp3"; sourceTree = "<group>"; };
+		B132B8B91BC059C400B85BED /* rain.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = rain.mp3; path = ../app/sounds/rain.mp3; sourceTree = "<group>"; };
+		B132B8BA1BC059C400B85BED /* stream.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = stream.mp3; path = ../app/sounds/stream.mp3; sourceTree = "<group>"; };
+		B132B8BB1BC059C400B85BED /* thunder.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = thunder.mp3; path = ../app/sounds/thunder.mp3; sourceTree = "<group>"; };
+		B132B8BC1BC059C400B85BED /* train.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = train.mp3; path = ../app/sounds/train.mp3; sourceTree = "<group>"; };
+		B132B8BD1BC059C400B85BED /* waves.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = waves.mp3; path = ../app/sounds/waves.mp3; sourceTree = "<group>"; };
+		B132B8BE1BC059C400B85BED /* wind.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = wind.mp3; path = ../app/sounds/wind.mp3; sourceTree = "<group>"; };
+		B132B8CC1BC0607700B85BED /* fan.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = fan.mp3; path = ../app/sounds/fan.mp3; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -233,6 +266,7 @@
 		13B07FAE1A68108700A75B9A /* kakapoNative */ = {
 			isa = PBXGroup;
 			children = (
+				B132B8B11BC059B200B85BED /* sounds */,
 				008F07F21AC5B25A0029DE68 /* main.jsbundle */,
 				13B07FAF1A68108700A75B9A /* AppDelegate.h */,
 				13B07FB01A68108700A75B9A /* AppDelegate.m */,
@@ -240,6 +274,9 @@
 				13B07FB61A68108700A75B9A /* Info.plist */,
 				13B07FB11A68108700A75B9A /* LaunchScreen.xib */,
 				13B07FB71A68108700A75B9A /* main.m */,
+				B132B8901BC0466200B85BED /* SwiftAudio.swift */,
+				B132B8921BC048BC00B85BED /* SwiftAudio.m */,
+				B132B88F1BC0466200B85BED /* kakapoNative-Bridging-Header.h */,
 			);
 			name = kakapoNative;
 			sourceTree = "<group>";
@@ -306,6 +343,27 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		B132B8B11BC059B200B85BED /* sounds */ = {
+			isa = PBXGroup;
+			children = (
+				B132B8CC1BC0607700B85BED /* fan.mp3 */,
+				B132B8B21BC059C400B85BED /* bonfire.mp3 */,
+				B132B8B31BC059C400B85BED /* cafe.mp3 */,
+				B132B8B41BC059C400B85BED /* cat-purr.mp3 */,
+				B132B8B51BC059C400B85BED /* chimes.mp3 */,
+				B132B8B61BC059C400B85BED /* leaves.mp3 */,
+				B132B8B71BC059C400B85BED /* paris-cafe.mp3 */,
+				B132B8B81BC059C400B85BED /* paris-street-corner.mp3 */,
+				B132B8B91BC059C400B85BED /* rain.mp3 */,
+				B132B8BA1BC059C400B85BED /* stream.mp3 */,
+				B132B8BB1BC059C400B85BED /* thunder.mp3 */,
+				B132B8BC1BC059C400B85BED /* train.mp3 */,
+				B132B8BD1BC059C400B85BED /* waves.mp3 */,
+				B132B8BE1BC059C400B85BED /* wind.mp3 */,
+			);
+			name = sounds;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -350,6 +408,7 @@
 		83CBB9F71A601CBA00E9B192 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 0700;
 				LastUpgradeCheck = 0700;
 				ORGANIZATIONNAME = Facebook;
 				TargetAttributes = {
@@ -505,8 +564,22 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B132B8CD1BC0607700B85BED /* fan.mp3 in Resources */,
+				B132B8C61BC059C400B85BED /* rain.mp3 in Resources */,
+				B132B8C91BC059C400B85BED /* train.mp3 in Resources */,
+				B132B8CA1BC059C400B85BED /* waves.mp3 in Resources */,
+				B132B8C31BC059C400B85BED /* leaves.mp3 in Resources */,
+				B132B8C21BC059C400B85BED /* chimes.mp3 in Resources */,
+				B132B8C51BC059C400B85BED /* paris-street-corner.mp3 in Resources */,
 				008F07F31AC5B25A0029DE68 /* main.jsbundle in Resources */,
+				B132B8C01BC059C400B85BED /* cafe.mp3 in Resources */,
+				B132B8CB1BC059C400B85BED /* wind.mp3 in Resources */,
+				B132B8C81BC059C400B85BED /* thunder.mp3 in Resources */,
+				B132B8C11BC059C400B85BED /* cat-purr.mp3 in Resources */,
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
+				B132B8C71BC059C400B85BED /* stream.mp3 in Resources */,
+				B132B8C41BC059C400B85BED /* paris-cafe.mp3 in Resources */,
+				B132B8BF1BC059C400B85BED /* bonfire.mp3 in Resources */,
 				13B07FBD1A68108700A75B9A /* LaunchScreen.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -527,6 +600,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				13B07FBC1A68108700A75B9A /* AppDelegate.m in Sources */,
+				B132B8911BC0466200B85BED /* SwiftAudio.swift in Sources */,
+				B132B8931BC048BC00B85BED /* SwiftAudio.m in Sources */,
 				13B07FC11A68108700A75B9A /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -597,6 +672,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
@@ -607,6 +683,8 @@
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = kakapoNative;
+				SWIFT_OBJC_BRIDGING_HEADER = "kakapoNative-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -614,6 +692,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
@@ -624,6 +703,7 @@
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = kakapoNative;
+				SWIFT_OBJC_BRIDGING_HEADER = "kakapoNative-Bridging-Header.h";
 			};
 			name = Release;
 		};
