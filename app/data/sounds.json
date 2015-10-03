@@ -8,7 +8,7 @@
     "playing": false,
     "editing": false,
     "progress": 1,
-    "img": "../app/images/dark/rain.png",
+    "img": "http://data.kakapo.co/dark/images/rain.png",
     "recentlyDownloaded": false
   },
   {
@@ -20,7 +20,7 @@
     "playing": false,
     "editing": false,
     "progress": 1,
-    "img": "../app/images/dark/cafe.png",
+    "img": "http://data.kakapo.co/dark/images/cafe.png",
     "recentlyDownloaded": false
   },
   {
@@ -32,7 +32,7 @@
     "playing": false,
     "editing": false,
     "progress": 1,
-    "img": "../app/images/dark/cat.png",
+    "img": "http://data.kakapo.co/dark/images/cat.png",
     "recentlyDownloaded": false
   },
   {
@@ -44,7 +44,7 @@
     "playing": false,
     "editing": false,
     "progress": 1,
-    "img": "../app/images/dark/chimes.png",
+    "img": "http://data.kakapo.co/dark/images/chimes.png",
     "recentlyDownloaded": false
   },
   {
@@ -56,7 +56,7 @@
     "playing": false,
     "editing": false,
     "progress": 1,
-    "img": "../app/images/dark/fan.png",
+    "img": "http://data.kakapo.co/dark/images/fan.png",
     "recentlyDownloaded": false
   },
   {
@@ -68,7 +68,7 @@
     "playing": false,
     "editing": false,
     "progress": 1,
-    "img": "../app/images/dark/leaves.png",
+    "img": "http://data.kakapo.co/dark/images/leaves.png",
     "recentlyDownloaded": false
   },
   {
@@ -80,7 +80,7 @@
     "playing": false,
     "editing": false,
     "progress": 1,
-    "img": "../app/images/dark/paris.png",
+    "img": "http://data.kakapo.co/dark/images/paris.png",
     "recentlyDownloaded": false
   },
   {
@@ -92,7 +92,7 @@
     "playing": false,
     "editing": false,
     "progress": 1,
-    "img": "../app/images/dark/water.png",
+    "img": "http://data.kakapo.co/dark/images/water.png",
     "recentlyDownloaded": false
   },
   {
@@ -104,7 +104,7 @@
     "playing": false,
     "editing": false,
     "progress": 1,
-    "img": "../app/images/dark/thunder.png",
+    "img": "http://data.kakapo.co/dark/images/thunder.png",
     "recentlyDownloaded": false
   },
   {
@@ -116,7 +116,7 @@
     "playing": false,
     "editing": false,
     "progress": 1,
-    "img": "../app/images/dark/train.png",
+    "img": "http://data.kakapo.co/dark/images/train.png",
     "recentlyDownloaded": false
   },
   {
@@ -128,7 +128,7 @@
     "playing": false,
     "editing": false,
     "progress": 1,
-    "img": "../app/images/dark/waves.png",
+    "img": "http://data.kakapo.co/dark/images/waves.png",
     "recentlyDownloaded": false
   },
   {
@@ -140,7 +140,7 @@
     "playing": false,
     "editing": false,
     "progress": 1,
-    "img": "../app/images/dark/wind.png",
+    "img": "http://data.kakapo.co/dark/images/wind.png",
     "recentlyDownloaded": false
   }
 ]

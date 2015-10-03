@@ -6,23 +6,16 @@ import {Sounds} from "../stores";
 const {ListView, StyleSheet, View} = React;
 
 export default React.createClass({
+  mixins: [Reflux.connect(Sounds, "sounds")],
   componentDidMount() {
-    Sounds.getSounds().then(s => this.setState({
-      dataSource: this.state.dataSource.cloneWithRows(s),
-      loaded: true
-    }));
+    Sounds.getSounds();
   },
   getInitialState() {
-    return {
-      dataSource: new ListView.DataSource({
-        rowHasChanged: (row1, row2) => row1 !== row2
-      }),
-      loaded: false
-    };
+    return { loaded: true };
   },
   renderList() {
     return <ListView
-      dataSource={this.state.dataSource}
+      dataSource={this.state.sounds}
       renderRow={sound => <SoundItem {...sound}/>}
       style={styles.listView}
     />
@@ -37,7 +30,6 @@ const styles = StyleSheet.create({
     flex: 1
   },
   listView: {
-    paddingTop: 20,
     backgroundColor: "#F5FCFF"
   }
 });

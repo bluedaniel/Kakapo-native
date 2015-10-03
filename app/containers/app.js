@@ -1,9 +1,12 @@
 import React from "react-native";
 import {Header, SoundList} from "../components";
 
-const {StyleSheet, View} = React;
+const {StatusBarIOS, StyleSheet, View} = React;
 
 export default React.createClass({
+  componentDidMount() {
+    StatusBarIOS.setStyle("light-content");
+  },
   getInitialState() {
     return { title: "Kakapo" };
   },
