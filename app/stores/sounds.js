@@ -43,10 +43,10 @@ var SoundStore = Reflux.createStore({
     sounds = sounds.update(sound.file, s => ({...s, ...{ playing: !s.playing }}));
     this.trigger(ds.cloneWithRows(sounds.toArray()));
   },
-  onChangeVolume(sound, volume) {
+  onChangeVolume(sound, volume, trigger) {
     SwiftAudio.changeVolume(sound.file, Math.round(volume * 100));
     sounds = sounds.update(sound.file, s => ({...s, ...{ volume: volume }}));
-    this.trigger(ds.cloneWithRows(sounds.toArray()));
+    if (trigger) this.trigger(ds.cloneWithRows(sounds.toArray()));
   }
 });
 

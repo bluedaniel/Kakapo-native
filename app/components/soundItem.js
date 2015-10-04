@@ -1,13 +1,17 @@
 import React from "react-native";
+import throttle from "lodash/function/throttle";
 import {soundActions} from "../actions";
 const {TouchableOpacity, SliderIOS, Image, StyleSheet, Text, View} = React;
 
 export default React.createClass({
+  componentWillMount() {
+    this.changeVolumeThrottled = throttle(this.changeVolume, 200);
+  },
   togglePlay() {
     soundActions.togglePlayPause(this.props);
   },
-  changeVolume(vol) {
-    soundActions.changeVolume(this.props, vol);
+  changeVolume(vol, trigger) {
+    soundActions.changeVolume(this.props, vol, trigger);
   },
   renderSlider() {
     if (!this.props.playing) return;
@@ -15,7 +19,8 @@ export default React.createClass({
       style={styles.slider}
       minimumTrackTintColor="#fff"
       maximumTrackTintColor="#fff"
-      onSlidingComplete={vol => this.changeVolume(vol)}
+      onValueChange={vol => this.changeVolumeThrottled(vol, false)}
+      onSlidingComplete={vol => this.changeVolume(vol, true)}
       value={this.props.volume}
     />;
   },
