@@ -20,6 +20,7 @@ class SwiftAudio: NSObject {
         soundArr.updateValue(soundObj, forKey: sound)
         soundArr[sound]!.prepareToPlay()
         soundArr[sound]!.volume = 0.5
+        soundArr[sound]!.numberOfLoops = -1
       } catch {
         fatalError ("Error loading \(sound): \(error)")
       }
@@ -32,5 +33,9 @@ class SwiftAudio: NSObject {
     } else {
       soundArr[sound]!.play()
     }
+  }
+  
+  @objc func changeVolume(sound: String, vol: NSNumber) {
+    soundArr[sound]!.volume = Float(vol) / 100
   }
 }

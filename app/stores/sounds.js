@@ -39,12 +39,12 @@ var SoundStore = Reflux.createStore({
     mute = muteToggle;
   },
   onTogglePlayPause(sound) {
-    console.log(SwiftAudio);
     SwiftAudio.togglePlay(sound.file);
     sounds = sounds.update(sound.file, s => ({...s, ...{ playing: !s.playing }}));
     this.trigger(ds.cloneWithRows(sounds.toArray()));
   },
   onChangeVolume(sound, volume) {
+    SwiftAudio.changeVolume(sound.file, Math.round(volume * 100));
     sounds = sounds.update(sound.file, s => ({...s, ...{ volume: volume }}));
     this.trigger(ds.cloneWithRows(sounds.toArray()));
   }

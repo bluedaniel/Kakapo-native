@@ -11,5 +11,6 @@
 
 RCT_EXTERN_METHOD(setSound:(NSString *)sound)
 RCT_EXTERN_METHOD(togglePlay:(NSString *)sound)
+RCT_EXTERN_METHOD(changeVolume:(NSString *)sound vol:(nonnull NSNumber *)vol)
 
 @end

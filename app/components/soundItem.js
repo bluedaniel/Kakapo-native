@@ -1,33 +1,49 @@
 import React from "react-native";
 import {soundActions} from "../actions";
-const {TouchableOpacity, Image, StyleSheet, Text, View} = React;
+const {TouchableOpacity, SliderIOS, Image, StyleSheet, Text, View} = React;
 
 export default React.createClass({
   togglePlay() {
     soundActions.togglePlayPause(this.props);
   },
+  changeVolume(vol) {
+    soundActions.changeVolume(this.props, vol);
+  },
+  renderSlider() {
+    if (!this.props.playing) return;
+    return <SliderIOS
+      style={styles.slider}
+      minimumTrackTintColor="#fff"
+      maximumTrackTintColor="#fff"
+      onSlidingComplete={vol => this.changeVolume(vol)}
+      value={this.props.volume}
+    />;
+  },
   render() {
     return (
-      <TouchableOpacity onPress={this.togglePlay}>
-        <View style={[styles.container, this.props.playing && styles.containerPlaying]}>
+      <View style={[styles.container, this.props.playing && styles.containerPlaying]}>
+        <TouchableOpacity onPress={this.togglePlay}>
           <Image style={styles.img} source={{uri: this.props.img}}/>
-          <View style={styles.rightContainer}>
-            <Text style={[styles.title, this.props.playing && styles.titlePlaying]}>
-              {this.props.name}
-            </Text>
-          </View>
+        </TouchableOpacity>
+        <View style={styles.rightContainer}>
+          <TouchableOpacity onPress={this.togglePlay}>
+          <Text style={[styles.title, this.props.playing && styles.titlePlaying]}>
+            {this.props.name}
+          </Text>
+          </TouchableOpacity>
+          {this.renderSlider()}
         </View>
-      </TouchableOpacity>
+      </View>
     );
   }
 });
 
 const styles = StyleSheet.create({
   container: {
-    flex: 1,
     flexDirection: "row",
     justifyContent: "flex-start",
-    alignItems: "center"
+    alignItems: "center",
+    marginBottom: 1
   },
   containerPlaying: {
     backgroundColor: "#6538B2"
@@ -42,11 +58,18 @@ const styles = StyleSheet.create({
   },
   title: {
     fontSize: 18,
-    marginBottom: 8,
     marginLeft: 8,
     textAlign: "left"
   },
   titlePlaying: {
-    color: "#fff"
+    color: "#fff",
+    marginBottom: 14
+  },
+  slider: {
+    flex: 1,
+    height: 10,
+    marginLeft: 8,
+    marginRight: 30,
+    marginBottom: 8
   }
 });
