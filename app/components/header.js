@@ -1,10 +1,12 @@
 import React from "react-native";
-const {StyleSheet, Text, View} = React;
+
+const {Image, StyleSheet, Text, View} = React;
 
 export default React.createClass({
   render() {
     return (
       <View style={styles.header}>
+        <Image style={styles.logo} source={{uri: "http://www.kakapo.co/icons/social/kakapo.png"}}/>
         <Text style={styles.headerText}>{this.props.title}</Text>
       </View>
     );
@@ -13,16 +15,24 @@ export default React.createClass({
 
 const styles = StyleSheet.create({
   header: {
-    height: 80,
+    flexDirection: "row",
     justifyContent: "center",
     alignItems: "center",
+    height: 80,
     backgroundColor: "#532F93",
-    flexDirection: "column",
     paddingTop: 25
+  },
+  logo: {
+    width: 38,
+    height: 38,
+    position: "relative",
+    left: -10
   },
   headerText: {
     fontWeight: "bold",
     fontSize: 20,
-    color: "white"
+    color: "white",
+    position: "relative",
+    left: -2
   }
 });

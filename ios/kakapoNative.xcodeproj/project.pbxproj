@@ -39,6 +39,8 @@
 		B132B8CA1BC059C400B85BED /* waves.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B132B8BD1BC059C400B85BED /* waves.mp3 */; settings = {ASSET_TAGS = (); }; };
 		B132B8CB1BC059C400B85BED /* wind.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B132B8BE1BC059C400B85BED /* wind.mp3 */; settings = {ASSET_TAGS = (); }; };
 		B132B8CD1BC0607700B85BED /* fan.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B132B8CC1BC0607700B85BED /* fan.mp3 */; settings = {ASSET_TAGS = (); }; };
+		B132B8D01BC137B300B85BED /* KDSocialShare.m in Sources */ = {isa = PBXBuildFile; fileRef = B132B8CF1BC137B300B85BED /* KDSocialShare.m */; settings = {ASSET_TAGS = (); }; };
+		B132B8D21BC137EB00B85BED /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B132B8D11BC137EB00B85BED /* Social.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -160,6 +162,9 @@
 		B132B8BD1BC059C400B85BED /* waves.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = waves.mp3; path = ../app/sounds/waves.mp3; sourceTree = "<group>"; };
 		B132B8BE1BC059C400B85BED /* wind.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = wind.mp3; path = ../app/sounds/wind.mp3; sourceTree = "<group>"; };
 		B132B8CC1BC0607700B85BED /* fan.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = fan.mp3; path = ../app/sounds/fan.mp3; sourceTree = "<group>"; };
+		B132B8CE1BC137B300B85BED /* KDSocialShare.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KDSocialShare.h; path = "../node_modules/react-native-social-share/iOS/KDSocialShare.h"; sourceTree = "<group>"; };
+		B132B8CF1BC137B300B85BED /* KDSocialShare.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KDSocialShare.m; path = "../node_modules/react-native-social-share/iOS/KDSocialShare.m"; sourceTree = "<group>"; };
+		B132B8D11BC137EB00B85BED /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -174,6 +179,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B132B8D21BC137EB00B85BED /* Social.framework in Frameworks */,
 				146834051AC3E58100842450 /* libReact.a in Frameworks */,
 				00C302E51ABCBA2D00DB3ED1 /* libRCTActionSheet.a in Frameworks */,
 				00C302E71ABCBA2D00DB3ED1 /* libRCTGeolocation.a in Frameworks */,
@@ -300,6 +306,8 @@
 		832341AE1AAA6A7D00B99B32 /* Libraries */ = {
 			isa = PBXGroup;
 			children = (
+				B132B8CE1BC137B300B85BED /* KDSocialShare.h */,
+				B132B8CF1BC137B300B85BED /* KDSocialShare.m */,
 				146833FF1AC3E56700842450 /* React.xcodeproj */,
 				00C302A71ABCB8CE00DB3ED1 /* RCTActionSheet.xcodeproj */,
 				00C302B51ABCB90400DB3ED1 /* RCTGeolocation.xcodeproj */,
@@ -325,6 +333,7 @@
 		83CBB9F61A601CBA00E9B192 = {
 			isa = PBXGroup;
 			children = (
+				B132B8D11BC137EB00B85BED /* Social.framework */,
 				13B07FAE1A68108700A75B9A /* kakapoNative */,
 				832341AE1AAA6A7D00B99B32 /* Libraries */,
 				00E356EF1AD99517003FC87E /* kakapoNativeTests */,
@@ -601,6 +610,7 @@
 			files = (
 				13B07FBC1A68108700A75B9A /* AppDelegate.m in Sources */,
 				B132B8911BC0466200B85BED /* SwiftAudio.swift in Sources */,
+				B132B8D01BC137B300B85BED /* KDSocialShare.m in Sources */,
 				B132B8931BC048BC00B85BED /* SwiftAudio.m in Sources */,
 				13B07FC11A68108700A75B9A /* main.m in Sources */,
 			);
