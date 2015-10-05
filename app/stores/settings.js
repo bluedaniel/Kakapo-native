@@ -14,6 +14,7 @@ export default Reflux.createStore({
   listenables: [settingActions],
   init() {
     StatusBarIOS.setStyle("light-content");
+    StatusBarIOS.setHidden(false, "slide");
   },
   getInitialState() {
     return settings.toJS();

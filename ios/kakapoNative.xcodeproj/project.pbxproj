@@ -82,6 +82,9 @@
 		B13585FD1BC2E78900A6E48A /* light-water.png in Resources */ = {isa = PBXBuildFile; fileRef = B13585E51BC2E78900A6E48A /* light-water.png */; settings = {ASSET_TAGS = (); }; };
 		B13585FE1BC2E78900A6E48A /* light-waves.png in Resources */ = {isa = PBXBuildFile; fileRef = B13585E61BC2E78900A6E48A /* light-waves.png */; settings = {ASSET_TAGS = (); }; };
 		B13585FF1BC2E78900A6E48A /* light-wind.png in Resources */ = {isa = PBXBuildFile; fileRef = B13585E71BC2E78900A6E48A /* light-wind.png */; settings = {ASSET_TAGS = (); }; };
+		B13586011BC3182F00A6E48A /* kakapo.png in Resources */ = {isa = PBXBuildFile; fileRef = B13586001BC3182F00A6E48A /* kakapo.png */; settings = {ASSET_TAGS = (); }; };
+		B13586051BC31D4F00A6E48A /* launch@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B13586031BC31D4F00A6E48A /* launch@2x.png */; settings = {ASSET_TAGS = (); }; };
+		B13586061BC31D4F00A6E48A /* launch@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = B13586041BC31D4F00A6E48A /* launch@3x.png */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -254,6 +257,9 @@
 		B13585E51BC2E78900A6E48A /* light-water.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "light-water.png"; path = "../app/images/light-water.png"; sourceTree = "<group>"; };
 		B13585E61BC2E78900A6E48A /* light-waves.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "light-waves.png"; path = "../app/images/light-waves.png"; sourceTree = "<group>"; };
 		B13585E71BC2E78900A6E48A /* light-wind.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "light-wind.png"; path = "../app/images/light-wind.png"; sourceTree = "<group>"; };
+		B13586001BC3182F00A6E48A /* kakapo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = kakapo.png; path = ../app/images/kakapo.png; sourceTree = "<group>"; };
+		B13586031BC31D4F00A6E48A /* launch@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "launch@2x.png"; path = "kakapoNative/resources/launch@2x.png"; sourceTree = "<group>"; };
+		B13586041BC31D4F00A6E48A /* launch@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "launch@3x.png"; path = "kakapoNative/resources/launch@3x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -362,6 +368,7 @@
 		13B07FAE1A68108700A75B9A /* kakapoNative */ = {
 			isa = PBXGroup;
 			children = (
+				B13586021BC31D3F00A6E48A /* launch */,
 				B13585CF1BC2E77A00A6E48A /* images */,
 				B13585CA1BC2B32600A6E48A /* icons */,
 				B1C075331BC297CF003201B7 /* fonts */,
@@ -486,6 +493,7 @@
 		B13585CF1BC2E77A00A6E48A /* images */ = {
 			isa = PBXGroup;
 			children = (
+				B13586001BC3182F00A6E48A /* kakapo.png */,
 				B13585D01BC2E78900A6E48A /* dark-cafe.png */,
 				B13585D11BC2E78900A6E48A /* dark-cat.png */,
 				B13585D21BC2E78900A6E48A /* dark-chimes.png */,
@@ -512,6 +520,15 @@
 				B13585E71BC2E78900A6E48A /* light-wind.png */,
 			);
 			name = images;
+			sourceTree = "<group>";
+		};
+		B13586021BC31D3F00A6E48A /* launch */ = {
+			isa = PBXGroup;
+			children = (
+				B13586031BC31D4F00A6E48A /* launch@2x.png */,
+				B13586041BC31D4F00A6E48A /* launch@3x.png */,
+			);
+			name = launch;
 			sourceTree = "<group>";
 		};
 		B1C075331BC297CF003201B7 /* fonts */ = {
@@ -752,6 +769,7 @@
 			files = (
 				B13585E81BC2E78900A6E48A /* dark-cafe.png in Resources */,
 				B13585B41BC2A48500A6E48A /* sf-ui-display-black.ttf in Resources */,
+				B13586011BC3182F00A6E48A /* kakapo.png in Resources */,
 				B13585EA1BC2E78900A6E48A /* dark-chimes.png in Resources */,
 				B13585F51BC2E78900A6E48A /* light-cat.png in Resources */,
 				B13585BF1BC2A48500A6E48A /* sf-ui-text-light.ttf in Resources */,
@@ -763,6 +781,7 @@
 				B13585ED1BC2E78900A6E48A /* dark-paris.png in Resources */,
 				B13585BA1BC2A48500A6E48A /* sf-ui-display-semibold.ttf in Resources */,
 				B13585FA1BC2E78900A6E48A /* light-rain.png in Resources */,
+				B13586061BC31D4F00A6E48A /* launch@3x.png in Resources */,
 				B13585B91BC2A48500A6E48A /* sf-ui-display-regular.ttf in Resources */,
 				B13585BB1BC2A48500A6E48A /* sf-ui-display-thin.ttf in Resources */,
 				B13585C11BC2A48500A6E48A /* sf-ui-text-regular.ttf in Resources */,
@@ -797,6 +816,7 @@
 				B132B8C11BC059C400B85BED /* cat-purr.mp3 in Resources */,
 				B132B8C71BC059C400B85BED /* stream.mp3 in Resources */,
 				B132B8C41BC059C400B85BED /* paris-cafe.mp3 in Resources */,
+				B13586051BC31D4F00A6E48A /* launch@2x.png in Resources */,
 				B132B8BF1BC059C400B85BED /* bonfire.mp3 in Resources */,
 				B13585EE1BC2E78900A6E48A /* dark-rain.png in Resources */,
 				B13585E91BC2E78900A6E48A /* dark-cat.png in Resources */,
