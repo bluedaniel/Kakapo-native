@@ -33,7 +33,9 @@ export default React.createClass({
     return (
       <View style={[styles.container, this.props.playing && {backgroundColor: Color(this.state.settings.color).lighten(0.15).hexString()}]}>
         <TouchableOpacity onPress={this.togglePlay}>
-          <Image style={styles.img} source={{uri: this.props.img}}/>
+          <Image style={styles.img} source={{
+            uri: (this.props.playing ? "light-" : "dark-") + this.props.img
+          }}/>
         </TouchableOpacity>
         <View style={styles.rightContainer}>
           <TouchableOpacity onPress={this.togglePlay}>

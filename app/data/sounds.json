@@ -8,7 +8,7 @@
     "playing": false,
     "editing": false,
     "progress": 1,
-    "img": "http://data.kakapo.co/dark/images/rain.png",
+    "img": "rain.png",
     "recentlyDownloaded": false
   },
   {
@@ -20,7 +20,7 @@
     "playing": false,
     "editing": false,
     "progress": 1,
-    "img": "http://data.kakapo.co/dark/images/cafe.png",
+    "img": "cafe.png",
     "recentlyDownloaded": false
   },
   {
@@ -32,7 +32,7 @@
     "playing": false,
     "editing": false,
     "progress": 1,
-    "img": "http://data.kakapo.co/dark/images/cat.png",
+    "img": "cat.png",
     "recentlyDownloaded": false
   },
   {
@@ -44,7 +44,7 @@
     "playing": false,
     "editing": false,
     "progress": 1,
-    "img": "http://data.kakapo.co/dark/images/chimes.png",
+    "img": "chimes.png",
     "recentlyDownloaded": false
   },
   {
@@ -56,7 +56,7 @@
     "playing": false,
     "editing": false,
     "progress": 1,
-    "img": "http://data.kakapo.co/dark/images/fan.png",
+    "img": "fan.png",
     "recentlyDownloaded": false
   },
   {
@@ -68,7 +68,7 @@
     "playing": false,
     "editing": false,
     "progress": 1,
-    "img": "http://data.kakapo.co/dark/images/leaves.png",
+    "img": "leaves.png",
     "recentlyDownloaded": false
   },
   {
@@ -80,7 +80,7 @@
     "playing": false,
     "editing": false,
     "progress": 1,
-    "img": "http://data.kakapo.co/dark/images/paris.png",
+    "img": "paris.png",
     "recentlyDownloaded": false
   },
   {
@@ -92,7 +92,7 @@
     "playing": false,
     "editing": false,
     "progress": 1,
-    "img": "http://data.kakapo.co/dark/images/water.png",
+    "img": "water.png",
     "recentlyDownloaded": false
   },
   {
@@ -104,7 +104,7 @@
     "playing": false,
     "editing": false,
     "progress": 1,
-    "img": "http://data.kakapo.co/dark/images/thunder.png",
+    "img": "thunder.png",
     "recentlyDownloaded": false
   },
   {
@@ -116,7 +116,7 @@
     "playing": false,
     "editing": false,
     "progress": 1,
-    "img": "http://data.kakapo.co/dark/images/train.png",
+    "img": "train.png",
     "recentlyDownloaded": false
   },
   {
@@ -128,7 +128,7 @@
     "playing": false,
     "editing": false,
     "progress": 1,
-    "img": "http://data.kakapo.co/dark/images/waves.png",
+    "img": "waves.png",
     "recentlyDownloaded": false
   },
   {
@@ -140,7 +140,7 @@
     "playing": false,
     "editing": false,
     "progress": 1,
-    "img": "http://data.kakapo.co/dark/images/wind.png",
+    "img": "wind.png",
     "recentlyDownloaded": false
   }
 ]
