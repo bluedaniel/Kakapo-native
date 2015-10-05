@@ -23,6 +23,12 @@ var config = {
         stage: 2
       }
     }, {
+      test: /node_modules\/react-native-icons\/.*\.js$/,
+      loader: "babel",
+      query: {
+        stage: 2
+      }
+    }, {
       test: /\.json$/,
       loader: "json"
     }]

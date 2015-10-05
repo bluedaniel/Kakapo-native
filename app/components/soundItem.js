@@ -70,13 +70,14 @@ const styles = StyleSheet.create({
   },
   titlePlaying: {
     color: "#fff",
-    marginBottom: 14
+    marginBottom: 10,
+    marginTop: 6
   },
   slider: {
     flex: 1,
-    height: 10,
+    height: 15,
     marginLeft: 8,
     marginRight: 30,
-    marginBottom: 8
+    marginBottom: 15
   }
 });

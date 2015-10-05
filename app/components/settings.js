@@ -1,56 +1,70 @@
 import React from "react-native";
 import Reflux from "reflux";
+import {Icon} from "react-native-icons";
 import {KDSocialShare} from "NativeModules";
 import Color from "color";
 import {Settings} from "../stores";
 import {settingActions} from "../actions";
 import {ColorPicker} from "./";
 
-const {ScrollView, AlertIOS, Image, TouchableOpacity, StyleSheet, Text, View} = React;
+const {LinkingIOS, ScrollView, AlertIOS, Image, TouchableOpacity, StyleSheet, Text, View} = React;
+const shareData = {
+  "text": "Kakapo",
+  "link": "https://kakapo.co",
+  "imagelink": "http://www.kakapo.co/icons/social/kakapo.png"
+};
 
 export default React.createClass({
   mixins: [Reflux.connect(Settings, "settings")],
   tweet() {
-    KDSocialShare.tweet({
-      "text": "Kakapo",
-      "link": "https://kakapo.co",
-      "imagelink": "http://www.kakapo.co/icons/social/kakapo.png"
-    },
-    res => {
-      if (res === "not_available") AlertIOS.alert("Twitter not available", "Setup Twitter in Settings > Twitter");
-    });
+    KDSocialShare.tweet(shareData,
+    res => res === "not_available" ? AlertIOS.alert("Twitter not available", "Setup Twitter in Settings > Twitter") : null);
   },
   facebook() {
-    KDSocialShare.shareOnFacebook({
-      "text": "Kakapo",
-      "link": "https://kakapo.co",
-      "imagelink": "http://www.kakapo.co/icons/social/kakapo.png"
-    },
-    res => {
-      if (res === "not_available") AlertIOS.alert("Facebook not available", "Setup Facebook in Settings > Facebook");
-    });
+    KDSocialShare.shareOnFacebook(shareData,
+    res => res === "not_available" ? AlertIOS.alert("Facebook not available", "Setup Facebook in Settings > Facebook") : null);
   },
   render() {
     return (
       <ScrollView
-        style={[styles.settings, {backgroundColor: Color(this.state.settings.color).lighten(0.15).hexString()}]}
+        automaticallyAdjustContentInsets={false}
+        style={[
+          styles.settings,
+          {backgroundColor: Color(this.state.settings.color).lighten(0.15).hexString()}
+        ]}
       >
         <Text style={[styles.header, styles.headerFirst]}>Settings</Text>
-        <TouchableOpacity>
-          <Text style={styles.opt}>Language</Text>
-        </TouchableOpacity>
-
         <Text style={styles.opt}>Color</Text>
         <ColorPicker/>
-
         <Text style={styles.header}>Share</Text>
-        <TouchableOpacity onPress={this.facebook}>
+        <TouchableOpacity style={styles.optWrap} onPress={this.facebook}>
+            <Icon
+              name="material|facebook"
+              size={30}
+              color="#fff"
+              style={styles.optWrapIcon}
+            />
           <Text style={styles.opt}>Facebook</Text>
         </TouchableOpacity>
-        <TouchableOpacity onPress={this.tweet}>
+        <TouchableOpacity style={styles.optWrap} onPress={this.tweet}>
+          <Icon
+            name="material|twitter"
+            size={30}
+            color="#fff"
+            style={styles.optWrapIcon}
+          />
           <Text style={styles.opt}>Twitter</Text>
         </TouchableOpacity>
-        <TouchableOpacity>
+        <TouchableOpacity
+          style={styles.optWrap}
+          onPress={() => LinkingIOS.openURL("https://github.com/bluedaniel/Kakapo-native")}
+        >
+          <Icon
+            name="material|github"
+            size={30}
+            color="#fff"
+            style={styles.optWrapIcon}
+          />
           <Text style={styles.opt}>Fork me on GitHub!</Text>
         </TouchableOpacity>
       </ScrollView>
@@ -62,6 +76,7 @@ const styles = StyleSheet.create({
   settings: {
     flex: 1,
     flexDirection: "column",
+    paddingTop: 20,
     paddingLeft: 25,
     paddingRight: 20,
     marginRight: 100
@@ -75,6 +90,18 @@ const styles = StyleSheet.create({
   },
   headerFirst: {
     marginTop: 0
+  },
+  optWrap: {
+    flex: 1,
+    flexDirection: "row",
+    alignItems: "center"
+  },
+  optWrapIcon: {
+    height: 30,
+    left: -5,
+    marginTop: -8,
+    position: "relative",
+    width: 30
   },
   opt: {
     fontFamily: "SFUIDisplay-Medium",

@@ -1,16 +1,28 @@
 import React from "react-native";
 import Reflux from "reflux";
+import {Icon} from "react-native-icons";
 import {Settings} from "../stores";
+import {settingActions} from "../actions";
 
-const {Image, StyleSheet, Text, View} = React;
+const {TouchableOpacity, Image, StyleSheet, Text, View} = React;
 
 export default React.createClass({
   mixins: [Reflux.connect(Settings, "settings")],
   render() {
     return (
       <View style={[styles.header, {backgroundColor: this.state.settings.color}]}>
-        <Image style={styles.logo} source={{uri: "http://www.kakapo.co/icons/social/kakapo.png"}}/>
-        <Text style={styles.headerText}>{this.props.title}</Text>
+        <TouchableOpacity onPress={this.props.toggleMenu}>
+          <Icon
+            name="material|menu"
+            size={30}
+            color="#fff"
+            style={[styles.menu, this.state.settings.menu && styles.menuActive]}
+          />
+        </TouchableOpacity>
+        <View style={styles.title}>
+          <Image style={styles.logo} source={{uri: "http://www.kakapo.co/icons/social/kakapo.png"}}/>
+          <Text style={styles.headerText}>{this.props.title}</Text>
+        </View>
       </View>
     );
   }
@@ -19,22 +31,33 @@ export default React.createClass({
 const styles = StyleSheet.create({
   header: {
     flexDirection: "row",
-    justifyContent: "center",
-    alignItems: "center",
     height: 80,
-    paddingTop: 25
+    paddingTop: 25,
+    alignItems: "center"
+  },
+  menu: {
+    width: 30,
+    height: 30,
+    marginLeft: 15
+  },
+  menuActive: {
+  },
+  title: {
+    flex: 1,
   },
   logo: {
     width: 38,
     height: 38,
     position: "relative",
-    left: -10
+    left: 83,
+    top: 11
   },
   headerText: {
     fontWeight: "bold",
+    alignSelf: "center",
     fontSize: 20,
     color: "white",
-    position: "relative",
-    left: -2
+    top: -19,
+    position: "relative"
   }
 });

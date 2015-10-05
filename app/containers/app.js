@@ -1,28 +1,20 @@
 import React from "react-native";
 import Drawer from "react-native-drawer";
 import {Header, SoundList, Settings} from "../components";
+import {settingActions} from "../actions";
 
-const {StatusBarIOS, StyleSheet, View} = React;
+const {StyleSheet, View} = React;
 
 export default React.createClass({
-  componentDidMount() {
-    StatusBarIOS.setStyle("light-content");
-  },
   getInitialState() {
     return { title: "Kakapo" };
-  },
-  openControlPanel() {
-    this.refs.drawer.open();
-  },
-  closeControlPanel() {
-    this.refs.drawer.close();
   },
   render() {
     return (
       <Drawer
         content={<Settings/>}
-        onClose={() => StatusBarIOS.setHidden(false, "slide")}
-        onOpen={() => StatusBarIOS.setHidden(true, "slide")}
+        onClose={() => settingActions.menuToggle(false)}
+        onOpen={() => settingActions.menuToggle(true)}
         openDrawerOffset={100}
         panCloseMask={1}
         ref="drawer"
@@ -35,7 +27,7 @@ export default React.createClass({
         type="static"
       >
         <View style={styles.container}>
-          <Header title={this.state.title}/>
+          <Header title={this.state.title} toggleMenu={() => this.refs.drawer.toggle()}/>
           <SoundList/>
         </View>
       </Drawer>

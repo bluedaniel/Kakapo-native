@@ -21,6 +21,7 @@
     "lodash": "^3.10.1",
     "react": "^0.13.3",
     "react-native-drawer": "^1.3.0",
+    "react-native-icons": "^0.4.0",
     "react-native-social-share": "^0.4.0",
     "react-native-webpack-server": "^0.6.0",
     "react-transform-hmr": "^1.0.1",
