@@ -1,6 +1,7 @@
 import React from "react-native";
 import Reflux from "reflux";
 import {KDSocialShare} from "NativeModules";
+import Color from "color";
 import {Settings} from "../stores";
 import {settingActions} from "../actions";
 import {ColorPicker} from "./";
@@ -31,7 +32,7 @@ export default React.createClass({
   },
   render() {
     return (
-      <View style={[styles.settings, {backgroundColor: this.state.settings.color}]}>
+      <View style={[styles.settings, {backgroundColor: Color(this.state.settings.color).lighten(0.15).hexString()}]}>
         <Text style={[styles.header, styles.headerFirst]}>Settings</Text>
         <TouchableOpacity>
           <Text style={styles.opt}>Language</Text>

@@ -1,6 +1,7 @@
 import React from "react-native";
 import Reflux from "reflux";
 import throttle from "lodash/function/throttle";
+import Color from "color";
 import {soundActions} from "../actions";
 import {Settings} from "../stores";
 
@@ -30,7 +31,7 @@ export default React.createClass({
   },
   render() {
     return (
-      <View style={[styles.container, this.props.playing && {backgroundColor: this.state.settings.color}]}>
+      <View style={[styles.container, this.props.playing && {backgroundColor: Color(this.state.settings.color).lighten(0.15).hexString()}]}>
         <TouchableOpacity onPress={this.togglePlay}>
           <Image style={styles.img} source={{uri: this.props.img}}/>
         </TouchableOpacity>
@@ -51,8 +52,7 @@ const styles = StyleSheet.create({
   container: {
     flexDirection: "row",
     justifyContent: "flex-start",
-    alignItems: "center",
-    marginBottom: 1
+    alignItems: "center"
   },
   img: {
     width: 48,
