@@ -13,7 +13,7 @@ export default React.createClass({
     this.changeVolumeThrottled = throttle(this.changeVolume, 200);
   },
   togglePlay() {
-    soundActions.togglePlayPause(this.props);
+    soundActions.togglePlayPause(this.props, true);
   },
   changeVolume(vol, trigger) {
     soundActions.changeVolume(this.props, vol, trigger);

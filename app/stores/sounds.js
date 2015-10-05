@@ -4,7 +4,7 @@ import Immutable from "immutable";
 import throttle from "lodash/function/throttle";
 import findWhere from "lodash/collection/findWhere";
 import {SwiftAudio} from "NativeModules";
-import { soundActions } from "../actions";
+import {soundActions} from "../actions";
 import SoundsJson from "../data/sounds.json";
 
 const {AsyncStorage, ListView} = React;
@@ -13,8 +13,7 @@ const STORAGE_KEY = "@AsyncStorageSounds:key";
 let ds = new ListView.DataSource({rowHasChanged: (r1, r2) => r1 !== r2});
 
 let sounds = new Immutable.OrderedMap();
-let howls = new Immutable.Map();
-let mute = false;
+let soundsMulti = new Immutable.OrderedMap();
 
 var SoundStore = Reflux.createStore({
   listenables: [soundActions],
@@ -35,12 +34,20 @@ var SoundStore = Reflux.createStore({
   getInitialState() {
     return ds.cloneWithRows(sounds.toArray());
   },
-  onToggleMute(muteToggle) {
-    mute = muteToggle;
+  getMultipleStatus() {
+    if (soundsMulti.count() && !sounds.filter(s => s.playing).count()) return 2;
+    if (sounds.filter(s => s.playing).count()) return 1;
+    return false;
   },
-  onTogglePlayPause(sound) {
+  onToggleMultiple() {
+    if (!soundsMulti.count()) soundsMulti = sounds.filter(s => s.playing);
+    soundsMulti.forEach(s => soundActions.togglePlayPause(s, false));
+    this.trigger(ds.cloneWithRows(sounds.toArray()));
+  },
+  onTogglePlayPause(sound, multi) {
     SwiftAudio.togglePlay(sound.file);
     sounds = sounds.update(sound.file, s => ({...s, ...{ playing: !s.playing }}));
+    if (multi) soundsMulti = soundsMulti.clear();
     this.trigger(ds.cloneWithRows(sounds.toArray()));
   },
   onChangeVolume(sound, volume, trigger) {
@@ -49,7 +56,5 @@ var SoundStore = Reflux.createStore({
     if (trigger) this.trigger(ds.cloneWithRows(sounds.toArray()));
   }
 });
-
-// SoundStore.listen(throttle(() => console.log(sounds.toArray()), 1000));
 
 export default SoundStore;
