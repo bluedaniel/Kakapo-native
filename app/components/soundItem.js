@@ -1,9 +1,13 @@
 import React from "react-native";
+import Reflux from "reflux";
 import throttle from "lodash/function/throttle";
 import {soundActions} from "../actions";
+import {Settings} from "../stores";
+
 const {TouchableOpacity, SliderIOS, Image, StyleSheet, Text, View} = React;
 
 export default React.createClass({
+  mixins: [Reflux.connect(Settings, "settings")],
   componentWillMount() {
     this.changeVolumeThrottled = throttle(this.changeVolume, 200);
   },
@@ -26,7 +30,7 @@ export default React.createClass({
   },
   render() {
     return (
-      <View style={[styles.container, this.props.playing && styles.containerPlaying]}>
+      <View style={[styles.container, this.props.playing && {backgroundColor: this.state.settings.color}]}>
         <TouchableOpacity onPress={this.togglePlay}>
           <Image style={styles.img} source={{uri: this.props.img}}/>
         </TouchableOpacity>
@@ -49,9 +53,6 @@ const styles = StyleSheet.create({
     justifyContent: "flex-start",
     alignItems: "center",
     marginBottom: 1
-  },
-  containerPlaying: {
-    backgroundColor: "#6538B2"
   },
   img: {
     width: 48,

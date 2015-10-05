@@ -1,9 +1,14 @@
 import React from "react-native";
+import Reflux from "reflux";
 import {KDSocialShare} from "NativeModules";
+import {Settings} from "../stores";
+import {settingActions} from "../actions";
+import {ColorPicker} from "./";
 
 const {AlertIOS, Image, TouchableOpacity, StyleSheet, Text, View} = React;
 
 export default React.createClass({
+  mixins: [Reflux.connect(Settings, "settings")],
   tweet() {
     KDSocialShare.tweet({
       "text": "Kakapo",
@@ -26,14 +31,14 @@ export default React.createClass({
   },
   render() {
     return (
-      <View style={styles.settings}>
+      <View style={[styles.settings, {backgroundColor: this.state.settings.color}]}>
         <Text style={[styles.header, styles.headerFirst]}>Settings</Text>
         <TouchableOpacity>
           <Text style={styles.opt}>Language</Text>
         </TouchableOpacity>
-        <TouchableOpacity>
-          <Text style={styles.opt}>Color</Text>
-        </TouchableOpacity>
+
+        <Text style={styles.opt}>Color</Text>
+        <ColorPicker/>
 
         <Text style={styles.header}>Share</Text>
         <TouchableOpacity onPress={this.facebook}>
@@ -54,7 +59,6 @@ const styles = StyleSheet.create({
   settings: {
     flex: 1,
     flexDirection: "column",
-    backgroundColor: "#532F93",
     paddingTop: 20,
     paddingLeft: 25,
     paddingRight: 20,

@@ -1,11 +1,14 @@
 import React from "react-native";
+import Reflux from "reflux";
+import {Settings} from "../stores";
 
 const {Image, StyleSheet, Text, View} = React;
 
 export default React.createClass({
+  mixins: [Reflux.connect(Settings, "settings")],
   render() {
     return (
-      <View style={styles.header}>
+      <View style={[styles.header, {backgroundColor: this.state.settings.color}]}>
         <Image style={styles.logo} source={{uri: "http://www.kakapo.co/icons/social/kakapo.png"}}/>
         <Text style={styles.headerText}>{this.props.title}</Text>
       </View>
@@ -19,7 +22,6 @@ const styles = StyleSheet.create({
     justifyContent: "center",
     alignItems: "center",
     height: 80,
-    backgroundColor: "#532F93",
     paddingTop: 25
   },
   logo: {
