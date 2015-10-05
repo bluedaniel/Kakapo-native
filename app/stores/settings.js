@@ -7,7 +7,7 @@ const {StatusBarIOS, StyleSheet, View} = React;
 
 let settings = new Immutable.Map({
   menu: false,
-  color: "#532F93"
+  color: "#673AB7"
 });
 
 export default Reflux.createStore({
