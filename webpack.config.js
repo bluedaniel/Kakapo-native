@@ -17,7 +17,7 @@ var config = {
       exclude: /node_modules/,
       loader: "babel"
     }, {
-      test: /node_modules\/react-native-drawer\/.*\.js$/,
+      test: /node_modules\/react-native-(drawer|icons)\/.*\.js$/,
       loader: "babel",
       query: {
         stage: 2

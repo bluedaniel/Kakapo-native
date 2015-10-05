@@ -35,14 +35,12 @@ const styles = StyleSheet.create({
   colorPicker: {
     flexDirection: "row",
     flexWrap: "wrap",
-    shadowColor: "#000",
-    shadowOpacity: 0.2,
-    shadowRadius: 8,
-    shadowOffset: {}
+    justifyContent: "space-around"
   },
   swatches: {
-    width: 46,
-    height: 46
+    width: 38,
+    height: 38,
+    marginBottom: 6
   },
   colorSelected: {
     borderWidth: 2,

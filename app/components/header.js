@@ -44,43 +44,38 @@ export default React.createClass({
 
 const styles = StyleSheet.create({
   header: {
+    alignItems: "center",
     flexDirection: "row",
     height: 80,
-    paddingTop: 25,
-    alignItems: "center"
+    paddingTop: 25
   },
   menu: {
-    width: 30,
     height: 30,
-    marginLeft: 15
-  },
-  menuActive: {
+    marginLeft: 15,
+    width: 30
   },
   multiple: {
-    width: 30,
     height: 30,
-    marginRight: 15
+    marginRight: 15,
+    width: 30
   },
   multipleHide: {
     opacity: 0
   },
   title: {
     flex: 1,
+    flexDirection: "row",
+    justifyContent: "center"
   },
   logo: {
-    width: 38,
     height: 38,
-    position: "relative",
-    left: 80,
-    top: 11
+    marginRight: 7,
+    width: 38
   },
   headerText: {
-    fontWeight: "bold",
     alignSelf: "center",
-    fontSize: 20,
     color: "white",
-    top: -19,
-    left: 19,
-    position: "relative"
+    fontSize: 20,
+    fontWeight: "bold"
   }
 });

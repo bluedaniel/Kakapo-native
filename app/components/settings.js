@@ -10,7 +10,7 @@ import {ColorPicker} from "./";
 const {LinkingIOS, ScrollView, AlertIOS, Image, TouchableOpacity, StyleSheet, Text, View} = React;
 const shareData = {
   "text": "Kakapo",
-  "link": "https://kakapo.co",
+  "link": "http://kakapo.co",
   "imagelink": "http://www.kakapo.co/icons/social/kakapo.png"
 };
 

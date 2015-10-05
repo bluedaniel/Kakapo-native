@@ -3,7 +3,7 @@ var swatches = function() {
 };
 
 var light = swatches.light = [
-  "#FFEB3B", "#FFC107", "#FF9800"
+  "#FFC107", "#FF9800"
 ];
 
 var dark = swatches.dark = [
