@@ -63,6 +63,7 @@ const styles = StyleSheet.create({
     flex: 1
   },
   title: {
+    fontFamily: "SFUIText-Regular",
     fontSize: 18,
     marginLeft: 8,
     textAlign: "left"

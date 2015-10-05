@@ -2,6 +2,24 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>UIAppFonts</key>
+	<array>
+		<string>sf-ui-display-black.ttf</string>
+		<string>sf-ui-display-bold.ttf</string>
+		<string>sf-ui-display-heavy.ttf</string>
+		<string>sf-ui-display-light.ttf</string>
+		<string>sf-ui-display-medium.ttf</string>
+		<string>sf-ui-display-regular.ttf</string>
+		<string>sf-ui-display-semibold.ttf</string>
+		<string>sf-ui-display-thin.ttf</string>
+		<string>sf-ui-display-ultralight.ttf</string>
+		<string>sf-ui-text-bold.ttf</string>
+		<string>sf-ui-text-heavy.ttf</string>
+		<string>sf-ui-text-light.ttf</string>
+		<string>sf-ui-text-medium.ttf</string>
+		<string>sf-ui-text-regular.ttf</string>
+		<string>sf-ui-text-semibold.ttf</string>
+	</array>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>en</string>
 	<key>CFBundleExecutable</key>
@@ -38,8 +56,6 @@
 	<key>UISupportedInterfaceOrientations</key>
 	<array>
 		<string>UIInterfaceOrientationPortrait</string>
-		<string>UIInterfaceOrientationLandscapeLeft</string>
-		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
 	<key>UIViewControllerBasedStatusBarAppearance</key>
 	<false/>

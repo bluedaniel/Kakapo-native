@@ -6,7 +6,7 @@ import {Settings} from "../stores";
 import {settingActions} from "../actions";
 import {ColorPicker} from "./";
 
-const {AlertIOS, Image, TouchableOpacity, StyleSheet, Text, View} = React;
+const {ScrollView, AlertIOS, Image, TouchableOpacity, StyleSheet, Text, View} = React;
 
 export default React.createClass({
   mixins: [Reflux.connect(Settings, "settings")],
@@ -32,7 +32,9 @@ export default React.createClass({
   },
   render() {
     return (
-      <View style={[styles.settings, {backgroundColor: Color(this.state.settings.color).lighten(0.15).hexString()}]}>
+      <ScrollView
+        style={[styles.settings, {backgroundColor: Color(this.state.settings.color).lighten(0.15).hexString()}]}
+      >
         <Text style={[styles.header, styles.headerFirst]}>Settings</Text>
         <TouchableOpacity>
           <Text style={styles.opt}>Language</Text>
@@ -51,7 +53,7 @@ export default React.createClass({
         <TouchableOpacity>
           <Text style={styles.opt}>Fork me on GitHub!</Text>
         </TouchableOpacity>
-      </View>
+      </ScrollView>
     );
   }
 });
@@ -60,12 +62,12 @@ const styles = StyleSheet.create({
   settings: {
     flex: 1,
     flexDirection: "column",
-    paddingTop: 20,
     paddingLeft: 25,
     paddingRight: 20,
     marginRight: 100
   },
   header: {
+    fontFamily: "SFUIDisplay-Bold",
     color: "#fff",
     fontSize: 22,
     marginBottom: 13,
@@ -75,6 +77,7 @@ const styles = StyleSheet.create({
     marginTop: 0
   },
   opt: {
+    fontFamily: "SFUIDisplay-Medium",
     color: "#fff",
     fontSize: 16,
     marginTop: 7,
