@@ -10,14 +10,13 @@ export default React.createClass({
   mixins: [Reflux.connect(Settings, "settings"), Reflux.connect(Sounds, "sounds")],
   renderIconMultiple() {
     let multiToggle = Sounds.getMultipleStatus();
-    if (!multiToggle) return;
     return (
       <TouchableOpacity onPress={soundActions.toggleMultiple}>
         <Icon
           name={"material|" + (multiToggle === 2 ? "play" : "pause")}
           size={30}
           color="#fff"
-          style={styles.multiple}
+          style={[styles.multiple, !multiToggle && styles.multipleHide]}
         />
       </TouchableOpacity>
     );
