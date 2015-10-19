@@ -13,6 +13,19 @@ class SwiftAudio: NSObject {
   
   var soundArr = [String:AVAudioPlayer]()
   
+  override init() {
+    do {
+      try AVAudioSession.sharedInstance().setCategory(AVAudioSessionCategoryPlayback)
+      do {
+        try AVAudioSession.sharedInstance().setActive(true)
+      } catch let error as NSError {
+        print(error.localizedDescription)
+      }
+    } catch let error as NSError {
+      print(error.localizedDescription)
+    }
+  }
+  
   @objc func setSound(sound: String) {
     if soundArr[sound] === nil {
       do {
