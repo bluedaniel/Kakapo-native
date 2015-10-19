@@ -29,7 +29,7 @@ class SwiftAudio: NSObject {
   @objc func setSound(sound: String) {
     if soundArr[sound] === nil {
       do {
-        let soundObj = try AVAudioPlayer(contentsOfURL: NSBundle.mainBundle().URLForResource(sound, withExtension: "mp3")!)
+        let soundObj = try AVAudioPlayer(contentsOfURL: NSBundle.mainBundle().URLForResource(sound, withExtension: "m4a")!)
         soundArr.updateValue(soundObj, forKey: sound)
         soundArr[sound]!.prepareToPlay()
         soundArr[sound]!.volume = 0.5
