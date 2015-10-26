@@ -202,7 +202,7 @@
 		B1E52C061BDE4D1500F4D1AE /* sf-ui-text-medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "sf-ui-text-medium.ttf"; path = "../src/fonts/sf-ui/sf-ui-text-medium.ttf"; sourceTree = "<group>"; };
 		B1E52C071BDE4D1500F4D1AE /* sf-ui-text-regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "sf-ui-text-regular.ttf"; path = "../src/fonts/sf-ui/sf-ui-text-regular.ttf"; sourceTree = "<group>"; };
 		B1E52C081BDE4D1500F4D1AE /* sf-ui-text-semibold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "sf-ui-text-semibold.ttf"; path = "../src/fonts/sf-ui/sf-ui-text-semibold.ttf"; sourceTree = "<group>"; };
-		B1E52C181BDE4FFA00F4D1AE /* KakapoNative-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "KakapoNative-Bridging-Header.h"; sourceTree = "<group>"; };
+		B1E52C181BDE4FFA00F4D1AE /* Kakapo-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Kakapo-Bridging-Header.h"; sourceTree = "<group>"; };
 		B1E52C191BDE4FFB00F4D1AE /* SwiftAudio.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SwiftAudio.m; path = KakapoNative/SwiftAudio.m; sourceTree = "<group>"; };
 		B1E52C1A1BDE4FFB00F4D1AE /* SwiftAudio.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SwiftAudio.swift; path = KakapoNative/SwiftAudio.swift; sourceTree = "<group>"; };
 		B1E52C291BDE509600F4D1AE /* bonfire.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; name = bonfire.m4a; path = ../src/sounds/bonfire.m4a; sourceTree = "<group>"; };
@@ -330,7 +330,7 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		13B07FAE1A68108700A75B9A /* KakapoNative */ = {
+		13B07FAE1A68108700A75B9A /* Kakapo */ = {
 			isa = PBXGroup;
 			children = (
 				B1E52C451BDE567C00F4D1AE /* icons */,
@@ -343,11 +343,11 @@
 				13B07FB61A68108700A75B9A /* Info.plist */,
 				13B07FB11A68108700A75B9A /* LaunchScreen.xib */,
 				13B07FB71A68108700A75B9A /* main.m */,
-				B1E52C181BDE4FFA00F4D1AE /* KakapoNative-Bridging-Header.h */,
+				B1E52C181BDE4FFA00F4D1AE /* Kakapo-Bridging-Header.h */,
 				B1E52C191BDE4FFB00F4D1AE /* SwiftAudio.m */,
 				B1E52C1A1BDE4FFB00F4D1AE /* SwiftAudio.swift */,
 			);
-			name = KakapoNative;
+			name = Kakapo;
 			sourceTree = "<group>";
 		};
 		146834001AC3E56700842450 /* Products */ = {
@@ -399,7 +399,7 @@
 			children = (
 				B1E52C841BDE59CD00F4D1AE /* Social.framework */,
 				B1E52C7F1BDE592C00F4D1AE /* Material-Design-Iconic-Font.ttf */,
-				13B07FAE1A68108700A75B9A /* KakapoNative */,
+				13B07FAE1A68108700A75B9A /* Kakapo */,
 				832341AE1AAA6A7D00B99B32 /* Libraries */,
 				83CBBA001A601CBA00E9B192 /* Products */,
 			);
@@ -511,9 +511,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		13B07F861A680F5B00A75B9A /* KakapoNative */ = {
+		13B07F861A680F5B00A75B9A /* Kakapo */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "KakapoNative" */;
+			buildConfigurationList = 13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "Kakapo" */;
 			buildPhases = (
 				13B07F871A680F5B00A75B9A /* Sources */,
 				13B07F8C1A680F5B00A75B9A /* Frameworks */,
@@ -523,7 +523,7 @@
 			);
 			dependencies = (
 			);
-			name = KakapoNative;
+			name = Kakapo;
 			productName = "Hello World";
 			productReference = 13B07F961A680F5B00A75B9A /* Kakapo.temp_caseinsensitive_renameNative.app */;
 			productType = "com.apple.product-type.application";
@@ -536,7 +536,7 @@
 			attributes = {
 				LastSwiftUpdateCheck = 0710;
 				LastUpgradeCheck = 0710;
-				ORGANIZATIONNAME = Facebook;
+				ORGANIZATIONNAME = Supercerebral;
 				TargetAttributes = {
 					13B07F861A680F5B00A75B9A = {
 						DevelopmentTeam = A6K3VKBW43;
@@ -607,7 +607,7 @@
 			);
 			projectRoot = "";
 			targets = (
-				13B07F861A680F5B00A75B9A /* KakapoNative */,
+				13B07F861A680F5B00A75B9A /* Kakapo */,
 			);
 		};
 /* End PBXProject section */
@@ -808,7 +808,7 @@
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = com.supercerebral.kakapo;
 				PRODUCT_NAME = KakapoNative;
-				SWIFT_OBJC_BRIDGING_HEADER = "KakapoNative-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "Kakapo-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
@@ -830,7 +830,7 @@
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = com.supercerebral.kakapo;
 				PRODUCT_NAME = KakapoNative;
-				SWIFT_OBJC_BRIDGING_HEADER = "KakapoNative-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "Kakapo-Bridging-Header.h";
 			};
 			name = Release;
 		};
@@ -877,6 +877,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = Kakapo;
 				SDKROOT = iphoneos;
 			};
 			name = Debug;
@@ -916,6 +917,7 @@
 				);
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = Kakapo;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};
@@ -924,7 +926,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "KakapoNative" */ = {
+		13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "Kakapo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				13B07F941A680F5B00A75B9A /* Debug */,

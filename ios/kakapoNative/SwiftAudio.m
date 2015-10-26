@@ -5,7 +5,7 @@
 //  Created by Daniel Levitt on 03/10/2015.
 //  Copyright © 2015 SuperCerebral. All rights reserved.
 //
-#import "kakapoNative-Bridging-Header.h"
+#import "kakapo-Bridging-Header.h"
 
 @interface RCT_EXTERN_MODULE(SwiftAudio, NSObject)
 
