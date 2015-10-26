@@ -1,11 +1,11 @@
 import React from "react-native";
 import Reflux from "reflux";
-import {KDSocialShare} from "NativeModules";
 import {Settings} from "../stores";
 import {settingActions} from "../actions";
 import Swatches from "../utils/swatches";
 
-const {TouchableOpacity, StyleSheet, Text, View} = React;
+const {NativeModules, TouchableOpacity, StyleSheet, Text, View} = React;
+const {KDSocialShare} = NativeModules;
 
 export default React.createClass({
   mixins: [Reflux.connect(Settings, "settings")],

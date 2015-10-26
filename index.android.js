@@ -12,7 +12,7 @@ var {
   View,
 } = React;
 
-var kakapoNative = React.createClass({
+var KakapoNative = React.createClass({
   render: function() {
     return (
       <View style={styles.container}>
@@ -49,4 +49,4 @@ var styles = StyleSheet.create({
   },
 });
 
-AppRegistry.registerComponent('kakapoNative', () => kakapoNative);
+AppRegistry.registerComponent('KakapoNative', () => KakapoNative);

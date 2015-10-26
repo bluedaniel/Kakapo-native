@@ -30,7 +30,7 @@ public class MainActivity extends Activity implements DefaultHardwareBackBtnHand
                 .setInitialLifecycleState(LifecycleState.RESUMED)
                 .build();
 
-        mReactRootView.startReactApplication(mReactInstanceManager, "kakapoNative", null);
+        mReactRootView.startReactApplication(mReactInstanceManager, "KakapoNative", null);
 
         setContentView(mReactRootView);
     }
@@ -42,6 +42,15 @@ public class MainActivity extends Activity implements DefaultHardwareBackBtnHand
             return true;
         }
         return super.onKeyUp(keyCode, event);
+    }
+
+    @Override
+    public void onBackPressed() {
+      if (mReactInstanceManager != null) {
+        mReactInstanceManager.onBackPressed();
+      } else {
+        super.onBackPressed();
+      }
     }
 
     @Override

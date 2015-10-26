@@ -1,13 +1,12 @@
-import Reflux from "reflux";
 import React from "react-native";
+import Reflux from "reflux";
 import Immutable from "immutable";
 import throttle from "lodash/function/throttle";
 import findWhere from "lodash/collection/findWhere";
-import {SwiftAudio} from "NativeModules";
 import {soundActions} from "../actions";
 import SoundsJson from "../data/sounds.json";
-
-const {AsyncStorage, ListView} = React;
+const {NativeModules, AsyncStorage, ListView} = React;
+const {SwiftAudio} = NativeModules;
 const STORAGE_KEY = "@AsyncStorageSounds:key";
 
 let ds = new ListView.DataSource({rowHasChanged: (r1, r2) => r1 !== r2});

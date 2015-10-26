@@ -1,3 +1,3 @@
-rootProject.name = 'kakapoNative'
+rootProject.name = 'KakapoNative'
 
 include ':app'

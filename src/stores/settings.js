@@ -1,5 +1,5 @@
-import Reflux from "reflux";
 import React from "react-native";
+import Reflux from "reflux";
 import Immutable from "immutable";
 import { settingActions } from "../actions";
 

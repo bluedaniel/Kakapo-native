@@ -1,13 +1,14 @@
 import React from "react-native";
 import Reflux from "reflux";
 import {Icon} from "react-native-icons";
-import {KDSocialShare} from "NativeModules";
 import Color from "color";
 import {Settings} from "../stores";
 import {settingActions} from "../actions";
-import {ColorPicker} from "./";
+import ColorPicker from "./colorPicker";
 
-const {LinkingIOS, ScrollView, AlertIOS, Image, TouchableOpacity, StyleSheet, Text, View} = React;
+const {NativeModules, LinkingIOS, ScrollView, AlertIOS, Image, TouchableOpacity, StyleSheet, Text, View} = React;
+const {KDSocialShare} = NativeModules;
+
 const shareData = {
   "text": "Kakapo",
   "link": "http://kakapo.co",
@@ -78,8 +79,7 @@ const styles = StyleSheet.create({
     flexDirection: "column",
     paddingTop: 20,
     paddingLeft: 25,
-    paddingRight: 20,
-    marginRight: 100
+    paddingRight: 20
   },
   header: {
     fontFamily: "SFUIDisplay-Bold",

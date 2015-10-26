@@ -1,0 +1,1046 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		008F07F31AC5B25A0029DE68 /* main.jsbundle in Resources */ = {isa = PBXBuildFile; fileRef = 008F07F21AC5B25A0029DE68 /* main.jsbundle */; };
+		00C302E51ABCBA2D00DB3ED1 /* libRCTActionSheet.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 00C302AC1ABCB8CE00DB3ED1 /* libRCTActionSheet.a */; };
+		00C302E71ABCBA2D00DB3ED1 /* libRCTGeolocation.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 00C302BA1ABCB90400DB3ED1 /* libRCTGeolocation.a */; };
+		00C302E81ABCBA2D00DB3ED1 /* libRCTImage.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 00C302C01ABCB91800DB3ED1 /* libRCTImage.a */; };
+		00C302E91ABCBA2D00DB3ED1 /* libRCTNetwork.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 00C302DC1ABCB9D200DB3ED1 /* libRCTNetwork.a */; };
+		00C302EA1ABCBA2D00DB3ED1 /* libRCTVibration.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 00C302E41ABCB9EE00DB3ED1 /* libRCTVibration.a */; };
+		00E356F31AD99517003FC87E /* KakapoNativeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* KakapoNativeTests.m */; };
+		133E29F31AD74F7200F7D852 /* libRCTLinking.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 78C398B91ACF4ADC00677621 /* libRCTLinking.a */; };
+		139105C61AF99C1200B5F7CC /* libRCTSettings.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 139105C11AF99BAD00B5F7CC /* libRCTSettings.a */; };
+		139FDEF61B0652A700C62182 /* libRCTWebSocket.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 139FDEF41B06529B00C62182 /* libRCTWebSocket.a */; };
+		13B07FBC1A68108700A75B9A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.m */; };
+		13B07FBD1A68108700A75B9A /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB11A68108700A75B9A /* LaunchScreen.xib */; };
+		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
+		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
+		146834051AC3E58100842450 /* libReact.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 146834041AC3E56700842450 /* libReact.a */; };
+		832341BD1AAA6AB300B99B32 /* libRCTText.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 832341B51AAA6A8300B99B32 /* libRCTText.a */; };
+		B1E52C091BDE4D1500F4D1AE /* sf-ui-display-black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B1E52BFA1BDE4D1500F4D1AE /* sf-ui-display-black.ttf */; };
+		B1E52C0A1BDE4D1500F4D1AE /* sf-ui-display-bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B1E52BFB1BDE4D1500F4D1AE /* sf-ui-display-bold.ttf */; };
+		B1E52C0B1BDE4D1500F4D1AE /* sf-ui-display-heavy.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B1E52BFC1BDE4D1500F4D1AE /* sf-ui-display-heavy.ttf */; };
+		B1E52C0C1BDE4D1500F4D1AE /* sf-ui-display-light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B1E52BFD1BDE4D1500F4D1AE /* sf-ui-display-light.ttf */; };
+		B1E52C0D1BDE4D1500F4D1AE /* sf-ui-display-medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B1E52BFE1BDE4D1500F4D1AE /* sf-ui-display-medium.ttf */; };
+		B1E52C0E1BDE4D1500F4D1AE /* sf-ui-display-regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B1E52BFF1BDE4D1500F4D1AE /* sf-ui-display-regular.ttf */; };
+		B1E52C0F1BDE4D1500F4D1AE /* sf-ui-display-semibold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B1E52C001BDE4D1500F4D1AE /* sf-ui-display-semibold.ttf */; };
+		B1E52C101BDE4D1500F4D1AE /* sf-ui-display-thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B1E52C011BDE4D1500F4D1AE /* sf-ui-display-thin.ttf */; };
+		B1E52C111BDE4D1500F4D1AE /* sf-ui-display-ultralight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B1E52C021BDE4D1500F4D1AE /* sf-ui-display-ultralight.ttf */; };
+		B1E52C121BDE4D1500F4D1AE /* sf-ui-text-bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B1E52C031BDE4D1500F4D1AE /* sf-ui-text-bold.ttf */; };
+		B1E52C131BDE4D1500F4D1AE /* sf-ui-text-heavy.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B1E52C041BDE4D1500F4D1AE /* sf-ui-text-heavy.ttf */; };
+		B1E52C141BDE4D1500F4D1AE /* sf-ui-text-light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B1E52C051BDE4D1500F4D1AE /* sf-ui-text-light.ttf */; };
+		B1E52C151BDE4D1500F4D1AE /* sf-ui-text-medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B1E52C061BDE4D1500F4D1AE /* sf-ui-text-medium.ttf */; };
+		B1E52C161BDE4D1500F4D1AE /* sf-ui-text-regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B1E52C071BDE4D1500F4D1AE /* sf-ui-text-regular.ttf */; };
+		B1E52C171BDE4D1500F4D1AE /* sf-ui-text-semibold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B1E52C081BDE4D1500F4D1AE /* sf-ui-text-semibold.ttf */; };
+		B1E52C1B1BDE4FFB00F4D1AE /* SwiftAudio.m in Sources */ = {isa = PBXBuildFile; fileRef = B1E52C191BDE4FFB00F4D1AE /* SwiftAudio.m */; };
+		B1E52C1C1BDE4FFB00F4D1AE /* SwiftAudio.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1E52C1A1BDE4FFB00F4D1AE /* SwiftAudio.swift */; };
+		B1E52C371BDE509600F4D1AE /* bonfire.m4a in Resources */ = {isa = PBXBuildFile; fileRef = B1E52C291BDE509600F4D1AE /* bonfire.m4a */; };
+		B1E52C381BDE509600F4D1AE /* cafe.m4a in Resources */ = {isa = PBXBuildFile; fileRef = B1E52C2A1BDE509600F4D1AE /* cafe.m4a */; };
+		B1E52C391BDE509600F4D1AE /* cat-purr.m4a in Resources */ = {isa = PBXBuildFile; fileRef = B1E52C2B1BDE509600F4D1AE /* cat-purr.m4a */; };
+		B1E52C3A1BDE509600F4D1AE /* chimes.m4a in Resources */ = {isa = PBXBuildFile; fileRef = B1E52C2C1BDE509600F4D1AE /* chimes.m4a */; };
+		B1E52C3B1BDE509600F4D1AE /* fan.m4a in Resources */ = {isa = PBXBuildFile; fileRef = B1E52C2D1BDE509600F4D1AE /* fan.m4a */; };
+		B1E52C3C1BDE509600F4D1AE /* leaves.m4a in Resources */ = {isa = PBXBuildFile; fileRef = B1E52C2E1BDE509600F4D1AE /* leaves.m4a */; };
+		B1E52C3D1BDE509600F4D1AE /* paris-cafe.m4a in Resources */ = {isa = PBXBuildFile; fileRef = B1E52C2F1BDE509600F4D1AE /* paris-cafe.m4a */; };
+		B1E52C3E1BDE509600F4D1AE /* paris-street-corner.m4a in Resources */ = {isa = PBXBuildFile; fileRef = B1E52C301BDE509600F4D1AE /* paris-street-corner.m4a */; };
+		B1E52C3F1BDE509600F4D1AE /* rain.m4a in Resources */ = {isa = PBXBuildFile; fileRef = B1E52C311BDE509600F4D1AE /* rain.m4a */; };
+		B1E52C401BDE509600F4D1AE /* stream.m4a in Resources */ = {isa = PBXBuildFile; fileRef = B1E52C321BDE509600F4D1AE /* stream.m4a */; };
+		B1E52C411BDE509600F4D1AE /* thunder.m4a in Resources */ = {isa = PBXBuildFile; fileRef = B1E52C331BDE509600F4D1AE /* thunder.m4a */; };
+		B1E52C421BDE509600F4D1AE /* train.m4a in Resources */ = {isa = PBXBuildFile; fileRef = B1E52C341BDE509600F4D1AE /* train.m4a */; };
+		B1E52C431BDE509600F4D1AE /* waves.m4a in Resources */ = {isa = PBXBuildFile; fileRef = B1E52C351BDE509600F4D1AE /* waves.m4a */; };
+		B1E52C441BDE509600F4D1AE /* wind.m4a in Resources */ = {isa = PBXBuildFile; fileRef = B1E52C361BDE509600F4D1AE /* wind.m4a */; };
+		B1E52C5F1BDE569700F4D1AE /* dark-cafe.png in Resources */ = {isa = PBXBuildFile; fileRef = B1E52C461BDE569700F4D1AE /* dark-cafe.png */; };
+		B1E52C601BDE569700F4D1AE /* dark-cat.png in Resources */ = {isa = PBXBuildFile; fileRef = B1E52C471BDE569700F4D1AE /* dark-cat.png */; };
+		B1E52C611BDE569700F4D1AE /* dark-chimes.png in Resources */ = {isa = PBXBuildFile; fileRef = B1E52C481BDE569700F4D1AE /* dark-chimes.png */; };
+		B1E52C621BDE569700F4D1AE /* dark-fan.png in Resources */ = {isa = PBXBuildFile; fileRef = B1E52C491BDE569700F4D1AE /* dark-fan.png */; };
+		B1E52C631BDE569700F4D1AE /* dark-leaves.png in Resources */ = {isa = PBXBuildFile; fileRef = B1E52C4A1BDE569700F4D1AE /* dark-leaves.png */; };
+		B1E52C641BDE569700F4D1AE /* dark-paris.png in Resources */ = {isa = PBXBuildFile; fileRef = B1E52C4B1BDE569700F4D1AE /* dark-paris.png */; };
+		B1E52C651BDE569700F4D1AE /* dark-rain.png in Resources */ = {isa = PBXBuildFile; fileRef = B1E52C4C1BDE569700F4D1AE /* dark-rain.png */; };
+		B1E52C661BDE569700F4D1AE /* dark-thunder.png in Resources */ = {isa = PBXBuildFile; fileRef = B1E52C4D1BDE569700F4D1AE /* dark-thunder.png */; };
+		B1E52C671BDE569700F4D1AE /* dark-train.png in Resources */ = {isa = PBXBuildFile; fileRef = B1E52C4E1BDE569700F4D1AE /* dark-train.png */; };
+		B1E52C681BDE569700F4D1AE /* dark-water.png in Resources */ = {isa = PBXBuildFile; fileRef = B1E52C4F1BDE569700F4D1AE /* dark-water.png */; };
+		B1E52C691BDE569700F4D1AE /* dark-waves.png in Resources */ = {isa = PBXBuildFile; fileRef = B1E52C501BDE569700F4D1AE /* dark-waves.png */; };
+		B1E52C6A1BDE569700F4D1AE /* dark-wind.png in Resources */ = {isa = PBXBuildFile; fileRef = B1E52C511BDE569700F4D1AE /* dark-wind.png */; };
+		B1E52C6B1BDE569700F4D1AE /* kakapo.png in Resources */ = {isa = PBXBuildFile; fileRef = B1E52C521BDE569700F4D1AE /* kakapo.png */; };
+		B1E52C6C1BDE569700F4D1AE /* light-cafe.png in Resources */ = {isa = PBXBuildFile; fileRef = B1E52C531BDE569700F4D1AE /* light-cafe.png */; };
+		B1E52C6D1BDE569700F4D1AE /* light-cat.png in Resources */ = {isa = PBXBuildFile; fileRef = B1E52C541BDE569700F4D1AE /* light-cat.png */; };
+		B1E52C6E1BDE569700F4D1AE /* light-chimes.png in Resources */ = {isa = PBXBuildFile; fileRef = B1E52C551BDE569700F4D1AE /* light-chimes.png */; };
+		B1E52C6F1BDE569700F4D1AE /* light-fan.png in Resources */ = {isa = PBXBuildFile; fileRef = B1E52C561BDE569700F4D1AE /* light-fan.png */; };
+		B1E52C701BDE569700F4D1AE /* light-leaves.png in Resources */ = {isa = PBXBuildFile; fileRef = B1E52C571BDE569700F4D1AE /* light-leaves.png */; };
+		B1E52C711BDE569700F4D1AE /* light-paris.png in Resources */ = {isa = PBXBuildFile; fileRef = B1E52C581BDE569700F4D1AE /* light-paris.png */; };
+		B1E52C721BDE569700F4D1AE /* light-rain.png in Resources */ = {isa = PBXBuildFile; fileRef = B1E52C591BDE569700F4D1AE /* light-rain.png */; };
+		B1E52C731BDE569700F4D1AE /* light-thunder.png in Resources */ = {isa = PBXBuildFile; fileRef = B1E52C5A1BDE569700F4D1AE /* light-thunder.png */; };
+		B1E52C741BDE569700F4D1AE /* light-train.png in Resources */ = {isa = PBXBuildFile; fileRef = B1E52C5B1BDE569700F4D1AE /* light-train.png */; };
+		B1E52C751BDE569700F4D1AE /* light-water.png in Resources */ = {isa = PBXBuildFile; fileRef = B1E52C5C1BDE569700F4D1AE /* light-water.png */; };
+		B1E52C761BDE569700F4D1AE /* light-waves.png in Resources */ = {isa = PBXBuildFile; fileRef = B1E52C5D1BDE569700F4D1AE /* light-waves.png */; };
+		B1E52C771BDE569700F4D1AE /* light-wind.png in Resources */ = {isa = PBXBuildFile; fileRef = B1E52C5E1BDE569700F4D1AE /* light-wind.png */; };
+		B1E52C7E1BDE58E200F4D1AE /* libReactNativeIcons.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B1E52C7D1BDE58B000F4D1AE /* libReactNativeIcons.a */; };
+		B1E52C801BDE592C00F4D1AE /* Material-Design-Iconic-Font.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B1E52C7F1BDE592C00F4D1AE /* Material-Design-Iconic-Font.ttf */; };
+		B1E52C831BDE59B400F4D1AE /* KDSocialShare.m in Sources */ = {isa = PBXBuildFile; fileRef = B1E52C821BDE59B400F4D1AE /* KDSocialShare.m */; };
+		B1E52C851BDE59CD00F4D1AE /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B1E52C841BDE59CD00F4D1AE /* Social.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		00C302AB1ABCB8CE00DB3ED1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 00C302A71ABCB8CE00DB3ED1 /* RCTActionSheet.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 134814201AA4EA6300B7C361;
+			remoteInfo = RCTActionSheet;
+		};
+		00C302B91ABCB90400DB3ED1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 00C302B51ABCB90400DB3ED1 /* RCTGeolocation.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 134814201AA4EA6300B7C361;
+			remoteInfo = RCTGeolocation;
+		};
+		00C302BF1ABCB91800DB3ED1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 00C302BB1ABCB91800DB3ED1 /* RCTImage.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 58B5115D1A9E6B3D00147676;
+			remoteInfo = RCTImage;
+		};
+		00C302DB1ABCB9D200DB3ED1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 00C302D31ABCB9D200DB3ED1 /* RCTNetwork.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 58B511DB1A9E6C8500147676;
+			remoteInfo = RCTNetwork;
+		};
+		00C302E31ABCB9EE00DB3ED1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 00C302DF1ABCB9EE00DB3ED1 /* RCTVibration.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 832C81801AAF6DEF007FA2F7;
+			remoteInfo = RCTVibration;
+		};
+		00E356F41AD99517003FC87E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 83CBB9F71A601CBA00E9B192 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 13B07F861A680F5B00A75B9A;
+			remoteInfo = KakapoNative;
+		};
+		139105C01AF99BAD00B5F7CC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 139105B61AF99BAD00B5F7CC /* RCTSettings.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 134814201AA4EA6300B7C361;
+			remoteInfo = RCTSettings;
+		};
+		139FDEF31B06529B00C62182 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 139FDEE61B06529A00C62182 /* RCTWebSocket.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 3C86DF461ADF2C930047B81A;
+			remoteInfo = RCTWebSocket;
+		};
+		146834031AC3E56700842450 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 146833FF1AC3E56700842450 /* React.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 83CBBA2E1A601D0E00E9B192;
+			remoteInfo = React;
+		};
+		78C398B81ACF4ADC00677621 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 78C398B01ACF4ADC00677621 /* RCTLinking.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 134814201AA4EA6300B7C361;
+			remoteInfo = RCTLinking;
+		};
+		832341B41AAA6A8300B99B32 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 832341B01AAA6A8300B99B32 /* RCTText.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 58B5119B1A9E6C1200147676;
+			remoteInfo = RCTText;
+		};
+		B1E52C7C1BDE58B000F4D1AE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B1E52C781BDE58B000F4D1AE /* ReactNativeIcons.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 2F5A3EB81ACDBF8000439386;
+			remoteInfo = ReactNativeIcons;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		008F07F21AC5B25A0029DE68 /* main.jsbundle */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = main.jsbundle; sourceTree = "<group>"; };
+		00C302A71ABCB8CE00DB3ED1 /* RCTActionSheet.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTActionSheet.xcodeproj; path = "../node_modules/react-native/Libraries/ActionSheetIOS/RCTActionSheet.xcodeproj"; sourceTree = "<group>"; };
+		00C302B51ABCB90400DB3ED1 /* RCTGeolocation.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTGeolocation.xcodeproj; path = "../node_modules/react-native/Libraries/Geolocation/RCTGeolocation.xcodeproj"; sourceTree = "<group>"; };
+		00C302BB1ABCB91800DB3ED1 /* RCTImage.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTImage.xcodeproj; path = "../node_modules/react-native/Libraries/Image/RCTImage.xcodeproj"; sourceTree = "<group>"; };
+		00C302D31ABCB9D200DB3ED1 /* RCTNetwork.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTNetwork.xcodeproj; path = "../node_modules/react-native/Libraries/Network/RCTNetwork.xcodeproj"; sourceTree = "<group>"; };
+		00C302DF1ABCB9EE00DB3ED1 /* RCTVibration.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTVibration.xcodeproj; path = "../node_modules/react-native/Libraries/Vibration/RCTVibration.xcodeproj"; sourceTree = "<group>"; };
+		00E356EE1AD99517003FC87E /* KakapoNativeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KakapoNativeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		00E356F11AD99517003FC87E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		00E356F21AD99517003FC87E /* KakapoNativeTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KakapoNativeTests.m; sourceTree = "<group>"; };
+		139105B61AF99BAD00B5F7CC /* RCTSettings.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTSettings.xcodeproj; path = "../node_modules/react-native/Libraries/Settings/RCTSettings.xcodeproj"; sourceTree = "<group>"; };
+		139FDEE61B06529A00C62182 /* RCTWebSocket.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTWebSocket.xcodeproj; path = "../node_modules/react-native/Libraries/WebSocket/RCTWebSocket.xcodeproj"; sourceTree = "<group>"; };
+		13B07F961A680F5B00A75B9A /* KakapoNative.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KakapoNative.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		13B07FAF1A68108700A75B9A /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = KakapoNative/AppDelegate.h; sourceTree = "<group>"; };
+		13B07FB01A68108700A75B9A /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = KakapoNative/AppDelegate.m; sourceTree = "<group>"; };
+		13B07FB21A68108700A75B9A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = KakapoNative/Images.xcassets; sourceTree = "<group>"; };
+		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = KakapoNative/Info.plist; sourceTree = "<group>"; };
+		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = KakapoNative/main.m; sourceTree = "<group>"; };
+		146833FF1AC3E56700842450 /* React.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = React.xcodeproj; path = "../node_modules/react-native/React/React.xcodeproj"; sourceTree = "<group>"; };
+		78C398B01ACF4ADC00677621 /* RCTLinking.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTLinking.xcodeproj; path = "../node_modules/react-native/Libraries/LinkingIOS/RCTLinking.xcodeproj"; sourceTree = "<group>"; };
+		832341B01AAA6A8300B99B32 /* RCTText.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTText.xcodeproj; path = "../node_modules/react-native/Libraries/Text/RCTText.xcodeproj"; sourceTree = "<group>"; };
+		B1E52BFA1BDE4D1500F4D1AE /* sf-ui-display-black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "sf-ui-display-black.ttf"; path = "../src/fonts/sf-ui/sf-ui-display-black.ttf"; sourceTree = "<group>"; };
+		B1E52BFB1BDE4D1500F4D1AE /* sf-ui-display-bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "sf-ui-display-bold.ttf"; path = "../src/fonts/sf-ui/sf-ui-display-bold.ttf"; sourceTree = "<group>"; };
+		B1E52BFC1BDE4D1500F4D1AE /* sf-ui-display-heavy.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "sf-ui-display-heavy.ttf"; path = "../src/fonts/sf-ui/sf-ui-display-heavy.ttf"; sourceTree = "<group>"; };
+		B1E52BFD1BDE4D1500F4D1AE /* sf-ui-display-light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "sf-ui-display-light.ttf"; path = "../src/fonts/sf-ui/sf-ui-display-light.ttf"; sourceTree = "<group>"; };
+		B1E52BFE1BDE4D1500F4D1AE /* sf-ui-display-medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "sf-ui-display-medium.ttf"; path = "../src/fonts/sf-ui/sf-ui-display-medium.ttf"; sourceTree = "<group>"; };
+		B1E52BFF1BDE4D1500F4D1AE /* sf-ui-display-regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "sf-ui-display-regular.ttf"; path = "../src/fonts/sf-ui/sf-ui-display-regular.ttf"; sourceTree = "<group>"; };
+		B1E52C001BDE4D1500F4D1AE /* sf-ui-display-semibold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "sf-ui-display-semibold.ttf"; path = "../src/fonts/sf-ui/sf-ui-display-semibold.ttf"; sourceTree = "<group>"; };
+		B1E52C011BDE4D1500F4D1AE /* sf-ui-display-thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "sf-ui-display-thin.ttf"; path = "../src/fonts/sf-ui/sf-ui-display-thin.ttf"; sourceTree = "<group>"; };
+		B1E52C021BDE4D1500F4D1AE /* sf-ui-display-ultralight.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "sf-ui-display-ultralight.ttf"; path = "../src/fonts/sf-ui/sf-ui-display-ultralight.ttf"; sourceTree = "<group>"; };
+		B1E52C031BDE4D1500F4D1AE /* sf-ui-text-bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "sf-ui-text-bold.ttf"; path = "../src/fonts/sf-ui/sf-ui-text-bold.ttf"; sourceTree = "<group>"; };
+		B1E52C041BDE4D1500F4D1AE /* sf-ui-text-heavy.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "sf-ui-text-heavy.ttf"; path = "../src/fonts/sf-ui/sf-ui-text-heavy.ttf"; sourceTree = "<group>"; };
+		B1E52C051BDE4D1500F4D1AE /* sf-ui-text-light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "sf-ui-text-light.ttf"; path = "../src/fonts/sf-ui/sf-ui-text-light.ttf"; sourceTree = "<group>"; };
+		B1E52C061BDE4D1500F4D1AE /* sf-ui-text-medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "sf-ui-text-medium.ttf"; path = "../src/fonts/sf-ui/sf-ui-text-medium.ttf"; sourceTree = "<group>"; };
+		B1E52C071BDE4D1500F4D1AE /* sf-ui-text-regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "sf-ui-text-regular.ttf"; path = "../src/fonts/sf-ui/sf-ui-text-regular.ttf"; sourceTree = "<group>"; };
+		B1E52C081BDE4D1500F4D1AE /* sf-ui-text-semibold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "sf-ui-text-semibold.ttf"; path = "../src/fonts/sf-ui/sf-ui-text-semibold.ttf"; sourceTree = "<group>"; };
+		B1E52C181BDE4FFA00F4D1AE /* KakapoNative-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "KakapoNative-Bridging-Header.h"; sourceTree = "<group>"; };
+		B1E52C191BDE4FFB00F4D1AE /* SwiftAudio.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SwiftAudio.m; path = KakapoNative/SwiftAudio.m; sourceTree = "<group>"; };
+		B1E52C1A1BDE4FFB00F4D1AE /* SwiftAudio.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SwiftAudio.swift; path = KakapoNative/SwiftAudio.swift; sourceTree = "<group>"; };
+		B1E52C291BDE509600F4D1AE /* bonfire.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; name = bonfire.m4a; path = ../src/sounds/bonfire.m4a; sourceTree = "<group>"; };
+		B1E52C2A1BDE509600F4D1AE /* cafe.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; name = cafe.m4a; path = ../src/sounds/cafe.m4a; sourceTree = "<group>"; };
+		B1E52C2B1BDE509600F4D1AE /* cat-purr.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; name = "cat-purr.m4a"; path = "../src/sounds/cat-purr.m4a"; sourceTree = "<group>"; };
+		B1E52C2C1BDE509600F4D1AE /* chimes.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; name = chimes.m4a; path = ../src/sounds/chimes.m4a; sourceTree = "<group>"; };
+		B1E52C2D1BDE509600F4D1AE /* fan.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; name = fan.m4a; path = ../src/sounds/fan.m4a; sourceTree = "<group>"; };
+		B1E52C2E1BDE509600F4D1AE /* leaves.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; name = leaves.m4a; path = ../src/sounds/leaves.m4a; sourceTree = "<group>"; };
+		B1E52C2F1BDE509600F4D1AE /* paris-cafe.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; name = "paris-cafe.m4a"; path = "../src/sounds/paris-cafe.m4a"; sourceTree = "<group>"; };
+		B1E52C301BDE509600F4D1AE /* paris-street-corner.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; name = "paris-street-corner.m4a"; path = "../src/sounds/paris-street-corner.m4a"; sourceTree = "<group>"; };
+		B1E52C311BDE509600F4D1AE /* rain.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; name = rain.m4a; path = ../src/sounds/rain.m4a; sourceTree = "<group>"; };
+		B1E52C321BDE509600F4D1AE /* stream.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; name = stream.m4a; path = ../src/sounds/stream.m4a; sourceTree = "<group>"; };
+		B1E52C331BDE509600F4D1AE /* thunder.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; name = thunder.m4a; path = ../src/sounds/thunder.m4a; sourceTree = "<group>"; };
+		B1E52C341BDE509600F4D1AE /* train.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; name = train.m4a; path = ../src/sounds/train.m4a; sourceTree = "<group>"; };
+		B1E52C351BDE509600F4D1AE /* waves.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; name = waves.m4a; path = ../src/sounds/waves.m4a; sourceTree = "<group>"; };
+		B1E52C361BDE509600F4D1AE /* wind.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; name = wind.m4a; path = ../src/sounds/wind.m4a; sourceTree = "<group>"; };
+		B1E52C461BDE569700F4D1AE /* dark-cafe.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "dark-cafe.png"; path = "../src/images/dark-cafe.png"; sourceTree = "<group>"; };
+		B1E52C471BDE569700F4D1AE /* dark-cat.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "dark-cat.png"; path = "../src/images/dark-cat.png"; sourceTree = "<group>"; };
+		B1E52C481BDE569700F4D1AE /* dark-chimes.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "dark-chimes.png"; path = "../src/images/dark-chimes.png"; sourceTree = "<group>"; };
+		B1E52C491BDE569700F4D1AE /* dark-fan.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "dark-fan.png"; path = "../src/images/dark-fan.png"; sourceTree = "<group>"; };
+		B1E52C4A1BDE569700F4D1AE /* dark-leaves.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "dark-leaves.png"; path = "../src/images/dark-leaves.png"; sourceTree = "<group>"; };
+		B1E52C4B1BDE569700F4D1AE /* dark-paris.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "dark-paris.png"; path = "../src/images/dark-paris.png"; sourceTree = "<group>"; };
+		B1E52C4C1BDE569700F4D1AE /* dark-rain.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "dark-rain.png"; path = "../src/images/dark-rain.png"; sourceTree = "<group>"; };
+		B1E52C4D1BDE569700F4D1AE /* dark-thunder.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "dark-thunder.png"; path = "../src/images/dark-thunder.png"; sourceTree = "<group>"; };
+		B1E52C4E1BDE569700F4D1AE /* dark-train.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "dark-train.png"; path = "../src/images/dark-train.png"; sourceTree = "<group>"; };
+		B1E52C4F1BDE569700F4D1AE /* dark-water.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "dark-water.png"; path = "../src/images/dark-water.png"; sourceTree = "<group>"; };
+		B1E52C501BDE569700F4D1AE /* dark-waves.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "dark-waves.png"; path = "../src/images/dark-waves.png"; sourceTree = "<group>"; };
+		B1E52C511BDE569700F4D1AE /* dark-wind.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "dark-wind.png"; path = "../src/images/dark-wind.png"; sourceTree = "<group>"; };
+		B1E52C521BDE569700F4D1AE /* kakapo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = kakapo.png; path = ../src/images/kakapo.png; sourceTree = "<group>"; };
+		B1E52C531BDE569700F4D1AE /* light-cafe.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "light-cafe.png"; path = "../src/images/light-cafe.png"; sourceTree = "<group>"; };
+		B1E52C541BDE569700F4D1AE /* light-cat.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "light-cat.png"; path = "../src/images/light-cat.png"; sourceTree = "<group>"; };
+		B1E52C551BDE569700F4D1AE /* light-chimes.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "light-chimes.png"; path = "../src/images/light-chimes.png"; sourceTree = "<group>"; };
+		B1E52C561BDE569700F4D1AE /* light-fan.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "light-fan.png"; path = "../src/images/light-fan.png"; sourceTree = "<group>"; };
+		B1E52C571BDE569700F4D1AE /* light-leaves.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "light-leaves.png"; path = "../src/images/light-leaves.png"; sourceTree = "<group>"; };
+		B1E52C581BDE569700F4D1AE /* light-paris.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "light-paris.png"; path = "../src/images/light-paris.png"; sourceTree = "<group>"; };
+		B1E52C591BDE569700F4D1AE /* light-rain.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "light-rain.png"; path = "../src/images/light-rain.png"; sourceTree = "<group>"; };
+		B1E52C5A1BDE569700F4D1AE /* light-thunder.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "light-thunder.png"; path = "../src/images/light-thunder.png"; sourceTree = "<group>"; };
+		B1E52C5B1BDE569700F4D1AE /* light-train.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "light-train.png"; path = "../src/images/light-train.png"; sourceTree = "<group>"; };
+		B1E52C5C1BDE569700F4D1AE /* light-water.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "light-water.png"; path = "../src/images/light-water.png"; sourceTree = "<group>"; };
+		B1E52C5D1BDE569700F4D1AE /* light-waves.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "light-waves.png"; path = "../src/images/light-waves.png"; sourceTree = "<group>"; };
+		B1E52C5E1BDE569700F4D1AE /* light-wind.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "light-wind.png"; path = "../src/images/light-wind.png"; sourceTree = "<group>"; };
+		B1E52C781BDE58B000F4D1AE /* ReactNativeIcons.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = ReactNativeIcons.xcodeproj; path = "../node_modules/react-native-icons/ios/ReactNativeIcons.xcodeproj"; sourceTree = "<group>"; };
+		B1E52C7F1BDE592C00F4D1AE /* Material-Design-Iconic-Font.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Material-Design-Iconic-Font.ttf"; sourceTree = "<group>"; };
+		B1E52C811BDE59B400F4D1AE /* KDSocialShare.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KDSocialShare.h; sourceTree = "<group>"; };
+		B1E52C821BDE59B400F4D1AE /* KDSocialShare.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KDSocialShare.m; sourceTree = "<group>"; };
+		B1E52C841BDE59CD00F4D1AE /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		00E356EB1AD99517003FC87E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		13B07F8C1A680F5B00A75B9A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B1E52C851BDE59CD00F4D1AE /* Social.framework in Frameworks */,
+				B1E52C7E1BDE58E200F4D1AE /* libReactNativeIcons.a in Frameworks */,
+				146834051AC3E58100842450 /* libReact.a in Frameworks */,
+				00C302E51ABCBA2D00DB3ED1 /* libRCTActionSheet.a in Frameworks */,
+				00C302E71ABCBA2D00DB3ED1 /* libRCTGeolocation.a in Frameworks */,
+				00C302E81ABCBA2D00DB3ED1 /* libRCTImage.a in Frameworks */,
+				133E29F31AD74F7200F7D852 /* libRCTLinking.a in Frameworks */,
+				00C302E91ABCBA2D00DB3ED1 /* libRCTNetwork.a in Frameworks */,
+				139105C61AF99C1200B5F7CC /* libRCTSettings.a in Frameworks */,
+				832341BD1AAA6AB300B99B32 /* libRCTText.a in Frameworks */,
+				00C302EA1ABCBA2D00DB3ED1 /* libRCTVibration.a in Frameworks */,
+				139FDEF61B0652A700C62182 /* libRCTWebSocket.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		00C302A81ABCB8CE00DB3ED1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				00C302AC1ABCB8CE00DB3ED1 /* libRCTActionSheet.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		00C302B61ABCB90400DB3ED1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				00C302BA1ABCB90400DB3ED1 /* libRCTGeolocation.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		00C302BC1ABCB91800DB3ED1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				00C302C01ABCB91800DB3ED1 /* libRCTImage.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		00C302D41ABCB9D200DB3ED1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				00C302DC1ABCB9D200DB3ED1 /* libRCTNetwork.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		00C302E01ABCB9EE00DB3ED1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				00C302E41ABCB9EE00DB3ED1 /* libRCTVibration.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		00E356EF1AD99517003FC87E /* KakapoNativeTests */ = {
+			isa = PBXGroup;
+			children = (
+				00E356F21AD99517003FC87E /* KakapoNativeTests.m */,
+				00E356F01AD99517003FC87E /* Supporting Files */,
+			);
+			path = KakapoNativeTests;
+			sourceTree = "<group>";
+		};
+		00E356F01AD99517003FC87E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				00E356F11AD99517003FC87E /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		139105B71AF99BAD00B5F7CC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				139105C11AF99BAD00B5F7CC /* libRCTSettings.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		139FDEE71B06529A00C62182 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				139FDEF41B06529B00C62182 /* libRCTWebSocket.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		13B07FAE1A68108700A75B9A /* KakapoNative */ = {
+			isa = PBXGroup;
+			children = (
+				B1E52C451BDE567C00F4D1AE /* icons */,
+				B1E52BEF1BDE4CFA00F4D1AE /* fonts */,
+				B1E52C281BDE508100F4D1AE /* sounds */,
+				008F07F21AC5B25A0029DE68 /* main.jsbundle */,
+				13B07FAF1A68108700A75B9A /* AppDelegate.h */,
+				13B07FB01A68108700A75B9A /* AppDelegate.m */,
+				13B07FB51A68108700A75B9A /* Images.xcassets */,
+				13B07FB61A68108700A75B9A /* Info.plist */,
+				13B07FB11A68108700A75B9A /* LaunchScreen.xib */,
+				13B07FB71A68108700A75B9A /* main.m */,
+				B1E52C181BDE4FFA00F4D1AE /* KakapoNative-Bridging-Header.h */,
+				B1E52C191BDE4FFB00F4D1AE /* SwiftAudio.m */,
+				B1E52C1A1BDE4FFB00F4D1AE /* SwiftAudio.swift */,
+			);
+			name = KakapoNative;
+			sourceTree = "<group>";
+		};
+		146834001AC3E56700842450 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				146834041AC3E56700842450 /* libReact.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		78C398B11ACF4ADC00677621 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				78C398B91ACF4ADC00677621 /* libRCTLinking.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		832341AE1AAA6A7D00B99B32 /* Libraries */ = {
+			isa = PBXGroup;
+			children = (
+				B1E52C811BDE59B400F4D1AE /* KDSocialShare.h */,
+				B1E52C821BDE59B400F4D1AE /* KDSocialShare.m */,
+				B1E52C781BDE58B000F4D1AE /* ReactNativeIcons.xcodeproj */,
+				146833FF1AC3E56700842450 /* React.xcodeproj */,
+				00C302A71ABCB8CE00DB3ED1 /* RCTActionSheet.xcodeproj */,
+				00C302B51ABCB90400DB3ED1 /* RCTGeolocation.xcodeproj */,
+				00C302BB1ABCB91800DB3ED1 /* RCTImage.xcodeproj */,
+				78C398B01ACF4ADC00677621 /* RCTLinking.xcodeproj */,
+				00C302D31ABCB9D200DB3ED1 /* RCTNetwork.xcodeproj */,
+				139105B61AF99BAD00B5F7CC /* RCTSettings.xcodeproj */,
+				832341B01AAA6A8300B99B32 /* RCTText.xcodeproj */,
+				00C302DF1ABCB9EE00DB3ED1 /* RCTVibration.xcodeproj */,
+				139FDEE61B06529A00C62182 /* RCTWebSocket.xcodeproj */,
+			);
+			name = Libraries;
+			sourceTree = "<group>";
+		};
+		832341B11AAA6A8300B99B32 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				832341B51AAA6A8300B99B32 /* libRCTText.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		83CBB9F61A601CBA00E9B192 = {
+			isa = PBXGroup;
+			children = (
+				B1E52C841BDE59CD00F4D1AE /* Social.framework */,
+				B1E52C7F1BDE592C00F4D1AE /* Material-Design-Iconic-Font.ttf */,
+				13B07FAE1A68108700A75B9A /* KakapoNative */,
+				832341AE1AAA6A7D00B99B32 /* Libraries */,
+				00E356EF1AD99517003FC87E /* KakapoNativeTests */,
+				83CBBA001A601CBA00E9B192 /* Products */,
+			);
+			indentWidth = 2;
+			sourceTree = "<group>";
+			tabWidth = 2;
+		};
+		83CBBA001A601CBA00E9B192 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				13B07F961A680F5B00A75B9A /* KakapoNative.app */,
+				00E356EE1AD99517003FC87E /* KakapoNativeTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B1E52BEF1BDE4CFA00F4D1AE /* fonts */ = {
+			isa = PBXGroup;
+			children = (
+				B1E52BFA1BDE4D1500F4D1AE /* sf-ui-display-black.ttf */,
+				B1E52BFB1BDE4D1500F4D1AE /* sf-ui-display-bold.ttf */,
+				B1E52BFC1BDE4D1500F4D1AE /* sf-ui-display-heavy.ttf */,
+				B1E52BFD1BDE4D1500F4D1AE /* sf-ui-display-light.ttf */,
+				B1E52BFE1BDE4D1500F4D1AE /* sf-ui-display-medium.ttf */,
+				B1E52BFF1BDE4D1500F4D1AE /* sf-ui-display-regular.ttf */,
+				B1E52C001BDE4D1500F4D1AE /* sf-ui-display-semibold.ttf */,
+				B1E52C011BDE4D1500F4D1AE /* sf-ui-display-thin.ttf */,
+				B1E52C021BDE4D1500F4D1AE /* sf-ui-display-ultralight.ttf */,
+				B1E52C031BDE4D1500F4D1AE /* sf-ui-text-bold.ttf */,
+				B1E52C041BDE4D1500F4D1AE /* sf-ui-text-heavy.ttf */,
+				B1E52C051BDE4D1500F4D1AE /* sf-ui-text-light.ttf */,
+				B1E52C061BDE4D1500F4D1AE /* sf-ui-text-medium.ttf */,
+				B1E52C071BDE4D1500F4D1AE /* sf-ui-text-regular.ttf */,
+				B1E52C081BDE4D1500F4D1AE /* sf-ui-text-semibold.ttf */,
+			);
+			name = fonts;
+			sourceTree = "<group>";
+		};
+		B1E52C281BDE508100F4D1AE /* sounds */ = {
+			isa = PBXGroup;
+			children = (
+				B1E52C291BDE509600F4D1AE /* bonfire.m4a */,
+				B1E52C2A1BDE509600F4D1AE /* cafe.m4a */,
+				B1E52C2B1BDE509600F4D1AE /* cat-purr.m4a */,
+				B1E52C2C1BDE509600F4D1AE /* chimes.m4a */,
+				B1E52C2D1BDE509600F4D1AE /* fan.m4a */,
+				B1E52C2E1BDE509600F4D1AE /* leaves.m4a */,
+				B1E52C2F1BDE509600F4D1AE /* paris-cafe.m4a */,
+				B1E52C301BDE509600F4D1AE /* paris-street-corner.m4a */,
+				B1E52C311BDE509600F4D1AE /* rain.m4a */,
+				B1E52C321BDE509600F4D1AE /* stream.m4a */,
+				B1E52C331BDE509600F4D1AE /* thunder.m4a */,
+				B1E52C341BDE509600F4D1AE /* train.m4a */,
+				B1E52C351BDE509600F4D1AE /* waves.m4a */,
+				B1E52C361BDE509600F4D1AE /* wind.m4a */,
+			);
+			name = sounds;
+			sourceTree = "<group>";
+		};
+		B1E52C451BDE567C00F4D1AE /* icons */ = {
+			isa = PBXGroup;
+			children = (
+				B1E52C461BDE569700F4D1AE /* dark-cafe.png */,
+				B1E52C471BDE569700F4D1AE /* dark-cat.png */,
+				B1E52C481BDE569700F4D1AE /* dark-chimes.png */,
+				B1E52C491BDE569700F4D1AE /* dark-fan.png */,
+				B1E52C4A1BDE569700F4D1AE /* dark-leaves.png */,
+				B1E52C4B1BDE569700F4D1AE /* dark-paris.png */,
+				B1E52C4C1BDE569700F4D1AE /* dark-rain.png */,
+				B1E52C4D1BDE569700F4D1AE /* dark-thunder.png */,
+				B1E52C4E1BDE569700F4D1AE /* dark-train.png */,
+				B1E52C4F1BDE569700F4D1AE /* dark-water.png */,
+				B1E52C501BDE569700F4D1AE /* dark-waves.png */,
+				B1E52C511BDE569700F4D1AE /* dark-wind.png */,
+				B1E52C521BDE569700F4D1AE /* kakapo.png */,
+				B1E52C531BDE569700F4D1AE /* light-cafe.png */,
+				B1E52C541BDE569700F4D1AE /* light-cat.png */,
+				B1E52C551BDE569700F4D1AE /* light-chimes.png */,
+				B1E52C561BDE569700F4D1AE /* light-fan.png */,
+				B1E52C571BDE569700F4D1AE /* light-leaves.png */,
+				B1E52C581BDE569700F4D1AE /* light-paris.png */,
+				B1E52C591BDE569700F4D1AE /* light-rain.png */,
+				B1E52C5A1BDE569700F4D1AE /* light-thunder.png */,
+				B1E52C5B1BDE569700F4D1AE /* light-train.png */,
+				B1E52C5C1BDE569700F4D1AE /* light-water.png */,
+				B1E52C5D1BDE569700F4D1AE /* light-waves.png */,
+				B1E52C5E1BDE569700F4D1AE /* light-wind.png */,
+			);
+			name = icons;
+			sourceTree = "<group>";
+		};
+		B1E52C791BDE58B000F4D1AE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B1E52C7D1BDE58B000F4D1AE /* libReactNativeIcons.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		00E356ED1AD99517003FC87E /* KakapoNativeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 00E357021AD99517003FC87E /* Build configuration list for PBXNativeTarget "KakapoNativeTests" */;
+			buildPhases = (
+				00E356EA1AD99517003FC87E /* Sources */,
+				00E356EB1AD99517003FC87E /* Frameworks */,
+				00E356EC1AD99517003FC87E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				00E356F51AD99517003FC87E /* PBXTargetDependency */,
+			);
+			name = KakapoNativeTests;
+			productName = KakapoNativeTests;
+			productReference = 00E356EE1AD99517003FC87E /* KakapoNativeTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		13B07F861A680F5B00A75B9A /* KakapoNative */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "KakapoNative" */;
+			buildPhases = (
+				13B07F871A680F5B00A75B9A /* Sources */,
+				13B07F8C1A680F5B00A75B9A /* Frameworks */,
+				13B07F8E1A680F5B00A75B9A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = KakapoNative;
+			productName = "Hello World";
+			productReference = 13B07F961A680F5B00A75B9A /* KakapoNative.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		83CBB9F71A601CBA00E9B192 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0710;
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = Facebook;
+				TargetAttributes = {
+					00E356ED1AD99517003FC87E = {
+						CreatedOnToolsVersion = 6.2;
+						TestTargetID = 13B07F861A680F5B00A75B9A;
+					};
+				};
+			};
+			buildConfigurationList = 83CBB9FA1A601CBA00E9B192 /* Build configuration list for PBXProject "KakapoNative" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 83CBB9F61A601CBA00E9B192;
+			productRefGroup = 83CBBA001A601CBA00E9B192 /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 00C302A81ABCB8CE00DB3ED1 /* Products */;
+					ProjectRef = 00C302A71ABCB8CE00DB3ED1 /* RCTActionSheet.xcodeproj */;
+				},
+				{
+					ProductGroup = 00C302B61ABCB90400DB3ED1 /* Products */;
+					ProjectRef = 00C302B51ABCB90400DB3ED1 /* RCTGeolocation.xcodeproj */;
+				},
+				{
+					ProductGroup = 00C302BC1ABCB91800DB3ED1 /* Products */;
+					ProjectRef = 00C302BB1ABCB91800DB3ED1 /* RCTImage.xcodeproj */;
+				},
+				{
+					ProductGroup = 78C398B11ACF4ADC00677621 /* Products */;
+					ProjectRef = 78C398B01ACF4ADC00677621 /* RCTLinking.xcodeproj */;
+				},
+				{
+					ProductGroup = 00C302D41ABCB9D200DB3ED1 /* Products */;
+					ProjectRef = 00C302D31ABCB9D200DB3ED1 /* RCTNetwork.xcodeproj */;
+				},
+				{
+					ProductGroup = 139105B71AF99BAD00B5F7CC /* Products */;
+					ProjectRef = 139105B61AF99BAD00B5F7CC /* RCTSettings.xcodeproj */;
+				},
+				{
+					ProductGroup = 832341B11AAA6A8300B99B32 /* Products */;
+					ProjectRef = 832341B01AAA6A8300B99B32 /* RCTText.xcodeproj */;
+				},
+				{
+					ProductGroup = 00C302E01ABCB9EE00DB3ED1 /* Products */;
+					ProjectRef = 00C302DF1ABCB9EE00DB3ED1 /* RCTVibration.xcodeproj */;
+				},
+				{
+					ProductGroup = 139FDEE71B06529A00C62182 /* Products */;
+					ProjectRef = 139FDEE61B06529A00C62182 /* RCTWebSocket.xcodeproj */;
+				},
+				{
+					ProductGroup = 146834001AC3E56700842450 /* Products */;
+					ProjectRef = 146833FF1AC3E56700842450 /* React.xcodeproj */;
+				},
+				{
+					ProductGroup = B1E52C791BDE58B000F4D1AE /* Products */;
+					ProjectRef = B1E52C781BDE58B000F4D1AE /* ReactNativeIcons.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				13B07F861A680F5B00A75B9A /* KakapoNative */,
+				00E356ED1AD99517003FC87E /* KakapoNativeTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		00C302AC1ABCB8CE00DB3ED1 /* libRCTActionSheet.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libRCTActionSheet.a;
+			remoteRef = 00C302AB1ABCB8CE00DB3ED1 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		00C302BA1ABCB90400DB3ED1 /* libRCTGeolocation.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libRCTGeolocation.a;
+			remoteRef = 00C302B91ABCB90400DB3ED1 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		00C302C01ABCB91800DB3ED1 /* libRCTImage.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libRCTImage.a;
+			remoteRef = 00C302BF1ABCB91800DB3ED1 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		00C302DC1ABCB9D200DB3ED1 /* libRCTNetwork.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libRCTNetwork.a;
+			remoteRef = 00C302DB1ABCB9D200DB3ED1 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		00C302E41ABCB9EE00DB3ED1 /* libRCTVibration.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libRCTVibration.a;
+			remoteRef = 00C302E31ABCB9EE00DB3ED1 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		139105C11AF99BAD00B5F7CC /* libRCTSettings.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libRCTSettings.a;
+			remoteRef = 139105C01AF99BAD00B5F7CC /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		139FDEF41B06529B00C62182 /* libRCTWebSocket.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libRCTWebSocket.a;
+			remoteRef = 139FDEF31B06529B00C62182 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		146834041AC3E56700842450 /* libReact.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libReact.a;
+			remoteRef = 146834031AC3E56700842450 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		78C398B91ACF4ADC00677621 /* libRCTLinking.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libRCTLinking.a;
+			remoteRef = 78C398B81ACF4ADC00677621 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		832341B51AAA6A8300B99B32 /* libRCTText.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libRCTText.a;
+			remoteRef = 832341B41AAA6A8300B99B32 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		B1E52C7D1BDE58B000F4D1AE /* libReactNativeIcons.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libReactNativeIcons.a;
+			remoteRef = B1E52C7C1BDE58B000F4D1AE /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		00E356EC1AD99517003FC87E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		13B07F8E1A680F5B00A75B9A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B1E52C801BDE592C00F4D1AE /* Material-Design-Iconic-Font.ttf in Resources */,
+				B1E52C111BDE4D1500F4D1AE /* sf-ui-display-ultralight.ttf in Resources */,
+				B1E52C641BDE569700F4D1AE /* dark-paris.png in Resources */,
+				B1E52C3F1BDE509600F4D1AE /* rain.m4a in Resources */,
+				B1E52C6D1BDE569700F4D1AE /* light-cat.png in Resources */,
+				B1E52C391BDE509600F4D1AE /* cat-purr.m4a in Resources */,
+				B1E52C651BDE569700F4D1AE /* dark-rain.png in Resources */,
+				B1E52C3E1BDE509600F4D1AE /* paris-street-corner.m4a in Resources */,
+				B1E52C091BDE4D1500F4D1AE /* sf-ui-display-black.ttf in Resources */,
+				B1E52C101BDE4D1500F4D1AE /* sf-ui-display-thin.ttf in Resources */,
+				B1E52C411BDE509600F4D1AE /* thunder.m4a in Resources */,
+				B1E52C6A1BDE569700F4D1AE /* dark-wind.png in Resources */,
+				B1E52C381BDE509600F4D1AE /* cafe.m4a in Resources */,
+				B1E52C721BDE569700F4D1AE /* light-rain.png in Resources */,
+				B1E52C0F1BDE4D1500F4D1AE /* sf-ui-display-semibold.ttf in Resources */,
+				B1E52C0D1BDE4D1500F4D1AE /* sf-ui-display-medium.ttf in Resources */,
+				B1E52C441BDE509600F4D1AE /* wind.m4a in Resources */,
+				B1E52C681BDE569700F4D1AE /* dark-water.png in Resources */,
+				B1E52C3A1BDE509600F4D1AE /* chimes.m4a in Resources */,
+				B1E52C731BDE569700F4D1AE /* light-thunder.png in Resources */,
+				B1E52C6E1BDE569700F4D1AE /* light-chimes.png in Resources */,
+				B1E52C611BDE569700F4D1AE /* dark-chimes.png in Resources */,
+				B1E52C711BDE569700F4D1AE /* light-paris.png in Resources */,
+				B1E52C6F1BDE569700F4D1AE /* light-fan.png in Resources */,
+				B1E52C151BDE4D1500F4D1AE /* sf-ui-text-medium.ttf in Resources */,
+				B1E52C0C1BDE4D1500F4D1AE /* sf-ui-display-light.ttf in Resources */,
+				B1E52C141BDE4D1500F4D1AE /* sf-ui-text-light.ttf in Resources */,
+				B1E52C131BDE4D1500F4D1AE /* sf-ui-text-heavy.ttf in Resources */,
+				B1E52C401BDE509600F4D1AE /* stream.m4a in Resources */,
+				B1E52C661BDE569700F4D1AE /* dark-thunder.png in Resources */,
+				B1E52C3B1BDE509600F4D1AE /* fan.m4a in Resources */,
+				B1E52C171BDE4D1500F4D1AE /* sf-ui-text-semibold.ttf in Resources */,
+				B1E52C741BDE569700F4D1AE /* light-train.png in Resources */,
+				008F07F31AC5B25A0029DE68 /* main.jsbundle in Resources */,
+				B1E52C771BDE569700F4D1AE /* light-wind.png in Resources */,
+				B1E52C0A1BDE4D1500F4D1AE /* sf-ui-display-bold.ttf in Resources */,
+				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
+				B1E52C0B1BDE4D1500F4D1AE /* sf-ui-display-heavy.ttf in Resources */,
+				B1E52C751BDE569700F4D1AE /* light-water.png in Resources */,
+				B1E52C761BDE569700F4D1AE /* light-waves.png in Resources */,
+				B1E52C3C1BDE509600F4D1AE /* leaves.m4a in Resources */,
+				B1E52C3D1BDE509600F4D1AE /* paris-cafe.m4a in Resources */,
+				B1E52C631BDE569700F4D1AE /* dark-leaves.png in Resources */,
+				B1E52C121BDE4D1500F4D1AE /* sf-ui-text-bold.ttf in Resources */,
+				B1E52C701BDE569700F4D1AE /* light-leaves.png in Resources */,
+				B1E52C371BDE509600F4D1AE /* bonfire.m4a in Resources */,
+				B1E52C5F1BDE569700F4D1AE /* dark-cafe.png in Resources */,
+				13B07FBD1A68108700A75B9A /* LaunchScreen.xib in Resources */,
+				B1E52C691BDE569700F4D1AE /* dark-waves.png in Resources */,
+				B1E52C161BDE4D1500F4D1AE /* sf-ui-text-regular.ttf in Resources */,
+				B1E52C671BDE569700F4D1AE /* dark-train.png in Resources */,
+				B1E52C621BDE569700F4D1AE /* dark-fan.png in Resources */,
+				B1E52C0E1BDE4D1500F4D1AE /* sf-ui-display-regular.ttf in Resources */,
+				B1E52C431BDE509600F4D1AE /* waves.m4a in Resources */,
+				B1E52C6B1BDE569700F4D1AE /* kakapo.png in Resources */,
+				B1E52C6C1BDE569700F4D1AE /* light-cafe.png in Resources */,
+				B1E52C601BDE569700F4D1AE /* dark-cat.png in Resources */,
+				B1E52C421BDE509600F4D1AE /* train.m4a in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		00E356EA1AD99517003FC87E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				00E356F31AD99517003FC87E /* KakapoNativeTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		13B07F871A680F5B00A75B9A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B1E52C1B1BDE4FFB00F4D1AE /* SwiftAudio.m in Sources */,
+				13B07FBC1A68108700A75B9A /* AppDelegate.m in Sources */,
+				B1E52C831BDE59B400F4D1AE /* KDSocialShare.m in Sources */,
+				B1E52C1C1BDE4FFB00F4D1AE /* SwiftAudio.swift in Sources */,
+				13B07FC11A68108700A75B9A /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		00E356F51AD99517003FC87E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 13B07F861A680F5B00A75B9A /* KakapoNative */;
+			targetProxy = 00E356F41AD99517003FC87E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		13B07FB11A68108700A75B9A /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				13B07FB21A68108700A75B9A /* Base */,
+			);
+			name = LaunchScreen.xib;
+			path = KakapoNative;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		00E356F61AD99517003FC87E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = KakapoNativeTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/KakapoNative.app/KakapoNative";
+			};
+			name = Debug;
+		};
+		00E356F71AD99517003FC87E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COPY_PHASE_STRIP = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = KakapoNativeTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/KakapoNative.app/KakapoNative";
+			};
+			name = Release;
+		};
+		13B07F941A680F5B00A75B9A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				DEAD_CODE_STRIPPING = NO;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"$(SRCROOT)/../node_modules/react-native/React/**",
+				);
+				INFOPLIST_FILE = KakapoNative/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = KakapoNative;
+				SWIFT_OBJC_BRIDGING_HEADER = "KakapoNative-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		13B07F951A680F5B00A75B9A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"$(SRCROOT)/../node_modules/react-native/React/**",
+				);
+				INFOPLIST_FILE = KakapoNative/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = KakapoNative;
+				SWIFT_OBJC_BRIDGING_HEADER = "KakapoNative-Bridging-Header.h";
+			};
+			name = Release;
+		};
+		83CBBA201A601CBA00E9B192 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"$(SRCROOT)/../node_modules/react-native/React/**",
+				);
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		83CBBA211A601CBA00E9B192 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"$(SRCROOT)/../node_modules/react-native/React/**",
+				);
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		00E357021AD99517003FC87E /* Build configuration list for PBXNativeTarget "KakapoNativeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				00E356F61AD99517003FC87E /* Debug */,
+				00E356F71AD99517003FC87E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "KakapoNative" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				13B07F941A680F5B00A75B9A /* Debug */,
+				13B07F951A680F5B00A75B9A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		83CBB9FA1A601CBA00E9B192 /* Build configuration list for PBXProject "KakapoNative" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				83CBBA201A601CBA00E9B192 /* Debug */,
+				83CBBA211A601CBA00E9B192 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 83CBB9F71A601CBA00E9B192 /* Project object */;
+}

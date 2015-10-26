@@ -1,6 +1,7 @@
 import React from "react-native";
 import Reflux from "reflux";
-import {Loading, SoundItem} from "./";
+import Loading from "./loading";
+import SoundItem from "./soundItem";
 import {Sounds} from "../stores";
 
 const {ListView, View} = React;
