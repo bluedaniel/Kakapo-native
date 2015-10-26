@@ -22,8 +22,12 @@
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
 		146834051AC3E58100842450 /* libReact.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 146834041AC3E56700842450 /* libReact.a */; };
 		832341BD1AAA6AB300B99B32 /* libRCTText.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 832341B51AAA6A8300B99B32 /* libRCTText.a */; };
-		B15EBA3F1BDE92510083DFC3 /* launch@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B15EBA3D1BDE92510083DFC3 /* launch@2x.png */; };
-		B15EBA401BDE92510083DFC3 /* launch@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = B15EBA3E1BDE92510083DFC3 /* launch@3x.png */; };
+		B15EBA491BDEEEAC0083DFC3 /* Default-375w-667h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B15EBA431BDEEEAC0083DFC3 /* Default-375w-667h@2x.png */; };
+		B15EBA4A1BDEEEAC0083DFC3 /* Default-414w-736h-Landscape@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = B15EBA441BDEEEAC0083DFC3 /* Default-414w-736h-Landscape@3x.png */; };
+		B15EBA4B1BDEEEAC0083DFC3 /* Default-414w-736h@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = B15EBA451BDEEEAC0083DFC3 /* Default-414w-736h@3x.png */; };
+		B15EBA4C1BDEEEAC0083DFC3 /* Default-568h@2x1.png in Resources */ = {isa = PBXBuildFile; fileRef = B15EBA461BDEEEAC0083DFC3 /* Default-568h@2x1.png */; };
+		B15EBA4D1BDEEEAC0083DFC3 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = B15EBA471BDEEEAC0083DFC3 /* Default.png */; };
+		B15EBA4E1BDEEEAC0083DFC3 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B15EBA481BDEEEAC0083DFC3 /* Default@2x.png */; };
 		B1E52C091BDE4D1500F4D1AE /* sf-ui-display-black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B1E52BFA1BDE4D1500F4D1AE /* sf-ui-display-black.ttf */; };
 		B1E52C0A1BDE4D1500F4D1AE /* sf-ui-display-bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B1E52BFB1BDE4D1500F4D1AE /* sf-ui-display-bold.ttf */; };
 		B1E52C0B1BDE4D1500F4D1AE /* sf-ui-display-heavy.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B1E52BFC1BDE4D1500F4D1AE /* sf-ui-display-heavy.ttf */; };
@@ -175,7 +179,7 @@
 		00C302DF1ABCB9EE00DB3ED1 /* RCTVibration.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTVibration.xcodeproj; path = "../node_modules/react-native/Libraries/Vibration/RCTVibration.xcodeproj"; sourceTree = "<group>"; };
 		139105B61AF99BAD00B5F7CC /* RCTSettings.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTSettings.xcodeproj; path = "../node_modules/react-native/Libraries/Settings/RCTSettings.xcodeproj"; sourceTree = "<group>"; };
 		139FDEE61B06529A00C62182 /* RCTWebSocket.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTWebSocket.xcodeproj; path = "../node_modules/react-native/Libraries/WebSocket/RCTWebSocket.xcodeproj"; sourceTree = "<group>"; };
-		13B07F961A680F5B00A75B9A /* Kakapo.temp_caseinsensitive_renameNative.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Kakapo.temp_caseinsensitive_renameNative.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		13B07F961A680F5B00A75B9A /* KakapoNative.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KakapoNative.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		13B07FAF1A68108700A75B9A /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = KakapoNative/AppDelegate.h; sourceTree = "<group>"; };
 		13B07FB01A68108700A75B9A /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = KakapoNative/AppDelegate.m; sourceTree = "<group>"; };
 		13B07FB21A68108700A75B9A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
@@ -185,8 +189,12 @@
 		146833FF1AC3E56700842450 /* React.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = React.xcodeproj; path = "../node_modules/react-native/React/React.xcodeproj"; sourceTree = "<group>"; };
 		78C398B01ACF4ADC00677621 /* RCTLinking.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTLinking.xcodeproj; path = "../node_modules/react-native/Libraries/LinkingIOS/RCTLinking.xcodeproj"; sourceTree = "<group>"; };
 		832341B01AAA6A8300B99B32 /* RCTText.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTText.xcodeproj; path = "../node_modules/react-native/Libraries/Text/RCTText.xcodeproj"; sourceTree = "<group>"; };
-		B15EBA3D1BDE92510083DFC3 /* launch@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "launch@2x.png"; path = "../src/images/launch/launch@2x.png"; sourceTree = "<group>"; };
-		B15EBA3E1BDE92510083DFC3 /* launch@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "launch@3x.png"; path = "../src/images/launch/launch@3x.png"; sourceTree = "<group>"; };
+		B15EBA431BDEEEAC0083DFC3 /* Default-375w-667h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default-375w-667h@2x.png"; path = "../src/images/LaunchImages-assets/Default-375w-667h@2x.png"; sourceTree = "<group>"; };
+		B15EBA441BDEEEAC0083DFC3 /* Default-414w-736h-Landscape@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default-414w-736h-Landscape@3x.png"; path = "../src/images/LaunchImages-assets/Default-414w-736h-Landscape@3x.png"; sourceTree = "<group>"; };
+		B15EBA451BDEEEAC0083DFC3 /* Default-414w-736h@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default-414w-736h@3x.png"; path = "../src/images/LaunchImages-assets/Default-414w-736h@3x.png"; sourceTree = "<group>"; };
+		B15EBA461BDEEEAC0083DFC3 /* Default-568h@2x1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default-568h@2x1.png"; path = "../src/images/LaunchImages-assets/Default-568h@2x1.png"; sourceTree = "<group>"; };
+		B15EBA471BDEEEAC0083DFC3 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Default.png; path = "../src/images/LaunchImages-assets/Default.png"; sourceTree = "<group>"; };
+		B15EBA481BDEEEAC0083DFC3 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default@2x.png"; path = "../src/images/LaunchImages-assets/Default@2x.png"; sourceTree = "<group>"; };
 		B1E52BFA1BDE4D1500F4D1AE /* sf-ui-display-black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "sf-ui-display-black.ttf"; path = "../src/fonts/sf-ui/sf-ui-display-black.ttf"; sourceTree = "<group>"; };
 		B1E52BFB1BDE4D1500F4D1AE /* sf-ui-display-bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "sf-ui-display-bold.ttf"; path = "../src/fonts/sf-ui/sf-ui-display-bold.ttf"; sourceTree = "<group>"; };
 		B1E52BFC1BDE4D1500F4D1AE /* sf-ui-display-heavy.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "sf-ui-display-heavy.ttf"; path = "../src/fonts/sf-ui/sf-ui-display-heavy.ttf"; sourceTree = "<group>"; };
@@ -333,6 +341,7 @@
 		13B07FAE1A68108700A75B9A /* Kakapo */ = {
 			isa = PBXGroup;
 			children = (
+				B15EBA421BDEEE990083DFC3 /* LaunchImages-assets */,
 				B1E52C451BDE567C00F4D1AE /* icons */,
 				B1E52BEF1BDE4CFA00F4D1AE /* fonts */,
 				B1E52C281BDE508100F4D1AE /* sounds */,
@@ -410,18 +419,22 @@
 		83CBBA001A601CBA00E9B192 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				13B07F961A680F5B00A75B9A /* Kakapo.temp_caseinsensitive_renameNative.app */,
+				13B07F961A680F5B00A75B9A /* KakapoNative.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		B15EBA3C1BDE92400083DFC3 /* launch */ = {
+		B15EBA421BDEEE990083DFC3 /* LaunchImages-assets */ = {
 			isa = PBXGroup;
 			children = (
-				B15EBA3D1BDE92510083DFC3 /* launch@2x.png */,
-				B15EBA3E1BDE92510083DFC3 /* launch@3x.png */,
+				B15EBA431BDEEEAC0083DFC3 /* Default-375w-667h@2x.png */,
+				B15EBA441BDEEEAC0083DFC3 /* Default-414w-736h-Landscape@3x.png */,
+				B15EBA451BDEEEAC0083DFC3 /* Default-414w-736h@3x.png */,
+				B15EBA461BDEEEAC0083DFC3 /* Default-568h@2x1.png */,
+				B15EBA471BDEEEAC0083DFC3 /* Default.png */,
+				B15EBA481BDEEEAC0083DFC3 /* Default@2x.png */,
 			);
-			name = launch;
+			name = "LaunchImages-assets";
 			sourceTree = "<group>";
 		};
 		B1E52BEF1BDE4CFA00F4D1AE /* fonts */ = {
@@ -470,7 +483,6 @@
 		B1E52C451BDE567C00F4D1AE /* icons */ = {
 			isa = PBXGroup;
 			children = (
-				B15EBA3C1BDE92400083DFC3 /* launch */,
 				B1E52C461BDE569700F4D1AE /* dark-cafe.png */,
 				B1E52C471BDE569700F4D1AE /* dark-cat.png */,
 				B1E52C481BDE569700F4D1AE /* dark-chimes.png */,
@@ -525,7 +537,7 @@
 			);
 			name = Kakapo;
 			productName = "Hello World";
-			productReference = 13B07F961A680F5B00A75B9A /* Kakapo.temp_caseinsensitive_renameNative.app */;
+			productReference = 13B07F961A680F5B00A75B9A /* KakapoNative.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -711,7 +723,6 @@
 				B1E52C6A1BDE569700F4D1AE /* dark-wind.png in Resources */,
 				B1E52C381BDE509600F4D1AE /* cafe.m4a in Resources */,
 				B1E52C721BDE569700F4D1AE /* light-rain.png in Resources */,
-				B15EBA401BDE92510083DFC3 /* launch@3x.png in Resources */,
 				B1E52C0F1BDE4D1500F4D1AE /* sf-ui-display-semibold.ttf in Resources */,
 				B1E52C0D1BDE4D1500F4D1AE /* sf-ui-display-medium.ttf in Resources */,
 				B1E52C441BDE509600F4D1AE /* wind.m4a in Resources */,
@@ -720,6 +731,7 @@
 				B1E52C731BDE569700F4D1AE /* light-thunder.png in Resources */,
 				B1E52C6E1BDE569700F4D1AE /* light-chimes.png in Resources */,
 				B1E52C611BDE569700F4D1AE /* dark-chimes.png in Resources */,
+				B15EBA4B1BDEEEAC0083DFC3 /* Default-414w-736h@3x.png in Resources */,
 				B1E52C711BDE569700F4D1AE /* light-paris.png in Resources */,
 				B1E52C6F1BDE569700F4D1AE /* light-fan.png in Resources */,
 				B1E52C151BDE4D1500F4D1AE /* sf-ui-text-medium.ttf in Resources */,
@@ -728,6 +740,7 @@
 				B1E52C131BDE4D1500F4D1AE /* sf-ui-text-heavy.ttf in Resources */,
 				B1E52C401BDE509600F4D1AE /* stream.m4a in Resources */,
 				B1E52C661BDE569700F4D1AE /* dark-thunder.png in Resources */,
+				B15EBA4C1BDEEEAC0083DFC3 /* Default-568h@2x1.png in Resources */,
 				B1E52C3B1BDE509600F4D1AE /* fan.m4a in Resources */,
 				B1E52C171BDE4D1500F4D1AE /* sf-ui-text-semibold.ttf in Resources */,
 				B1E52C741BDE569700F4D1AE /* light-train.png in Resources */,
@@ -742,14 +755,16 @@
 				B1E52C3D1BDE509600F4D1AE /* paris-cafe.m4a in Resources */,
 				B1E52C631BDE569700F4D1AE /* dark-leaves.png in Resources */,
 				B1E52C121BDE4D1500F4D1AE /* sf-ui-text-bold.ttf in Resources */,
+				B15EBA4D1BDEEEAC0083DFC3 /* Default.png in Resources */,
 				B1E52C701BDE569700F4D1AE /* light-leaves.png in Resources */,
+				B15EBA4E1BDEEEAC0083DFC3 /* Default@2x.png in Resources */,
 				B1E52C371BDE509600F4D1AE /* bonfire.m4a in Resources */,
 				B1E52C5F1BDE569700F4D1AE /* dark-cafe.png in Resources */,
 				13B07FBD1A68108700A75B9A /* LaunchScreen.xib in Resources */,
-				B15EBA3F1BDE92510083DFC3 /* launch@2x.png in Resources */,
 				B1E52C691BDE569700F4D1AE /* dark-waves.png in Resources */,
 				B1E52C161BDE4D1500F4D1AE /* sf-ui-text-regular.ttf in Resources */,
 				B1E52C671BDE569700F4D1AE /* dark-train.png in Resources */,
+				B15EBA4A1BDEEEAC0083DFC3 /* Default-414w-736h-Landscape@3x.png in Resources */,
 				B1E52C621BDE569700F4D1AE /* dark-fan.png in Resources */,
 				B1E52C0E1BDE4D1500F4D1AE /* sf-ui-display-regular.ttf in Resources */,
 				B1E52C431BDE509600F4D1AE /* waves.m4a in Resources */,
@@ -757,6 +772,7 @@
 				B1E52C6C1BDE569700F4D1AE /* light-cafe.png in Resources */,
 				B1E52C601BDE569700F4D1AE /* dark-cat.png in Resources */,
 				B1E52C421BDE509600F4D1AE /* train.m4a in Resources */,
+				B15EBA491BDEEEAC0083DFC3 /* Default-375w-667h@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -794,6 +810,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				DEAD_CODE_STRIPPING = NO;
@@ -817,6 +834,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				HEADER_SEARCH_PATHS = (

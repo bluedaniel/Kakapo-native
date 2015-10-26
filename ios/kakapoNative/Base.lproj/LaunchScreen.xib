@@ -11,7 +11,7 @@
             <rect key="frame" x="0.0" y="0.0" width="480" height="480"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="launch.png" translatesAutoresizingMaskIntoConstraints="NO" id="Pvn-Xh-uTF">
+                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="Default-568h@2x1.png" translatesAutoresizingMaskIntoConstraints="NO" id="Pvn-Xh-uTF">
                     <rect key="frame" x="0.0" y="0.0" width="480" height="480"/>
                     <animations/>
                 </imageView>
@@ -40,7 +40,7 @@
         </view>
     </objects>
     <resources>
+        <image name="Default-568h@2x1.png" width="640" height="1136"/>
         <image name="kakapo.png" width="1024" height="1024"/>
-        <image name="launch.png" width="375" height="667"/>
     </resources>
 </document>
