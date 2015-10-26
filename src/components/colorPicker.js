@@ -32,8 +32,6 @@ export default React.createClass({
   }
 });
 
-console.log(Dimensions.get("window").width);
-
 const styles = StyleSheet.create({
   colorPicker: {
     flexDirection: "row",
