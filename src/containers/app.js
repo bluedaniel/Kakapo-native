@@ -2,12 +2,16 @@ import React from "react-native";
 import Drawer from "react-native-drawer";
 import {Header, SoundList, Settings} from "../components";
 import {settingActions} from "../actions";
+import {Settings as SettingsStore} from "../stores";
 
 const {StyleSheet, View} = React;
 
 export default React.createClass({
   getInitialState() {
     return { title: "Kakapo" };
+  },
+  componentDidMount() {
+    SettingsStore.getTheme();
   },
   render() {
     return (

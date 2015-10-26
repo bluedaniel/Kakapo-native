@@ -1,7 +1,6 @@
 import React from "react-native";
 import Reflux from "reflux";
 import Immutable from "immutable";
-import throttle from "lodash/function/throttle";
 import findWhere from "lodash/collection/findWhere";
 import {soundActions} from "../actions";
 import SoundsJson from "../data/sounds.json";
@@ -17,18 +16,22 @@ let soundsMulti = new Immutable.OrderedMap();
 var SoundStore = Reflux.createStore({
   listenables: [soundActions],
   async getSounds() {
-    let data = await AsyncStorage.getItem(STORAGE_KEY);
-    data = null;
-    if (!data) {
-      data = JSON.stringify(SoundsJson);
-      await AsyncStorage.setItem(STORAGE_KEY, data);
+    var data = await AsyncStorage.getItem(STORAGE_KEY);
+    if (!data) data = JSON.stringify(SoundsJson);
+    data = JSON.parse(data);
+    for (var _s in data) {
+      sounds = sounds.set(data[_s].file, Object.assign({}, data[_s], {
+        recentlyDownloaded: false
+      }));
     }
-    JSON.parse(data).forEach(s => sounds = sounds.set(s.file, {...s, ...{ recentlyDownloaded: false }}));
     this.setSwiftSounds();
     this.trigger(ds.cloneWithRows(sounds.toArray()));
   },
   setSwiftSounds() {
-    sounds.forEach(s => SwiftAudio.setSound(s.file));
+    sounds.forEach(s => {
+      SwiftAudio.setSound(s.file);
+      if (s.playing) SwiftAudio.togglePlay(s.file);
+    });
   },
   getInitialState() {
     return ds.cloneWithRows(sounds.toArray());
@@ -45,15 +48,17 @@ var SoundStore = Reflux.createStore({
   },
   onTogglePlayPause(sound, multi) {
     SwiftAudio.togglePlay(sound.file);
-    sounds = sounds.update(sound.file, s => ({...s, ...{ playing: !s.playing }}));
+    sounds = sounds.update(sound.file, s => Object.assign({}, s, { playing: !s.playing }));
     if (multi) soundsMulti = soundsMulti.clear();
     this.trigger(ds.cloneWithRows(sounds.toArray()));
   },
   onChangeVolume(sound, volume, trigger) {
     SwiftAudio.changeVolume(sound.file, Math.round(volume * 100));
-    sounds = sounds.update(sound.file, s => ({...s, ...{ volume: volume }}));
+    sounds = sounds.update(sound.file, s => Object.assign({}, s, { volume: volume }));
     if (trigger) this.trigger(ds.cloneWithRows(sounds.toArray()));
   }
 });
+
+SoundStore.listen(() => AsyncStorage.setItem(STORAGE_KEY, JSON.stringify(sounds)));
 
 export default SoundStore;

@@ -3,18 +3,21 @@ import Reflux from "reflux";
 import Immutable from "immutable";
 import { settingActions } from "../actions";
 
-const {StatusBarIOS, StyleSheet, View} = React;
+const STORAGE_KEY = "@AsyncStorageSettings:key";
+const {AsyncStorage, StatusBarIOS, StyleSheet, View} = React;
 
-let settings = new Immutable.Map({
-  menu: false,
-  color: "#673AB7"
-});
+let settings = new Immutable.Map({ menu: false });
 
-export default Reflux.createStore({
+let SettingsStore = Reflux.createStore({
   listenables: [settingActions],
   init() {
     StatusBarIOS.setStyle("light-content");
     StatusBarIOS.setHidden(false, "slide");
+  },
+  async getTheme() {
+    var themeData = await AsyncStorage.getItem(STORAGE_KEY);
+    settings = settings.set("color", themeData || "#673AB7");
+    this.trigger(settings.toJS());
   },
   getInitialState() {
     return settings.toJS();
@@ -32,3 +35,7 @@ export default Reflux.createStore({
     this.trigger(settings.toJS());
   }
 });
+
+SettingsStore.listen(data => AsyncStorage.setItem(STORAGE_KEY, settings.get("color")));
+
+export default SettingsStore;
