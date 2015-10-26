@@ -19,7 +19,7 @@ var SoundStore = Reflux.createStore({
     var data = await AsyncStorage.getItem(STORAGE_KEY);
     if (!data) data = JSON.stringify(SoundsJson);
     data = JSON.parse(data);
-    for (var _s in data) {
+    for (let _s in data) {
       sounds = sounds.set(data[_s].file, Object.assign({}, data[_s], {
         recentlyDownloaded: false
       }));
@@ -29,7 +29,7 @@ var SoundStore = Reflux.createStore({
   },
   setSwiftSounds() {
     sounds.forEach(s => {
-      SwiftAudio.setSound(s.file);
+      SwiftAudio.setSound(s.file, Math.round(s.volume * 100));
       if (s.playing) SwiftAudio.togglePlay(s.file);
     });
   },

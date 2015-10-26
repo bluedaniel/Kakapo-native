@@ -9,7 +9,7 @@
 
 @interface RCT_EXTERN_MODULE(SwiftAudio, NSObject)
 
-RCT_EXTERN_METHOD(setSound:(NSString *)sound)
+RCT_EXTERN_METHOD(setSound:(NSString *)sound vol:(nonnull NSNumber *)vol)
 RCT_EXTERN_METHOD(togglePlay:(NSString *)sound)
 RCT_EXTERN_METHOD(changeVolume:(NSString *)sound vol:(nonnull NSNumber *)vol)
 

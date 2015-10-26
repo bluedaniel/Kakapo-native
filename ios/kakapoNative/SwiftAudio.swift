@@ -10,9 +10,9 @@ import AVFoundation
 
 @objc(SwiftAudio)
 class SwiftAudio: NSObject {
-  
+
   var soundArr = [String:AVAudioPlayer]()
-  
+
   override init() {
     do {
       try AVAudioSession.sharedInstance().setCategory(AVAudioSessionCategoryPlayback)
@@ -25,21 +25,21 @@ class SwiftAudio: NSObject {
       print(error.localizedDescription)
     }
   }
-  
-  @objc func setSound(sound: String) {
+
+  @objc func setSound(sound: String, vol: NSNumber) {
     if soundArr[sound] === nil {
       do {
         let soundObj = try AVAudioPlayer(contentsOfURL: NSBundle.mainBundle().URLForResource(sound, withExtension: "m4a")!)
         soundArr.updateValue(soundObj, forKey: sound)
         soundArr[sound]!.prepareToPlay()
-        soundArr[sound]!.volume = 0.5
+        soundArr[sound]!.volume = Float(vol) / 100
         soundArr[sound]!.numberOfLoops = -1
       } catch {
         fatalError ("Error loading \(sound): \(error)")
       }
     }
   }
-  
+
   @objc func togglePlay(sound: String) {
     if soundArr[sound]!.playing {
       soundArr[sound]!.pause()
@@ -47,7 +47,7 @@ class SwiftAudio: NSObject {
       soundArr[sound]!.play()
     }
   }
-  
+
   @objc func changeVolume(sound: String, vol: NSNumber) {
     soundArr[sound]!.volume = Float(vol) / 100
   }
