@@ -1,5 +1,6 @@
 import React from "react-native";
 import Reflux from "reflux";
+import Dimensions from "Dimensions";
 import {Settings} from "../stores";
 import {settingActions} from "../actions";
 import Swatches from "../utils/swatches";
@@ -31,6 +32,8 @@ export default React.createClass({
   }
 });
 
+console.log(Dimensions.get("window").width);
+
 const styles = StyleSheet.create({
   colorPicker: {
     flexDirection: "row",
@@ -40,7 +43,8 @@ const styles = StyleSheet.create({
   swatches: {
     width: 38,
     height: 38,
-    marginBottom: 6
+    marginBottom: 6,
+    marginRight: Dimensions.get("window").width === 320 ? 2 : 6
   },
   colorSelected: {
     borderWidth: 2,
