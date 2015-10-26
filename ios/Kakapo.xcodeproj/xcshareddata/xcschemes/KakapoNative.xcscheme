@@ -29,7 +29,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "00E356ED1AD99517003FC87E"
-               BuildableName = "KakapoNativeTests.xctest"
+               BuildableName = "KakapoNative.xctest"
                BlueprintName = "KakapoNativeTests"
                ReferencedContainer = "container:Kakapo.xcodeproj">
             </BuildableReference>
@@ -47,7 +47,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "00E356ED1AD99517003FC87E"
-               BuildableName = "KakapoNativeTests.xctest"
+               BuildableName = "KakapoNative.xctest"
                BlueprintName = "KakapoNativeTests"
                ReferencedContainer = "container:Kakapo.xcodeproj">
             </BuildableReference>
