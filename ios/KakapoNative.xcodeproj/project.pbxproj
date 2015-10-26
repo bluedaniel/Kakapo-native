@@ -23,8 +23,8 @@
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
 		146834051AC3E58100842450 /* libReact.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 146834041AC3E56700842450 /* libReact.a */; };
 		832341BD1AAA6AB300B99B32 /* libRCTText.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 832341B51AAA6A8300B99B32 /* libRCTText.a */; };
-		B15EBA3A1BDE731B0083DFC3 /* launch@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B15EBA381BDE731B0083DFC3 /* launch@2x.png */; };
-		B15EBA3B1BDE731B0083DFC3 /* launch@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = B15EBA391BDE731B0083DFC3 /* launch@3x.png */; };
+		B15EBA3F1BDE92510083DFC3 /* launch@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B15EBA3D1BDE92510083DFC3 /* launch@2x.png */; };
+		B15EBA401BDE92510083DFC3 /* launch@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = B15EBA3E1BDE92510083DFC3 /* launch@3x.png */; };
 		B1E52C091BDE4D1500F4D1AE /* sf-ui-display-black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B1E52BFA1BDE4D1500F4D1AE /* sf-ui-display-black.ttf */; };
 		B1E52C0A1BDE4D1500F4D1AE /* sf-ui-display-bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B1E52BFB1BDE4D1500F4D1AE /* sf-ui-display-bold.ttf */; };
 		B1E52C0B1BDE4D1500F4D1AE /* sf-ui-display-heavy.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B1E52BFC1BDE4D1500F4D1AE /* sf-ui-display-heavy.ttf */; };
@@ -196,8 +196,8 @@
 		146833FF1AC3E56700842450 /* React.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = React.xcodeproj; path = "../node_modules/react-native/React/React.xcodeproj"; sourceTree = "<group>"; };
 		78C398B01ACF4ADC00677621 /* RCTLinking.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTLinking.xcodeproj; path = "../node_modules/react-native/Libraries/LinkingIOS/RCTLinking.xcodeproj"; sourceTree = "<group>"; };
 		832341B01AAA6A8300B99B32 /* RCTText.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTText.xcodeproj; path = "../node_modules/react-native/Libraries/Text/RCTText.xcodeproj"; sourceTree = "<group>"; };
-		B15EBA381BDE731B0083DFC3 /* launch@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "launch@2x.png"; path = "../src/images/launch@2x.png"; sourceTree = "<group>"; };
-		B15EBA391BDE731B0083DFC3 /* launch@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "launch@3x.png"; path = "../src/images/launch@3x.png"; sourceTree = "<group>"; };
+		B15EBA3D1BDE92510083DFC3 /* launch@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "launch@2x.png"; path = "../src/images/launch/launch@2x.png"; sourceTree = "<group>"; };
+		B15EBA3E1BDE92510083DFC3 /* launch@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "launch@3x.png"; path = "../src/images/launch/launch@3x.png"; sourceTree = "<group>"; };
 		B1E52BFA1BDE4D1500F4D1AE /* sf-ui-display-black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "sf-ui-display-black.ttf"; path = "../src/fonts/sf-ui/sf-ui-display-black.ttf"; sourceTree = "<group>"; };
 		B1E52BFB1BDE4D1500F4D1AE /* sf-ui-display-bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "sf-ui-display-bold.ttf"; path = "../src/fonts/sf-ui/sf-ui-display-bold.ttf"; sourceTree = "<group>"; };
 		B1E52BFC1BDE4D1500F4D1AE /* sf-ui-display-heavy.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "sf-ui-display-heavy.ttf"; path = "../src/fonts/sf-ui/sf-ui-display-heavy.ttf"; sourceTree = "<group>"; };
@@ -452,6 +452,15 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		B15EBA3C1BDE92400083DFC3 /* launch */ = {
+			isa = PBXGroup;
+			children = (
+				B15EBA3D1BDE92510083DFC3 /* launch@2x.png */,
+				B15EBA3E1BDE92510083DFC3 /* launch@3x.png */,
+			);
+			name = launch;
+			sourceTree = "<group>";
+		};
 		B1E52BEF1BDE4CFA00F4D1AE /* fonts */ = {
 			isa = PBXGroup;
 			children = (
@@ -498,8 +507,7 @@
 		B1E52C451BDE567C00F4D1AE /* icons */ = {
 			isa = PBXGroup;
 			children = (
-				B15EBA381BDE731B0083DFC3 /* launch@2x.png */,
-				B15EBA391BDE731B0083DFC3 /* launch@3x.png */,
+				B15EBA3C1BDE92400083DFC3 /* launch */,
 				B1E52C461BDE569700F4D1AE /* dark-cafe.png */,
 				B1E52C471BDE569700F4D1AE /* dark-cat.png */,
 				B1E52C481BDE569700F4D1AE /* dark-chimes.png */,
@@ -582,7 +590,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0710;
-				LastUpgradeCheck = 0610;
+				LastUpgradeCheck = 0710;
 				ORGANIZATIONNAME = Facebook;
 				TargetAttributes = {
 					00E356ED1AD99517003FC87E = {
@@ -762,7 +770,7 @@
 				B1E52C6A1BDE569700F4D1AE /* dark-wind.png in Resources */,
 				B1E52C381BDE509600F4D1AE /* cafe.m4a in Resources */,
 				B1E52C721BDE569700F4D1AE /* light-rain.png in Resources */,
-				B15EBA3B1BDE731B0083DFC3 /* launch@3x.png in Resources */,
+				B15EBA401BDE92510083DFC3 /* launch@3x.png in Resources */,
 				B1E52C0F1BDE4D1500F4D1AE /* sf-ui-display-semibold.ttf in Resources */,
 				B1E52C0D1BDE4D1500F4D1AE /* sf-ui-display-medium.ttf in Resources */,
 				B1E52C441BDE509600F4D1AE /* wind.m4a in Resources */,
@@ -797,7 +805,7 @@
 				B1E52C371BDE509600F4D1AE /* bonfire.m4a in Resources */,
 				B1E52C5F1BDE569700F4D1AE /* dark-cafe.png in Resources */,
 				13B07FBD1A68108700A75B9A /* LaunchScreen.xib in Resources */,
-				B15EBA3A1BDE731B0083DFC3 /* launch@2x.png in Resources */,
+				B15EBA3F1BDE92510083DFC3 /* launch@2x.png in Resources */,
 				B1E52C691BDE569700F4D1AE /* dark-waves.png in Resources */,
 				B1E52C161BDE4D1500F4D1AE /* sf-ui-text-regular.ttf in Resources */,
 				B1E52C671BDE569700F4D1AE /* dark-train.png in Resources */,
@@ -872,6 +880,7 @@
 				INFOPLIST_FILE = KakapoNativeTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/KakapoNative.app/KakapoNative";
 			};
@@ -889,6 +898,7 @@
 				INFOPLIST_FILE = KakapoNativeTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/KakapoNative.app/KakapoNative";
 			};
@@ -906,8 +916,10 @@
 					"$(SRCROOT)/../node_modules/react-native/React/**",
 				);
 				INFOPLIST_FILE = KakapoNative/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = KakapoNative;
 				SWIFT_OBJC_BRIDGING_HEADER = "KakapoNative-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -925,8 +937,10 @@
 					"$(SRCROOT)/../node_modules/react-native/React/**",
 				);
 				INFOPLIST_FILE = KakapoNative/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = KakapoNative;
 				SWIFT_OBJC_BRIDGING_HEADER = "KakapoNative-Bridging-Header.h";
 			};
@@ -952,6 +966,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
