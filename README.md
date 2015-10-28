@@ -4,7 +4,7 @@ Kakapo native is an ambient sound mixer for relaxation or productivity that is c
 
 [Download the latest version here](https://itunes.apple.com/us/app/kakapo/id1046673139).
 
-This is part of a trilogy of Kakapo repos, with the other 2 being [website](https://github.com/bluedaniel/Kakapo-web/) and [desktop](https://github.com/bluedaniel/Kakapo-app/).
+See also: [Kakapo for Web](https://github.com/bluedaniel/Kakapo-web) - [Kakapo for Desktop](https://github.com/bluedaniel/Kakapo-app) - [Kakapo for Chrome](https://github.com/bluedaniel/Kakapo-chrome).
 
 This repo differs from the others as it is built using [React Native](https://facebook.github.io/react-native/) and has some limitations due to rules/hardware/software so it is a somewhat slimmed down version although being a native app it also has some nice advantages.
 
