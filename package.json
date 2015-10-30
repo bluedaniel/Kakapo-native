@@ -10,10 +10,9 @@
     "immutable": "^3.7.5",
     "lodash": "^3.10.1",
     "react": "^0.14.0",
-    "react-native": "^0.13.1",
+    "react-native": "^0.14.0-rc",
     "react-native-drawer": "^1.6.0",
     "react-native-icons": "^0.5.1",
-    "react-native-social-share": "^0.4.0",
     "reflux": "^0.3.0"
   }
 }

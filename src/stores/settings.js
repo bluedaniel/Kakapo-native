@@ -11,8 +11,10 @@ let settings = new Immutable.Map({ menu: false });
 let SettingsStore = Reflux.createStore({
   listenables: [settingActions],
   init() {
-    StatusBarIOS.setStyle("light-content");
-    StatusBarIOS.setHidden(false, "slide");
+    if (process.env.os === "ios") {
+      StatusBarIOS.setStyle("light-content");
+      StatusBarIOS.setHidden(false, "slide");
+    }
   },
   async getTheme() {
     var themeData = await AsyncStorage.getItem(STORAGE_KEY);
@@ -29,7 +31,7 @@ let SettingsStore = Reflux.createStore({
   onMenuToggle(guestured) {
     if (guestured !== null && guestured === settings.get("menu")) return;
     settings = settings.update("menu", m => {
-      StatusBarIOS.setHidden(!m, "slide");
+      if (process.env.os === "ios") StatusBarIOS.setHidden(!m, "slide");
       return !m;
     });
     this.trigger(settings.toJS());

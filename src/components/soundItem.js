@@ -52,9 +52,10 @@ export default React.createClass({
 
 const styles = StyleSheet.create({
   container: {
+    alignItems: "center",
+    backgroundColor: "#fff",
     flexDirection: "row",
-    justifyContent: "flex-start",
-    alignItems: "center"
+    justifyContent: "flex-start"
   },
   img: {
     width: 48,
