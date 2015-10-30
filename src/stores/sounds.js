@@ -5,7 +5,7 @@ import findWhere from "lodash/collection/findWhere";
 import {soundActions} from "../actions";
 import SoundsJson from "../data/sounds.json";
 const {NativeModules, AsyncStorage, ListView} = React;
-const {SwiftAudio} = NativeModules;
+const {AudioModule} = NativeModules;
 const STORAGE_KEY = "@AsyncStorageSounds:key";
 
 let ds = new ListView.DataSource({rowHasChanged: (r1, r2) => r1 !== r2});
@@ -24,13 +24,13 @@ var SoundStore = Reflux.createStore({
         recentlyDownloaded: false
       }));
     }
-    this.setSwiftSounds();
+    this.setSounds();
     this.trigger(ds.cloneWithRows(sounds.toArray()));
   },
-  setSwiftSounds() {
+  setSounds() {
     sounds.forEach(s => {
-      SwiftAudio.setSound(s.file, Math.round(s.volume * 100));
-      if (s.playing) SwiftAudio.togglePlay(s.file);
+      AudioModule.setSound(s.file, Math.round(s.volume * 100));
+      if (s.playing) AudioModule.togglePlay(s.file);
     });
   },
   getInitialState() {
@@ -47,13 +47,13 @@ var SoundStore = Reflux.createStore({
     this.trigger(ds.cloneWithRows(sounds.toArray()));
   },
   onTogglePlayPause(sound, multi) {
-    SwiftAudio.togglePlay(sound.file);
+    AudioModule.togglePlay(sound.file);
     sounds = sounds.update(sound.file, s => Object.assign({}, s, { playing: !s.playing }));
     if (multi) soundsMulti = soundsMulti.clear();
     this.trigger(ds.cloneWithRows(sounds.toArray()));
   },
   onChangeVolume(sound, volume, trigger) {
-    SwiftAudio.changeVolume(sound.file, Math.round(volume * 100));
+    AudioModule.changeVolume(sound.file, Math.round(volume * 100));
     sounds = sounds.update(sound.file, s => Object.assign({}, s, { volume: volume }));
     if (trigger) this.trigger(ds.cloneWithRows(sounds.toArray()));
   }

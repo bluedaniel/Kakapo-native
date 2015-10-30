@@ -34,3 +34,5 @@ node_modules/
 npm-debug.log
 
 ios/main.jsbundle
+
+android/app/src/main/res/raw/*
