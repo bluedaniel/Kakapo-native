@@ -1,10 +1,13 @@
 package com.kakaponative;
 
 import java.util.*;
+import java.lang.Float;
 
+import android.app.Activity;
 import android.util.Log;
 import android.util.Pair;
 import android.media.MediaPlayer;
+import android.net.Uri;
 
 import com.facebook.react.bridge.NativeModule;
 import com.facebook.react.bridge.ReactApplicationContext;
@@ -16,8 +19,11 @@ public class AudioModule extends ReactContextBaseJavaModule {
 
   private static Map<String, MediaPlayer> soundArr = new HashMap<String, MediaPlayer>();
 
-  public AudioModule(ReactApplicationContext reactContext) {
+  Activity mActivity;
+
+  public AudioModule(ReactApplicationContext reactContext, Activity activity) {
     super(reactContext);
+    mActivity = activity;
   }
 
   @Override
@@ -28,8 +34,10 @@ public class AudioModule extends ReactContextBaseJavaModule {
   @ReactMethod
   public void setSound(String sound, Integer vol) {
     if (!soundArr.containsKey(sound)) {
-      String filename = sound.replace("-", "_");
-      MediaPlayer soundObj = MediaPlayer.create(Context, R.raw.filename);
+      String filename = "android.resource://com.kakaponative/raw/" + sound.replace("-", "_");
+      MediaPlayer soundObj = MediaPlayer.create(mActivity, Uri.parse(filename));
+      soundObj.setLooping(true);
+      soundObj.setVolume((float) vol / 100, (float) vol / 100);
       soundArr.put(sound, soundObj);
     }
   }
@@ -45,6 +53,6 @@ public class AudioModule extends ReactContextBaseJavaModule {
 
   @ReactMethod
   public void changeVolume(String sound, Integer vol) {
-    Log.i("AudioModule", "AudioModule is cool!");
+    soundArr.get(sound).setVolume((float) vol / 100, (float) vol / 100);
   }
 }
