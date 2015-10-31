@@ -33,7 +33,7 @@ export default React.createClass({
           />
         </TouchableOpacity>
         <View style={styles.title}>
-          <Image style={styles.logo} source={{uri: "http://www.kakapo.co/icons/social/kakapo.png"}}/>
+          <Image style={styles.logo} source={require("image!kakapo")}/>
           <Text style={styles.headerText}>{this.props.title}</Text>
         </View>
         {this.renderIconMultiple()}

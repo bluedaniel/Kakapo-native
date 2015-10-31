@@ -34,10 +34,10 @@ public class AudioModule extends ReactContextBaseJavaModule {
   @ReactMethod
   public void setSound(String sound, Integer vol) {
     if (!soundArr.containsKey(sound)) {
-      String filename = "android.resource://com.kakaponative/raw/" + sound.replace("-", "_");
+      String filename = "android.resource://com.kakaponative/raw/" + sound;
       MediaPlayer soundObj = MediaPlayer.create(mActivity, Uri.parse(filename));
-      soundObj.setLooping(true);
-      soundObj.setVolume((float) vol / 100, (float) vol / 100);
+      // soundObj.setLooping(true);
+      // soundObj.setVolume((float) vol / 100, (float) vol / 100);
       soundArr.put(sound, soundObj);
     }
   }
