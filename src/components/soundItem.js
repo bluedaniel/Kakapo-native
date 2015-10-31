@@ -2,13 +2,28 @@ import React from "react-native";
 import Reflux from "reflux";
 import throttle from "lodash/function/throttle";
 import Color from "color";
+import {MKColor, mdl, setTheme} from "react-native-material-kit";
 import {soundActions} from "../actions";
 import {Settings} from "../stores";
 
 const {TouchableOpacity, SliderIOS, Image, StyleSheet, Text, View} = React;
 
+const SliderWithValue = mdl.Slider.slider()
+  .withStyle({
+    flex: 1,
+    marginRight: 30,
+    marginBottom: 15,
+    height: 0
+  })
+  .withMin(0)
+  .withMax(1)
+  .build();
+
 export default React.createClass({
   mixins: [Reflux.connect(Settings, "settings")],
+  componentDidUpdate() {
+    this.refs.sliderWithValue.value = this.props.volume;
+  },
   componentWillMount() {
     this.changeVolumeThrottled = throttle(this.changeVolume, 200);
   },
@@ -17,17 +32,6 @@ export default React.createClass({
   },
   changeVolume(vol, trigger) {
     soundActions.changeVolume(this.props, vol, trigger);
-  },
-  renderSlider() {
-    if (!this.props.playing) return;
-    return <SliderIOS
-      style={styles.slider}
-      minimumTrackTintColor="#fff"
-      maximumTrackTintColor="#fff"
-      onValueChange={vol => this.changeVolumeThrottled(vol, false)}
-      onSlidingComplete={vol => this.changeVolume(vol, true)}
-      value={this.props.volume}
-    />;
   },
   render() {
     return (
@@ -41,7 +45,13 @@ export default React.createClass({
             {this.props.name}
           </Text>
           </TouchableOpacity>
-          {this.renderSlider()}
+          <SliderWithValue
+            ref="sliderWithValue"
+            upperTrackColor={this.props.playing ? "#fff" : "#f9f9f9"}
+            lowerTrackColor={this.props.playing ? "#fff" : "#f9f9f9"}
+            onChange={vol => this.changeVolumeThrottled(vol, false)}
+            trackSize={4}
+          />
         </View>
       </View>
     );
@@ -73,12 +83,5 @@ const styles = StyleSheet.create({
     color: "#fff",
     marginBottom: 10,
     marginTop: 6
-  },
-  slider: {
-    flex: 1,
-    height: 15,
-    marginLeft: 8,
-    marginRight: 30,
-    marginBottom: 15
   }
 });

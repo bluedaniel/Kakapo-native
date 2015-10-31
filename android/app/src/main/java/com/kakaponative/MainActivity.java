@@ -11,6 +11,8 @@ import com.facebook.react.modules.core.DefaultHardwareBackBtnHandler;
 import com.facebook.react.shell.MainReactPackage;
 import com.facebook.soloader.SoLoader;
 
+import com.github.xinthink.rnmk.ReactMaterialKitPackage;
+
 import com.smixx.reactnativeicons.ReactNativeIcons;  // <--- import
 import java.util.Arrays; // <--- import this if you want to specify which fonts to load
 import com.smixx.reactnativeicons.IconFont; // <--- import this if you want to specify which fonts to load
@@ -31,6 +33,7 @@ public class MainActivity extends Activity implements DefaultHardwareBackBtnHand
                 .setJSMainModuleName("index.android")
                 .addPackage(new MainReactPackage())
                 .addPackage(new ReactNativeIcons())
+                .addPackage(new ReactMaterialKitPackage())
                 .addPackage(new AudioPackage(this))
                 .setUseDeveloperSupport(BuildConfig.DEBUG)
                 .setInitialLifecycleState(LifecycleState.RESUMED)
