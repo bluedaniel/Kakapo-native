@@ -4,7 +4,7 @@ import {Icon} from "react-native-icons";
 import {Settings, Sounds} from "../stores";
 import {settingActions, soundActions} from "../actions";
 
-const {TouchableOpacity, Image, StyleSheet, Text, View} = React;
+const {TouchableOpacity, Image, StyleSheet, Text, View, Platform} = React;
 
 export default React.createClass({
   mixins: [Reflux.connect(Settings, "settings"), Reflux.connect(Sounds, "sounds")],
@@ -46,8 +46,8 @@ const styles = StyleSheet.create({
   header: {
     alignItems: "center",
     flexDirection: "row",
-    height: process.env.os === "ios" ? 80 : 55,
-    paddingTop: process.env.os === "ios" ? 25 : 0
+    height: Platform.OS === "ios" ? 80 : 55,
+    paddingTop: Platform.OS === "ios" ? 25 : 0
   },
   menu: {
     height: 30,

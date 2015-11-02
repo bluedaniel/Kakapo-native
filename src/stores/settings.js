@@ -4,14 +4,14 @@ import Immutable from "immutable";
 import { settingActions } from "../actions";
 
 const STORAGE_KEY = "@AsyncStorageSettings:key";
-const {AsyncStorage, StatusBarIOS, StyleSheet, View} = React;
+const {AsyncStorage, StatusBarIOS, StyleSheet, View, Platform} = React;
 
 let settings = new Immutable.Map({ menu: false });
 
 let SettingsStore = Reflux.createStore({
   listenables: [settingActions],
   init() {
-    if (process.env.os === "ios") {
+    if (Platform.OS === "ios") {
       StatusBarIOS.setStyle("light-content");
       StatusBarIOS.setHidden(false, "slide");
     }
@@ -31,7 +31,7 @@ let SettingsStore = Reflux.createStore({
   onMenuToggle(guestured) {
     if (guestured !== null && guestured === settings.get("menu")) return;
     settings = settings.update("menu", m => {
-      if (process.env.os === "ios") StatusBarIOS.setHidden(!m, "slide");
+      if (Platform.OS === "ios") StatusBarIOS.setHidden(!m, "slide");
       return !m;
     });
     this.trigger(settings.toJS());

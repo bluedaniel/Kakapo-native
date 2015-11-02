@@ -1,5 +1,3 @@
-process.env["os"] = "ios";
-
 import React from "react-native";
 import {App} from "./src/containers";
 

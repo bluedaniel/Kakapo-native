@@ -6,7 +6,7 @@ import {Settings} from "../stores";
 import {settingActions} from "../actions";
 import ColorPicker from "./colorPicker";
 
-const {NativeModules, LinkingIOS, ScrollView, AlertIOS, Image, TouchableOpacity, StyleSheet, Text, View} = React;
+const {NativeModules, LinkingIOS, ScrollView, AlertIOS, Image, TouchableOpacity, StyleSheet, Text, View, Platform} = React;
 const {KDSocialShare} = NativeModules;
 
 const shareDataiOS = {
@@ -23,7 +23,7 @@ const githubRepo = "https://github.com/bluedaniel/Kakapo-native";
 export default React.createClass({
   mixins: [Reflux.connect(Settings, "settings")],
   tweet() {
-    if (process.env.os === "ios") {
+    if (Platform.OS === "ios") {
       KDSocialShare.tweet(shareDataiOS,
         res => res === "not_available" ? AlertIOS.alert("Twitter not available", "Setup Twitter in Settings > Twitter") : null);
     } else {
@@ -31,7 +31,7 @@ export default React.createClass({
     }
   },
   facebook() {
-    if (process.env.os === "ios") {
+    if (Platform.OS === "ios") {
       KDSocialShare.shareOnFacebook(shareDataiOS,
         res => res === "not_available" ? AlertIOS.alert("Facebook not available", "Setup Facebook in Settings > Facebook") : null);
     } else {
@@ -39,7 +39,7 @@ export default React.createClass({
     }
   },
   openURL() {
-    if (process.env.os === "ios") {
+    if (Platform.OS === "ios") {
       LinkingIOS.openURL(githubRepo);
     } else {
       KDSocialShare.openURL(githubRepo)
