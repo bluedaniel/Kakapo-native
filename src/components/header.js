@@ -46,8 +46,8 @@ const styles = StyleSheet.create({
   header: {
     alignItems: "center",
     flexDirection: "row",
-    height: 80,
-    paddingTop: 25
+    height: process.env.os === "ios" ? 80 : 55,
+    paddingTop: process.env.os === "ios" ? 25 : 0
   },
   menu: {
     height: 30,
