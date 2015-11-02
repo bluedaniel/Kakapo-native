@@ -16,7 +16,7 @@ const shareDataiOS = {
 };
 const shareDataAndroid = Object.assign({}, shareDataiOS, {
   text: "Kakapo on the Play Store",
-  link: "https://play.google.com/store/apps/details?id=com.kakapo"
+  link: "https://play.google.com/store/apps/details?id=com.kakaponative"
 });
 
 const githubRepo = "https://github.com/bluedaniel/Kakapo-native";
