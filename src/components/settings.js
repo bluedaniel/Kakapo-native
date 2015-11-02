@@ -10,12 +10,13 @@ const {NativeModules, LinkingIOS, ScrollView, AlertIOS, Image, TouchableOpacity,
 const {KDSocialShare} = NativeModules;
 
 const shareDataiOS = {
-  text: "Kakapo",
+  text: "Kakapo on the App Store",
   link: "https://itunes.apple.com/gb/app/kakapo/id1046673139?mt=8",
   imagelink: "http://www.kakapo.co/icons/social/kakapo.png"
 };
 const shareDataAndroid = Object.assign({}, shareDataiOS, {
-  link: "https://play.google.com/store/apps/details?id=com.rovio.angrybirds"
+  text: "Kakapo on the Play Store",
+  link: "https://play.google.com/store/apps/details?id=com.kakapo"
 });
 
 const githubRepo = "https://github.com/bluedaniel/Kakapo-native";
@@ -23,20 +24,16 @@ const githubRepo = "https://github.com/bluedaniel/Kakapo-native";
 export default React.createClass({
   mixins: [Reflux.connect(Settings, "settings")],
   tweet() {
-    if (Platform.OS === "ios") {
-      KDSocialShare.tweet(shareDataiOS,
-        res => res === "not_available" ? AlertIOS.alert("Twitter not available", "Setup Twitter in Settings > Twitter") : null);
-    } else {
-      KDSocialShare.tweet(`https://twitter.com/intent/tweet?text=Kakapo%20is%20neat!%20${shareDataAndroid.link}`, "");
-    }
+    KDSocialShare.tweet(shareDataiOS,
+      res => res === "not_available" ? AlertIOS.alert("Twitter not available", "Setup Twitter in Settings > Twitter") : null);
   },
   facebook() {
-    if (Platform.OS === "ios") {
-      KDSocialShare.shareOnFacebook(shareDataiOS,
-        res => res === "not_available" ? AlertIOS.alert("Facebook not available", "Setup Facebook in Settings > Facebook") : null);
-    } else {
-      KDSocialShare.shareOnFacebook(`https://www.facebook.com/dialog/feed?app_id=1663218660581932&display=popup&caption=Kakapo&link=${shareDataAndroid.link}&redirect_uri=http://kakapo.co`, "");
-    }
+    KDSocialShare.shareOnFacebook(shareDataiOS,
+      res => res === "not_available" ? AlertIOS.alert("Facebook not available", "Setup Facebook in Settings > Facebook") : null);
+  },
+  shareIntent() {
+    KDSocialShare.shareIntent(shareDataAndroid,
+      res => res === "not_available" ? null : null);
   },
   openURL() {
     if (Platform.OS === "ios") {
@@ -45,7 +42,7 @@ export default React.createClass({
       KDSocialShare.openURL(githubRepo)
     }
   },
-  renderShare() {
+  renderShareios() {
     return (
       <View>
         <TouchableOpacity style={styles.optWrap} onPress={this.facebook}>
@@ -69,6 +66,21 @@ export default React.createClass({
       </View>
     );
   },
+  renderShareAndroid() {
+    return (
+      <View>
+        <TouchableOpacity style={styles.optWrap} onPress={this.shareIntent}>
+          <Icon
+            name="material|share"
+            size={30}
+            color="#fff"
+            style={styles.optWrapIcon}
+          />
+          <Text style={styles.opt}>Share Kakapo</Text>
+        </TouchableOpacity>
+      </View>
+    );
+  },
   render() {
     return (
       <ScrollView
@@ -81,8 +93,8 @@ export default React.createClass({
         <Text style={[styles.header, styles.headerFirst]}>Settings</Text>
         <Text style={styles.opt}>Color</Text>
         <ColorPicker/>
-        <Text style={styles.header}>Share</Text>
-        {this.renderShare()}
+        <Text style={styles.header}>Links</Text>
+        {Platform.OS === "ios" ? this.renderShareios() : this.renderShareAndroid()}
         <TouchableOpacity
           style={styles.optWrap}
           onPress={this.openURL}
@@ -124,11 +136,11 @@ const styles = StyleSheet.create({
     alignItems: "center"
   },
   optWrapIcon: {
-    height: 30,
+    height: 34,
     left: -5,
     marginTop: -8,
     position: "relative",
-    width: 30
+    width: 34
   },
   opt: {
     fontFamily: "SFUIDisplay-Medium",
