@@ -34,6 +34,7 @@ public class MainActivity extends Activity implements DefaultHardwareBackBtnHand
                 .addPackage(new MainReactPackage())
                 .addPackage(new ReactNativeIcons())
                 .addPackage(new ReactMaterialKitPackage())
+                .addPackage(new SharePackage(this))
                 .addPackage(new AudioPackage(this))
                 .setUseDeveloperSupport(BuildConfig.DEBUG)
                 .setInitialLifecycleState(LifecycleState.RESUMED)
