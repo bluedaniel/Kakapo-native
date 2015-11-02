@@ -46,13 +46,13 @@ export default React.createClass({
     return (
       <View>
         <TouchableOpacity style={styles.optWrap} onPress={this.facebook}>
-            <Icon
-              name="material|facebook"
-              size={30}
-              color="#fff"
-              style={styles.optWrapIcon}
-            />
-          <Text style={styles.opt}>Facebook</Text>
+          <Icon
+            name="material|facebook"
+            size={30}
+            color="#fff"
+            style={styles.optWrapIcon}
+          />
+          <Text style={styles.opt}>Share on Facebook</Text>
         </TouchableOpacity>
         <TouchableOpacity style={styles.optWrap} onPress={this.tweet}>
           <Icon
@@ -61,7 +61,7 @@ export default React.createClass({
             color="#fff"
             style={styles.optWrapIcon}
           />
-          <Text style={styles.opt}>Twitter</Text>
+          <Text style={styles.opt}>Share on Twitter</Text>
         </TouchableOpacity>
       </View>
     );
@@ -93,7 +93,7 @@ export default React.createClass({
         <Text style={[styles.header, styles.headerFirst]}>Settings</Text>
         <Text style={styles.opt}>Color</Text>
         <ColorPicker/>
-        <Text style={styles.header}>Links</Text>
+        <Text style={styles.header}>Extra</Text>
         {Platform.OS === "ios" ? this.renderShareios() : this.renderShareAndroid()}
         <TouchableOpacity
           style={styles.optWrap}
