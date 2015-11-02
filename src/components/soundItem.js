@@ -12,8 +12,8 @@ const SliderWithValue = mdl.Slider.slider()
   .withStyle({
     flex: 1,
     marginRight: 30,
-    marginBottom: 15,
-    height: 0
+    marginBottom: 6,
+    marginLeft: 0
   })
   .withMin(0)
   .withMax(1)
@@ -76,12 +76,11 @@ const styles = StyleSheet.create({
   title: {
     fontFamily: "SFUIText-Regular",
     fontSize: 18,
-    marginLeft: 8,
-    textAlign: "left"
+    marginLeft: 14,
+    textAlign: "left",
+    marginTop: 6
   },
   titlePlaying: {
-    color: "#fff",
-    marginBottom: 10,
-    marginTop: 6
+    color: "#fff"
   }
 });

@@ -1,5 +1,5 @@
 //
-//  SwiftAudio.swift
+//  AudioModule.swift
 //  kakapoNative
 //
 //  Created by Daniel Levitt on 03/10/2015.
@@ -8,8 +8,8 @@
 import Foundation
 import AVFoundation
 
-@objc(SwiftAudio)
-class SwiftAudio: NSObject {
+@objc(AudioModule)
+class AudioModule: NSObject {
 
   var soundArr = [String:AVAudioPlayer]()
 

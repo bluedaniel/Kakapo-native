@@ -1,5 +1,5 @@
 //
-//  SwiftAudio.m
+//  AudioModule.m
 //  kakapoNative
 //
 //  Created by Daniel Levitt on 03/10/2015.
@@ -7,7 +7,7 @@
 //
 #import "kakapo-Bridging-Header.h"
 
-@interface RCT_EXTERN_MODULE(SwiftAudio, NSObject)
+@interface RCT_EXTERN_MODULE(AudioModule, NSObject)
 
 RCT_EXTERN_METHOD(setSound:(NSString *)sound vol:(nonnull NSNumber *)vol)
 RCT_EXTERN_METHOD(togglePlay:(NSString *)sound)
