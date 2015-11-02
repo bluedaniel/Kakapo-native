@@ -1,17 +1,12 @@
 package com.kakaponative;
 
 import java.util.*;
-import java.lang.Float;
 
 import android.app.Activity;
-import android.util.Log;
-import android.util.Pair;
 import android.media.MediaPlayer;
 import android.net.Uri;
 
-import com.facebook.react.bridge.NativeModule;
 import com.facebook.react.bridge.ReactApplicationContext;
-import com.facebook.react.bridge.ReactContext;
 import com.facebook.react.bridge.ReactContextBaseJavaModule;
 import com.facebook.react.bridge.ReactMethod;
 
