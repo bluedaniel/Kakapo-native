@@ -43,7 +43,7 @@ public class KDSocialShare extends ReactContextBaseJavaModule {
             Intent chooser = Intent.createChooser(share, title);
             chooser.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
             mActivity.startActivity(chooser);
-            callback.invoke("OK");
+            callback.invoke("success");
         } catch (ActivityNotFoundException ex) {
             callback.invoke("not_available");
         }

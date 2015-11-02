@@ -6,13 +6,13 @@ import {Settings} from "../stores";
 import {settingActions} from "../actions";
 import ColorPicker from "./colorPicker";
 
-const {NativeModules, LinkingIOS, ScrollView, AlertIOS, Image, TouchableOpacity, StyleSheet, Text, View, Platform} = React;
+const {NativeModules, LinkingIOS, ScrollView, ToastAndroid, AlertIOS, Image, TouchableOpacity, StyleSheet, Text, View, Platform} = React;
 const {KDSocialShare} = NativeModules;
 
 const shareDataiOS = {
   text: "Kakapo on the App Store",
-  link: "https://itunes.apple.com/gb/app/kakapo/id1046673139?mt=8",
-  imagelink: "http://www.kakapo.co/icons/social/kakapo.png"
+  link: "https://itunes.apple.com/us/app/kakapo/id1046673139",
+  imagelink: "http://a2.mzstatic.com/eu/r30/Purple3/v4/12/ab/2a/12ab2a01-3a3c-9482-b8df-ab38ad281165/icon175x175.png"
 };
 const shareDataAndroid = Object.assign({}, shareDataiOS, {
   text: "Kakapo on the Play Store",
@@ -33,7 +33,7 @@ export default React.createClass({
   },
   shareIntent() {
     KDSocialShare.shareIntent(shareDataAndroid,
-      res => res === "not_available" ? null : null);
+      res => res === "not_available" ? ToastAndroid.show("Sharing not available :(", ToastAndroid.SHORT) : null);
   },
   openURL() {
     if (Platform.OS === "ios") {
