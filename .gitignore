@@ -38,3 +38,9 @@ ios/main.jsbundle
 # Android assets
 android/app/src/main/res/raw/*
 android/app/src/main/res/drawable-mdpi/*
+
+android/app/my-release-key.keystore
+
+android/app/src/main/assets/index.android.bundle
+
+android/gradle.properties
