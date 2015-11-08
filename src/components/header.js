@@ -33,7 +33,7 @@ export default React.createClass({
           />
         </TouchableOpacity>
         <View style={styles.title}>
-          <Image style={styles.logo} source={require("image!kakapo")}/>
+          <Image style={styles.logo} source={require("kakapo-assets/images/kakapo.png")}/>
           <Text style={styles.headerText}>{this.props.title}</Text>
         </View>
         {this.renderIconMultiple()}
