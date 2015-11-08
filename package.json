@@ -11,7 +11,7 @@
     "kakapo-assets": "git+https://github.com/bluedaniel/Kakapo-assets.git",
     "lodash": "^3.10.1",
     "react": "^0.14.0",
-    "react-native": "^0.14.0-rc",
+    "react-native": "^0.14.1",
     "react-native-drawer": "^1.6.0",
     "react-native-icons": "^0.5.1",
     "reflux": "^0.3.0"
