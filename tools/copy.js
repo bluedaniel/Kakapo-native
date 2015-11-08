@@ -4,7 +4,7 @@ import task from "./lib/task";
 
 export default task("copy", async () => {
   await Promise.all([
-    fs.copySync("src/images", "android/app/src/main/res/drawable-mdpi"),
-    fs.copySync("src/sounds", "android/app/src/main/res/raw")
+    fs.copySync("node_modules/kakapo-assets/images", "android/app/src/main/res/drawable-mdpi"),
+    fs.copySync("node_modules/kakapo-assets/sounds", "android/app/src/main/res/raw")
   ]);
 });

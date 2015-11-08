@@ -3,7 +3,8 @@ import Reflux from "reflux";
 import Immutable from "immutable";
 import findWhere from "lodash/collection/findWhere";
 import {soundActions} from "../actions";
-import SoundsJson from "../data/sounds.json";
+import kakapoAssets from "kakapo-assets";
+
 const {NativeModules, AsyncStorage, ListView} = React;
 const {AudioModule} = NativeModules;
 const STORAGE_KEY = "@AsyncStorageSounds:key";
@@ -17,7 +18,7 @@ var SoundStore = Reflux.createStore({
   listenables: [soundActions],
   async getSounds() {
     var data = await AsyncStorage.getItem(STORAGE_KEY);
-    if (!data) data = JSON.stringify(SoundsJson);
+    if (!data) data = JSON.stringify(kakapoAssets.sounds);
     data = JSON.parse(data);
     for (let _s in data) {
       sounds = sounds.set(data[_s].file, Object.assign({}, data[_s], {

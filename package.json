@@ -8,6 +8,7 @@
   "dependencies": {
     "color": "^0.10.1",
     "immutable": "^3.7.5",
+    "kakapo-assets": "git+https://github.com/bluedaniel/Kakapo-assets.git",
     "lodash": "^3.10.1",
     "react": "^0.14.0",
     "react-native": "^0.14.0-rc",
