@@ -16,7 +16,7 @@ This repo differs from the others as it is built using [React Native](https://fa
 - Still able to use [Reflux](https://github.com/reflux/refluxjs) and store/fetch the data with promises.
 - Deployment to the app store is very easy.
 
-<img src="https://raw.githubusercontent.com/bluedaniel/Kakapo-assets/master/images/screenshots/iphone.png" />
+<img src="https://raw.githubusercontent.com/bluedaniel/Kakapo-assets/master/images/screenshots/iphone.png" width="425" height="690" />
 
 ## Bugs and Feature Requests
 
