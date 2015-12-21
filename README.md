@@ -1,4 +1,4 @@
-<img src="http://www.kakapo.co/icons/social/kakapo.png" width="128" height="128" align="right" />
+<img src="https://raw.githubusercontent.com/bluedaniel/Kakapo-assets/master/icons/social/kakapo.png" width="128" height="128" align="right" />
 
 Kakapo native is an ambient sound mixer for relaxation or productivity. Built with React Native it is available in both the Apple App Store and Google Play Store.
 
@@ -16,7 +16,7 @@ This repo differs from the others as it is built using [React Native](https://fa
 - Still able to use [Reflux](https://github.com/reflux/refluxjs) and store/fetch the data with promises.
 - Deployment to the app store is very easy.
 
-<img src="http://www.kakapo.co/images/iphone-screenshot.png" width="425" height="690" />
+<img src="https://raw.githubusercontent.com/bluedaniel/Kakapo-assets/master/images/screenshots/iphone.png" />
 
 ## Bugs and Feature Requests
 
