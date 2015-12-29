@@ -1,4 +1,4 @@
-import React from "react-native";
-import {App} from "./src/containers";
+import React from 'react-native';
+import Root from './src';
 
-React.AppRegistry.registerComponent('KakapoNative', () => App);
+React.AppRegistry.registerComponent('KakapoNative', () => Root);

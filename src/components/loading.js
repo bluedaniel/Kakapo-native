@@ -1,5 +1,4 @@
-import React from "react-native";
-const {ActivityIndicatorIOS, StyleSheet, View} = React;
+import React, { ActivityIndicatorIOS, StyleSheet, View } from 'react-native';
 
 export default React.createClass({
   render() {
@@ -18,8 +17,8 @@ export default React.createClass({
 const styles = StyleSheet.create({
   activityContainer: {
     flex: 1,
-    alignItems: "center",
-    justifyContent: "center"
+    alignItems: 'center',
+    justifyContent: 'center'
   },
   activityIndicator: {
     height: 80,

@@ -22,26 +22,16 @@
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
 		146834051AC3E58100842450 /* libReact.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 146834041AC3E56700842450 /* libReact.a */; };
 		832341BD1AAA6AB300B99B32 /* libRCTText.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 832341B51AAA6A8300B99B32 /* libRCTText.a */; };
+		B10D26251C2C052D00822E30 /* dark_birds.png in Resources */ = {isa = PBXBuildFile; fileRef = B10D26211C2C052D00822E30 /* dark_birds.png */; };
+		B10D26261C2C052D00822E30 /* dark_bonfire.png in Resources */ = {isa = PBXBuildFile; fileRef = B10D26221C2C052D00822E30 /* dark_bonfire.png */; };
+		B10D26271C2C052D00822E30 /* light_birds.png in Resources */ = {isa = PBXBuildFile; fileRef = B10D26231C2C052D00822E30 /* light_birds.png */; };
+		B10D26281C2C052D00822E30 /* light_bonfire.png in Resources */ = {isa = PBXBuildFile; fileRef = B10D26241C2C052D00822E30 /* light_bonfire.png */; };
 		B1633BFA1BEFD137005FB931 /* Default-375w-667h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B1633BF41BEFD137005FB931 /* Default-375w-667h@2x.png */; };
 		B1633BFB1BEFD137005FB931 /* Default-414w-736h-Landscape@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = B1633BF51BEFD137005FB931 /* Default-414w-736h-Landscape@3x.png */; };
 		B1633BFC1BEFD137005FB931 /* Default-414w-736h@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = B1633BF61BEFD137005FB931 /* Default-414w-736h@3x.png */; };
 		B1633BFD1BEFD137005FB931 /* Default-568h@2x1.png in Resources */ = {isa = PBXBuildFile; fileRef = B1633BF71BEFD137005FB931 /* Default-568h@2x1.png */; };
 		B1633BFE1BEFD137005FB931 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = B1633BF81BEFD137005FB931 /* Default.png */; };
 		B1633BFF1BEFD137005FB931 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B1633BF91BEFD137005FB931 /* Default@2x.png */; };
-		B1633C1A1BEFD14F005FB931 /* bonfire.m4a in Resources */ = {isa = PBXBuildFile; fileRef = B1633C0C1BEFD14F005FB931 /* bonfire.m4a */; };
-		B1633C1B1BEFD14F005FB931 /* cafe.m4a in Resources */ = {isa = PBXBuildFile; fileRef = B1633C0D1BEFD14F005FB931 /* cafe.m4a */; };
-		B1633C1C1BEFD14F005FB931 /* cat_purr.m4a in Resources */ = {isa = PBXBuildFile; fileRef = B1633C0E1BEFD14F005FB931 /* cat_purr.m4a */; };
-		B1633C1D1BEFD14F005FB931 /* chimes.m4a in Resources */ = {isa = PBXBuildFile; fileRef = B1633C0F1BEFD14F005FB931 /* chimes.m4a */; };
-		B1633C1E1BEFD14F005FB931 /* fan.m4a in Resources */ = {isa = PBXBuildFile; fileRef = B1633C101BEFD14F005FB931 /* fan.m4a */; };
-		B1633C1F1BEFD14F005FB931 /* leaves.m4a in Resources */ = {isa = PBXBuildFile; fileRef = B1633C111BEFD14F005FB931 /* leaves.m4a */; };
-		B1633C201BEFD14F005FB931 /* paris_cafe.m4a in Resources */ = {isa = PBXBuildFile; fileRef = B1633C121BEFD14F005FB931 /* paris_cafe.m4a */; };
-		B1633C211BEFD14F005FB931 /* paris_street_corner.m4a in Resources */ = {isa = PBXBuildFile; fileRef = B1633C131BEFD14F005FB931 /* paris_street_corner.m4a */; };
-		B1633C221BEFD14F005FB931 /* rain.m4a in Resources */ = {isa = PBXBuildFile; fileRef = B1633C141BEFD14F005FB931 /* rain.m4a */; };
-		B1633C231BEFD14F005FB931 /* stream.m4a in Resources */ = {isa = PBXBuildFile; fileRef = B1633C151BEFD14F005FB931 /* stream.m4a */; };
-		B1633C241BEFD14F005FB931 /* thunder.m4a in Resources */ = {isa = PBXBuildFile; fileRef = B1633C161BEFD14F005FB931 /* thunder.m4a */; };
-		B1633C251BEFD14F005FB931 /* train.m4a in Resources */ = {isa = PBXBuildFile; fileRef = B1633C171BEFD14F005FB931 /* train.m4a */; };
-		B1633C261BEFD14F005FB931 /* waves.m4a in Resources */ = {isa = PBXBuildFile; fileRef = B1633C181BEFD14F005FB931 /* waves.m4a */; };
-		B1633C271BEFD14F005FB931 /* wind.m4a in Resources */ = {isa = PBXBuildFile; fileRef = B1633C191BEFD14F005FB931 /* wind.m4a */; };
 		B1633C411BEFD176005FB931 /* dark_cafe.png in Resources */ = {isa = PBXBuildFile; fileRef = B1633C281BEFD176005FB931 /* dark_cafe.png */; };
 		B1633C421BEFD176005FB931 /* dark_cat.png in Resources */ = {isa = PBXBuildFile; fileRef = B1633C291BEFD176005FB931 /* dark_cat.png */; };
 		B1633C431BEFD176005FB931 /* dark_chimes.png in Resources */ = {isa = PBXBuildFile; fileRef = B1633C2A1BEFD176005FB931 /* dark_chimes.png */; };
@@ -67,6 +57,21 @@
 		B1633C571BEFD176005FB931 /* light_water.png in Resources */ = {isa = PBXBuildFile; fileRef = B1633C3E1BEFD176005FB931 /* light_water.png */; };
 		B1633C581BEFD176005FB931 /* light_waves.png in Resources */ = {isa = PBXBuildFile; fileRef = B1633C3F1BEFD176005FB931 /* light_waves.png */; };
 		B1633C591BEFD176005FB931 /* light_wind.png in Resources */ = {isa = PBXBuildFile; fileRef = B1633C401BEFD176005FB931 /* light_wind.png */; };
+		B181423D1C32197F00CBD385 /* birds.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B181422E1C32197F00CBD385 /* birds.mp3 */; };
+		B181423E1C32197F00CBD385 /* bonfire.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B181422F1C32197F00CBD385 /* bonfire.mp3 */; };
+		B181423F1C32197F00CBD385 /* cafe.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B18142301C32197F00CBD385 /* cafe.mp3 */; };
+		B18142401C32197F00CBD385 /* cat_purr.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B18142311C32197F00CBD385 /* cat_purr.mp3 */; };
+		B18142411C32197F00CBD385 /* chimes.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B18142321C32197F00CBD385 /* chimes.mp3 */; };
+		B18142421C32197F00CBD385 /* fan.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B18142331C32197F00CBD385 /* fan.mp3 */; };
+		B18142431C32197F00CBD385 /* leaves.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B18142341C32197F00CBD385 /* leaves.mp3 */; };
+		B18142441C32197F00CBD385 /* paris_cafe.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B18142351C32197F00CBD385 /* paris_cafe.mp3 */; };
+		B18142451C32197F00CBD385 /* paris_street_corner.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B18142361C32197F00CBD385 /* paris_street_corner.mp3 */; };
+		B18142461C32197F00CBD385 /* rain.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B18142371C32197F00CBD385 /* rain.mp3 */; };
+		B18142471C32197F00CBD385 /* stream.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B18142381C32197F00CBD385 /* stream.mp3 */; };
+		B18142481C32197F00CBD385 /* thunder.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B18142391C32197F00CBD385 /* thunder.mp3 */; };
+		B18142491C32197F00CBD385 /* train.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B181423A1C32197F00CBD385 /* train.mp3 */; };
+		B181424A1C32197F00CBD385 /* waves.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B181423B1C32197F00CBD385 /* waves.mp3 */; };
+		B181424B1C32197F00CBD385 /* wind.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B181423C1C32197F00CBD385 /* wind.mp3 */; };
 		B1DB096B1BE79B9F007D292C /* libRCTMaterialKit.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B1DB096A1BE79B8C007D292C /* libRCTMaterialKit.a */; };
 		B1E52C091BDE4D1500F4D1AE /* sf-ui-display-black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B1E52BFA1BDE4D1500F4D1AE /* sf-ui-display-black.ttf */; };
 		B1E52C0A1BDE4D1500F4D1AE /* sf-ui-display-bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B1E52BFB1BDE4D1500F4D1AE /* sf-ui-display-bold.ttf */; };
@@ -197,26 +202,16 @@
 		146833FF1AC3E56700842450 /* React.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = React.xcodeproj; path = "../node_modules/react-native/React/React.xcodeproj"; sourceTree = "<group>"; };
 		78C398B01ACF4ADC00677621 /* RCTLinking.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTLinking.xcodeproj; path = "../node_modules/react-native/Libraries/LinkingIOS/RCTLinking.xcodeproj"; sourceTree = "<group>"; };
 		832341B01AAA6A8300B99B32 /* RCTText.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTText.xcodeproj; path = "../node_modules/react-native/Libraries/Text/RCTText.xcodeproj"; sourceTree = "<group>"; };
+		B10D26211C2C052D00822E30 /* dark_birds.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = dark_birds.png; path = "../node_modules/kakapo-assets/images/dark_birds.png"; sourceTree = "<group>"; };
+		B10D26221C2C052D00822E30 /* dark_bonfire.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = dark_bonfire.png; path = "../node_modules/kakapo-assets/images/dark_bonfire.png"; sourceTree = "<group>"; };
+		B10D26231C2C052D00822E30 /* light_birds.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = light_birds.png; path = "../node_modules/kakapo-assets/images/light_birds.png"; sourceTree = "<group>"; };
+		B10D26241C2C052D00822E30 /* light_bonfire.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = light_bonfire.png; path = "../node_modules/kakapo-assets/images/light_bonfire.png"; sourceTree = "<group>"; };
 		B1633BF41BEFD137005FB931 /* Default-375w-667h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default-375w-667h@2x.png"; path = "../node_modules/kakapo-assets/images/LaunchImages-assets/Default-375w-667h@2x.png"; sourceTree = "<group>"; };
 		B1633BF51BEFD137005FB931 /* Default-414w-736h-Landscape@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default-414w-736h-Landscape@3x.png"; path = "../node_modules/kakapo-assets/images/LaunchImages-assets/Default-414w-736h-Landscape@3x.png"; sourceTree = "<group>"; };
 		B1633BF61BEFD137005FB931 /* Default-414w-736h@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default-414w-736h@3x.png"; path = "../node_modules/kakapo-assets/images/LaunchImages-assets/Default-414w-736h@3x.png"; sourceTree = "<group>"; };
 		B1633BF71BEFD137005FB931 /* Default-568h@2x1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default-568h@2x1.png"; path = "../node_modules/kakapo-assets/images/LaunchImages-assets/Default-568h@2x1.png"; sourceTree = "<group>"; };
 		B1633BF81BEFD137005FB931 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Default.png; path = "../node_modules/kakapo-assets/images/LaunchImages-assets/Default.png"; sourceTree = "<group>"; };
 		B1633BF91BEFD137005FB931 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default@2x.png"; path = "../node_modules/kakapo-assets/images/LaunchImages-assets/Default@2x.png"; sourceTree = "<group>"; };
-		B1633C0C1BEFD14F005FB931 /* bonfire.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; name = bonfire.m4a; path = "../node_modules/kakapo-assets/sounds/bonfire.m4a"; sourceTree = "<group>"; };
-		B1633C0D1BEFD14F005FB931 /* cafe.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; name = cafe.m4a; path = "../node_modules/kakapo-assets/sounds/cafe.m4a"; sourceTree = "<group>"; };
-		B1633C0E1BEFD14F005FB931 /* cat_purr.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; name = cat_purr.m4a; path = "../node_modules/kakapo-assets/sounds/cat_purr.m4a"; sourceTree = "<group>"; };
-		B1633C0F1BEFD14F005FB931 /* chimes.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; name = chimes.m4a; path = "../node_modules/kakapo-assets/sounds/chimes.m4a"; sourceTree = "<group>"; };
-		B1633C101BEFD14F005FB931 /* fan.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; name = fan.m4a; path = "../node_modules/kakapo-assets/sounds/fan.m4a"; sourceTree = "<group>"; };
-		B1633C111BEFD14F005FB931 /* leaves.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; name = leaves.m4a; path = "../node_modules/kakapo-assets/sounds/leaves.m4a"; sourceTree = "<group>"; };
-		B1633C121BEFD14F005FB931 /* paris_cafe.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; name = paris_cafe.m4a; path = "../node_modules/kakapo-assets/sounds/paris_cafe.m4a"; sourceTree = "<group>"; };
-		B1633C131BEFD14F005FB931 /* paris_street_corner.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; name = paris_street_corner.m4a; path = "../node_modules/kakapo-assets/sounds/paris_street_corner.m4a"; sourceTree = "<group>"; };
-		B1633C141BEFD14F005FB931 /* rain.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; name = rain.m4a; path = "../node_modules/kakapo-assets/sounds/rain.m4a"; sourceTree = "<group>"; };
-		B1633C151BEFD14F005FB931 /* stream.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; name = stream.m4a; path = "../node_modules/kakapo-assets/sounds/stream.m4a"; sourceTree = "<group>"; };
-		B1633C161BEFD14F005FB931 /* thunder.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; name = thunder.m4a; path = "../node_modules/kakapo-assets/sounds/thunder.m4a"; sourceTree = "<group>"; };
-		B1633C171BEFD14F005FB931 /* train.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; name = train.m4a; path = "../node_modules/kakapo-assets/sounds/train.m4a"; sourceTree = "<group>"; };
-		B1633C181BEFD14F005FB931 /* waves.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; name = waves.m4a; path = "../node_modules/kakapo-assets/sounds/waves.m4a"; sourceTree = "<group>"; };
-		B1633C191BEFD14F005FB931 /* wind.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; name = wind.m4a; path = "../node_modules/kakapo-assets/sounds/wind.m4a"; sourceTree = "<group>"; };
 		B1633C281BEFD176005FB931 /* dark_cafe.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = dark_cafe.png; path = "../node_modules/kakapo-assets/images/dark_cafe.png"; sourceTree = "<group>"; };
 		B1633C291BEFD176005FB931 /* dark_cat.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = dark_cat.png; path = "../node_modules/kakapo-assets/images/dark_cat.png"; sourceTree = "<group>"; };
 		B1633C2A1BEFD176005FB931 /* dark_chimes.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = dark_chimes.png; path = "../node_modules/kakapo-assets/images/dark_chimes.png"; sourceTree = "<group>"; };
@@ -242,6 +237,21 @@
 		B1633C3E1BEFD176005FB931 /* light_water.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = light_water.png; path = "../node_modules/kakapo-assets/images/light_water.png"; sourceTree = "<group>"; };
 		B1633C3F1BEFD176005FB931 /* light_waves.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = light_waves.png; path = "../node_modules/kakapo-assets/images/light_waves.png"; sourceTree = "<group>"; };
 		B1633C401BEFD176005FB931 /* light_wind.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = light_wind.png; path = "../node_modules/kakapo-assets/images/light_wind.png"; sourceTree = "<group>"; };
+		B181422E1C32197F00CBD385 /* birds.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = birds.mp3; path = "../node_modules/kakapo-assets/sounds/birds.mp3"; sourceTree = "<group>"; };
+		B181422F1C32197F00CBD385 /* bonfire.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = bonfire.mp3; path = "../node_modules/kakapo-assets/sounds/bonfire.mp3"; sourceTree = "<group>"; };
+		B18142301C32197F00CBD385 /* cafe.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = cafe.mp3; path = "../node_modules/kakapo-assets/sounds/cafe.mp3"; sourceTree = "<group>"; };
+		B18142311C32197F00CBD385 /* cat_purr.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = cat_purr.mp3; path = "../node_modules/kakapo-assets/sounds/cat_purr.mp3"; sourceTree = "<group>"; };
+		B18142321C32197F00CBD385 /* chimes.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = chimes.mp3; path = "../node_modules/kakapo-assets/sounds/chimes.mp3"; sourceTree = "<group>"; };
+		B18142331C32197F00CBD385 /* fan.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = fan.mp3; path = "../node_modules/kakapo-assets/sounds/fan.mp3"; sourceTree = "<group>"; };
+		B18142341C32197F00CBD385 /* leaves.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = leaves.mp3; path = "../node_modules/kakapo-assets/sounds/leaves.mp3"; sourceTree = "<group>"; };
+		B18142351C32197F00CBD385 /* paris_cafe.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = paris_cafe.mp3; path = "../node_modules/kakapo-assets/sounds/paris_cafe.mp3"; sourceTree = "<group>"; };
+		B18142361C32197F00CBD385 /* paris_street_corner.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = paris_street_corner.mp3; path = "../node_modules/kakapo-assets/sounds/paris_street_corner.mp3"; sourceTree = "<group>"; };
+		B18142371C32197F00CBD385 /* rain.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = rain.mp3; path = "../node_modules/kakapo-assets/sounds/rain.mp3"; sourceTree = "<group>"; };
+		B18142381C32197F00CBD385 /* stream.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = stream.mp3; path = "../node_modules/kakapo-assets/sounds/stream.mp3"; sourceTree = "<group>"; };
+		B18142391C32197F00CBD385 /* thunder.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = thunder.mp3; path = "../node_modules/kakapo-assets/sounds/thunder.mp3"; sourceTree = "<group>"; };
+		B181423A1C32197F00CBD385 /* train.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = train.mp3; path = "../node_modules/kakapo-assets/sounds/train.mp3"; sourceTree = "<group>"; };
+		B181423B1C32197F00CBD385 /* waves.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = waves.mp3; path = "../node_modules/kakapo-assets/sounds/waves.mp3"; sourceTree = "<group>"; };
+		B181423C1C32197F00CBD385 /* wind.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = wind.mp3; path = "../node_modules/kakapo-assets/sounds/wind.mp3"; sourceTree = "<group>"; };
 		B1DB09651BE79B8C007D292C /* RCTMaterialKit.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTMaterialKit.xcodeproj; path = "../node_modules/react-native-material-kit/iOS/RCTMaterialKit.xcodeproj"; sourceTree = "<group>"; };
 		B1E52BFA1BDE4D1500F4D1AE /* sf-ui-display-black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "sf-ui-display-black.ttf"; path = "../src/fonts/sf-ui/sf-ui-display-black.ttf"; sourceTree = "<group>"; };
 		B1E52BFB1BDE4D1500F4D1AE /* sf-ui-display-bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "sf-ui-display-bold.ttf"; path = "../src/fonts/sf-ui/sf-ui-display-bold.ttf"; sourceTree = "<group>"; };
@@ -481,20 +491,21 @@
 		B1E52C281BDE508100F4D1AE /* sounds */ = {
 			isa = PBXGroup;
 			children = (
-				B1633C0C1BEFD14F005FB931 /* bonfire.m4a */,
-				B1633C0D1BEFD14F005FB931 /* cafe.m4a */,
-				B1633C0E1BEFD14F005FB931 /* cat_purr.m4a */,
-				B1633C0F1BEFD14F005FB931 /* chimes.m4a */,
-				B1633C101BEFD14F005FB931 /* fan.m4a */,
-				B1633C111BEFD14F005FB931 /* leaves.m4a */,
-				B1633C121BEFD14F005FB931 /* paris_cafe.m4a */,
-				B1633C131BEFD14F005FB931 /* paris_street_corner.m4a */,
-				B1633C141BEFD14F005FB931 /* rain.m4a */,
-				B1633C151BEFD14F005FB931 /* stream.m4a */,
-				B1633C161BEFD14F005FB931 /* thunder.m4a */,
-				B1633C171BEFD14F005FB931 /* train.m4a */,
-				B1633C181BEFD14F005FB931 /* waves.m4a */,
-				B1633C191BEFD14F005FB931 /* wind.m4a */,
+				B181422E1C32197F00CBD385 /* birds.mp3 */,
+				B181422F1C32197F00CBD385 /* bonfire.mp3 */,
+				B18142301C32197F00CBD385 /* cafe.mp3 */,
+				B18142311C32197F00CBD385 /* cat_purr.mp3 */,
+				B18142321C32197F00CBD385 /* chimes.mp3 */,
+				B18142331C32197F00CBD385 /* fan.mp3 */,
+				B18142341C32197F00CBD385 /* leaves.mp3 */,
+				B18142351C32197F00CBD385 /* paris_cafe.mp3 */,
+				B18142361C32197F00CBD385 /* paris_street_corner.mp3 */,
+				B18142371C32197F00CBD385 /* rain.mp3 */,
+				B18142381C32197F00CBD385 /* stream.mp3 */,
+				B18142391C32197F00CBD385 /* thunder.mp3 */,
+				B181423A1C32197F00CBD385 /* train.mp3 */,
+				B181423B1C32197F00CBD385 /* waves.mp3 */,
+				B181423C1C32197F00CBD385 /* wind.mp3 */,
 			);
 			name = sounds;
 			sourceTree = "<group>";
@@ -502,6 +513,10 @@
 		B1E52C451BDE567C00F4D1AE /* icons */ = {
 			isa = PBXGroup;
 			children = (
+				B10D26211C2C052D00822E30 /* dark_birds.png */,
+				B10D26221C2C052D00822E30 /* dark_bonfire.png */,
+				B10D26231C2C052D00822E30 /* light_birds.png */,
+				B10D26241C2C052D00822E30 /* light_bonfire.png */,
 				B1633C281BEFD176005FB931 /* dark_cafe.png */,
 				B1633C291BEFD176005FB931 /* dark_cat.png */,
 				B1633C2A1BEFD176005FB931 /* dark_chimes.png */,
@@ -740,26 +755,25 @@
 			buildActionMask = 2147483647;
 			files = (
 				B1E52C801BDE592C00F4D1AE /* Material-Design-Iconic-Font.ttf in Resources */,
+				B10D26271C2C052D00822E30 /* light_birds.png in Resources */,
 				B1633C4E1BEFD176005FB931 /* light_cafe.png in Resources */,
-				B1633C1D1BEFD14F005FB931 /* chimes.m4a in Resources */,
 				B1633C431BEFD176005FB931 /* dark_chimes.png in Resources */,
 				B1E52C111BDE4D1500F4D1AE /* sf-ui-display-ultralight.ttf in Resources */,
-				B1633C211BEFD14F005FB931 /* paris_street_corner.m4a in Resources */,
 				B1633C531BEFD176005FB931 /* light_paris.png in Resources */,
 				B1E52C091BDE4D1500F4D1AE /* sf-ui-display-black.ttf in Resources */,
-				B1633C1E1BEFD14F005FB931 /* fan.m4a in Resources */,
 				B1633C4A1BEFD176005FB931 /* dark_water.png in Resources */,
 				B1633C541BEFD176005FB931 /* light_rain.png in Resources */,
 				B1E52C101BDE4D1500F4D1AE /* sf-ui-display-thin.ttf in Resources */,
 				B1633BFF1BEFD137005FB931 /* Default@2x.png in Resources */,
+				B18142451C32197F00CBD385 /* paris_street_corner.mp3 in Resources */,
 				B1633BFE1BEFD137005FB931 /* Default.png in Resources */,
 				B1E52C0F1BDE4D1500F4D1AE /* sf-ui-display-semibold.ttf in Resources */,
 				B1E52C0D1BDE4D1500F4D1AE /* sf-ui-display-medium.ttf in Resources */,
-				B1633C241BEFD14F005FB931 /* thunder.m4a in Resources */,
 				B1633C4F1BEFD176005FB931 /* light_cat.png in Resources */,
-				B1633C261BEFD14F005FB931 /* waves.m4a in Resources */,
 				B1633C421BEFD176005FB931 /* dark_cat.png in Resources */,
 				B1E52C151BDE4D1500F4D1AE /* sf-ui-text-medium.ttf in Resources */,
+				B181423F1C32197F00CBD385 /* cafe.mp3 in Resources */,
+				B10D26281C2C052D00822E30 /* light_bonfire.png in Resources */,
 				B1633C491BEFD176005FB931 /* dark_train.png in Resources */,
 				B1633C481BEFD176005FB931 /* dark_thunder.png in Resources */,
 				B1E52C0C1BDE4D1500F4D1AE /* sf-ui-display-light.ttf in Resources */,
@@ -767,41 +781,47 @@
 				B1E52C141BDE4D1500F4D1AE /* sf-ui-text-light.ttf in Resources */,
 				B1633C461BEFD176005FB931 /* dark_paris.png in Resources */,
 				B1E52C131BDE4D1500F4D1AE /* sf-ui-text-heavy.ttf in Resources */,
-				B1633C201BEFD14F005FB931 /* paris_cafe.m4a in Resources */,
 				B1633C4D1BEFD176005FB931 /* kakapo.png in Resources */,
 				B1633C441BEFD176005FB931 /* dark_fan.png in Resources */,
-				B1633C1B1BEFD14F005FB931 /* cafe.m4a in Resources */,
+				B18142481C32197F00CBD385 /* thunder.mp3 in Resources */,
 				B1E52C171BDE4D1500F4D1AE /* sf-ui-text-semibold.ttf in Resources */,
 				008F07F31AC5B25A0029DE68 /* main.jsbundle in Resources */,
 				B1E52C0A1BDE4D1500F4D1AE /* sf-ui-display-bold.ttf in Resources */,
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
+				B18142401C32197F00CBD385 /* cat_purr.mp3 in Resources */,
+				B10D26261C2C052D00822E30 /* dark_bonfire.png in Resources */,
 				B1633BFB1BEFD137005FB931 /* Default-414w-736h-Landscape@3x.png in Resources */,
+				B181423D1C32197F00CBD385 /* birds.mp3 in Resources */,
 				B1633C411BEFD176005FB931 /* dark_cafe.png in Resources */,
 				B1E52C0B1BDE4D1500F4D1AE /* sf-ui-display-heavy.ttf in Resources */,
+				B18142431C32197F00CBD385 /* leaves.mp3 in Resources */,
+				B181424B1C32197F00CBD385 /* wind.mp3 in Resources */,
 				B1633BFA1BEFD137005FB931 /* Default-375w-667h@2x.png in Resources */,
-				B1633C271BEFD14F005FB931 /* wind.m4a in Resources */,
 				B1E52C121BDE4D1500F4D1AE /* sf-ui-text-bold.ttf in Resources */,
 				B1633C591BEFD176005FB931 /* light_wind.png in Resources */,
 				B1633C581BEFD176005FB931 /* light_waves.png in Resources */,
-				B1633C1A1BEFD14F005FB931 /* bonfire.m4a in Resources */,
-				B1633C1F1BEFD14F005FB931 /* leaves.m4a in Resources */,
 				B1633C4C1BEFD176005FB931 /* dark_wind.png in Resources */,
 				B1633C501BEFD176005FB931 /* light_chimes.png in Resources */,
 				13B07FBD1A68108700A75B9A /* LaunchScreen.xib in Resources */,
 				B1633BFC1BEFD137005FB931 /* Default-414w-736h@3x.png in Resources */,
-				B1633C251BEFD14F005FB931 /* train.m4a in Resources */,
+				B18142461C32197F00CBD385 /* rain.mp3 in Resources */,
+				B18142491C32197F00CBD385 /* train.mp3 in Resources */,
 				B1633C521BEFD176005FB931 /* light_leaves.png in Resources */,
+				B18142411C32197F00CBD385 /* chimes.mp3 in Resources */,
 				B1633C551BEFD176005FB931 /* light_thunder.png in Resources */,
-				B1633C221BEFD14F005FB931 /* rain.m4a in Resources */,
 				B1633C4B1BEFD176005FB931 /* dark_waves.png in Resources */,
+				B10D26251C2C052D00822E30 /* dark_birds.png in Resources */,
 				B1633BFD1BEFD137005FB931 /* Default-568h@2x1.png in Resources */,
+				B181424A1C32197F00CBD385 /* waves.mp3 in Resources */,
 				B1E52C161BDE4D1500F4D1AE /* sf-ui-text-regular.ttf in Resources */,
 				B1633C471BEFD176005FB931 /* dark_rain.png in Resources */,
+				B18142421C32197F00CBD385 /* fan.mp3 in Resources */,
+				B18142471C32197F00CBD385 /* stream.mp3 in Resources */,
 				B1E52C0E1BDE4D1500F4D1AE /* sf-ui-display-regular.ttf in Resources */,
+				B18142441C32197F00CBD385 /* paris_cafe.mp3 in Resources */,
 				B1633C511BEFD176005FB931 /* light_fan.png in Resources */,
-				B1633C1C1BEFD14F005FB931 /* cat_purr.m4a in Resources */,
-				B1633C231BEFD14F005FB931 /* stream.m4a in Resources */,
 				B1633C561BEFD176005FB931 /* light_train.png in Resources */,
+				B181423E1C32197F00CBD385 /* bonfire.mp3 in Resources */,
 				B1633C451BEFD176005FB931 /* dark_leaves.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

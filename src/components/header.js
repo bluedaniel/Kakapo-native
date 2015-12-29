@@ -1,53 +1,44 @@
-import React from "react-native";
-import Reflux from "reflux";
-import {Icon} from "react-native-icons";
-import {Settings, Sounds} from "../stores";
-import {settingActions, soundActions} from "../actions";
+import React, { Component, TouchableOpacity, Image, StyleSheet, Text, View, Platform } from 'react-native';
+import { bindActionCreators } from 'redux';
+import { connect } from 'react-redux/native';
+import { Icon } from 'react-native-icons';
+import { settingActions, soundActions } from '../actions';
 
-const {TouchableOpacity, Image, StyleSheet, Text, View, Platform} = React;
-
-export default React.createClass({
-  mixins: [Reflux.connect(Settings, "settings"), Reflux.connect(Sounds, "sounds")],
-  renderIconMultiple() {
-    let multiToggle = Sounds.getMultipleStatus();
-    return (
-      <TouchableOpacity onPress={soundActions.toggleMultiple}>
-        <Icon
-          name={"material|" + (multiToggle === 2 ? "play" : "pause")}
-          size={30}
-          color="#fff"
-          style={[styles.multiple, !multiToggle && styles.multipleHide]}
-        />
-      </TouchableOpacity>
-    );
-  },
+class Header extends Component {
   render() {
     return (
-      <View style={[styles.header, {backgroundColor: this.state.settings.color}]}>
+      <View style={[ styles.header, this.props.themes.getIn([ 'nav', 'navbar' ]).toJS() ]}>
         <TouchableOpacity onPress={this.props.toggleMenu}>
           <Icon
             name="material|menu"
             size={30}
             color="#fff"
-            style={[styles.menu, this.state.settings.menu && styles.menuActive]}
+            style={[ styles.menu, this.props.themes.getIn([ 'nav', 'tab' ]).toJS() && styles.menuActive ]}
           />
         </TouchableOpacity>
         <View style={styles.title}>
-          <Image style={styles.logo} source={require("kakapo-assets/images/kakapo.png")}/>
+          <Image style={styles.logo} source={require('kakapo-assets/images/kakapo.png')}/>
           <Text style={styles.headerText}>{this.props.title}</Text>
         </View>
-        {this.renderIconMultiple()}
+        <TouchableOpacity onPress={this.props.soundActions.soundsToggleAll}>
+          <Icon
+            name={'material|stop'}
+            size={30}
+            color="#fff"
+            style={[ styles.multiple, !this.props.sounds.filter(_s => _s.playing).count() && styles.multipleHide ]}
+          />
+        </TouchableOpacity>
       </View>
     );
   }
-});
+}
 
 const styles = StyleSheet.create({
   header: {
-    alignItems: "center",
-    flexDirection: "row",
-    height: Platform.OS === "ios" ? 80 : 55,
-    paddingTop: Platform.OS === "ios" ? 25 : 0
+    alignItems: 'center',
+    flexDirection: 'row',
+    height: Platform.OS === 'ios' ? 80 : 55,
+    paddingTop: Platform.OS === 'ios' ? 25 : 0
   },
   menu: {
     height: 30,
@@ -64,8 +55,8 @@ const styles = StyleSheet.create({
   },
   title: {
     flex: 1,
-    flexDirection: "row",
-    justifyContent: "center"
+    flexDirection: 'row',
+    justifyContent: 'center'
   },
   logo: {
     height: 38,
@@ -73,9 +64,22 @@ const styles = StyleSheet.create({
     width: 38
   },
   headerText: {
-    alignSelf: "center",
-    color: "white",
+    alignSelf: 'center',
+    color: 'white',
     fontSize: 20,
-    fontWeight: "bold"
+    fontWeight: 'bold'
   }
 });
+
+const mapStateToProps = state => ({
+  themes: state.themes,
+  settings: state.settings,
+  sounds: state.sounds
+});
+
+const mapDispatchToProps = dispatch => ({
+  settingActions: bindActionCreators(settingActions, dispatch),
+  soundActions: bindActionCreators(soundActions, dispatch)
+});
+
+export default connect(mapStateToProps, mapDispatchToProps)(Header);

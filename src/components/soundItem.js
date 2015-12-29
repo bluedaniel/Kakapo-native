@@ -1,12 +1,10 @@
-import React from "react-native";
-import Reflux from "reflux";
-import throttle from "lodash/function/throttle";
-import Color from "color";
-import {MKColor, mdl, setTheme} from "react-native-material-kit";
-import {soundActions} from "../actions";
-import {Settings} from "../stores";
-
-const {TouchableOpacity, SliderIOS, Image, StyleSheet, Text, View} = React;
+import React, { Component, TouchableOpacity, Image, StyleSheet, Text, View } from 'react-native';
+import { bindActionCreators } from 'redux';
+import { connect } from 'react-redux/native';
+import throttle from 'lodash/function/throttle';
+import Color from 'color';
+import { mdl } from 'react-native-material-kit';
+import { soundActions, settingActions } from '../actions';
 
 const SliderWithValue = mdl.Slider.slider()
   .withStyle({
@@ -19,51 +17,58 @@ const SliderWithValue = mdl.Slider.slider()
   .withMax(1)
   .build();
 
-export default React.createClass({
-  mixins: [Reflux.connect(Settings, "settings")],
+class SoundItem extends Component {
   componentDidUpdate() {
-    this.refs.sliderWithValue.value = this.props.volume;
-  },
+    this.updateVolumeTrack();
+  }
+
+  componentDidMount() {
+    this.updateVolumeTrack();
+  }
+
   componentWillMount() {
     this.changeVolumeThrottled = throttle(this.changeVolume, 200);
-  },
-  togglePlay() {
-    soundActions.togglePlayPause(this.props, true);
-  },
-  changeVolume(vol, trigger) {
-    soundActions.changeVolume(this.props, vol, trigger);
-  },
+  }
+
+  togglePlay = () => {
+    this.props.soundActions.soundsPlay(this.props);
+  }
+
+  changeVolume = (vol) => this.props.soundActions.soundsVolume(this.props, vol);
+
+  updateVolumeTrack = () => this.refs.sliderWithValue.value = this.props.volume;
+
   render() {
     return (
-      <View style={[styles.container, this.props.playing && {backgroundColor: Color(this.state.settings.color).lighten(0.15).hexString()}]}>
+      <View style={[ styles.container, this.props.playing && { backgroundColor: Color(this.props.themes.get('palette').first()).lighten(0.15).hexString() } ]}>
         <TouchableOpacity onPress={this.togglePlay}>
-          <Image style={styles.img} source={{ uri: (this.props.playing ? "light" : "dark") + `_${this.props.img}`, isStatic: true }}/>
+          <Image style={styles.img} source={{ uri: (this.props.playing ? 'light' : 'dark') + `_${this.props.img}`, isStatic: true }}/>
         </TouchableOpacity>
         <View style={styles.rightContainer}>
           <TouchableOpacity onPress={this.togglePlay}>
-          <Text style={[styles.title, this.props.playing && styles.titlePlaying]}>
+          <Text style={[ styles.title, this.props.playing && styles.titlePlaying ]}>
             {this.props.name}
           </Text>
           </TouchableOpacity>
           <SliderWithValue
             ref="sliderWithValue"
-            upperTrackColor={this.props.playing ? "#fff" : "#f9f9f9"}
-            lowerTrackColor={this.props.playing ? "#fff" : "#f9f9f9"}
-            onChange={vol => this.changeVolumeThrottled(vol, false)}
+            upperTrackColor={this.props.playing ? '#fff' : '#f9f9f9'}
+            lowerTrackColor={this.props.playing ? '#fff' : '#f9f9f9'}
+            onChange={vol => this.changeVolumeThrottled(vol)}
             trackSize={4}
           />
         </View>
       </View>
     );
   }
-});
+}
 
 const styles = StyleSheet.create({
   container: {
-    alignItems: "center",
-    backgroundColor: "#fff",
-    flexDirection: "row",
-    justifyContent: "flex-start"
+    alignItems: 'center',
+    backgroundColor: '#fff',
+    flexDirection: 'row',
+    justifyContent: 'flex-start'
   },
   img: {
     width: 48,
@@ -74,13 +79,25 @@ const styles = StyleSheet.create({
     flex: 1
   },
   title: {
-    fontFamily: "SFUIText-Regular",
+    fontFamily: 'SFUIText-Regular',
     fontSize: 18,
     marginLeft: 14,
-    textAlign: "left",
+    textAlign: 'left',
     marginTop: 6
   },
   titlePlaying: {
-    color: "#fff"
+    color: '#fff'
   }
 });
+
+const mapStateToProps = state => ({
+  themes: state.themes,
+  settings: state.settings
+});
+
+const mapDispatchToProps = dispatch => ({
+  soundActions: bindActionCreators(soundActions, dispatch),
+  settingActions: bindActionCreators(settingActions, dispatch)
+});
+
+export default connect(mapStateToProps, mapDispatchToProps)(SoundItem);

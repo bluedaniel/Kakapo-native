@@ -1,10 +1,6 @@
-import proc from "child_process";
-import fs from "fs-extra";
-import task from "./lib/task";
+import fs from 'fs-extra';
 
-export default task("copy", async () => {
-  await Promise.all([
-    fs.copySync("node_modules/kakapo-assets/images", "android/app/src/main/res/drawable-mdpi"),
-    fs.copySync("node_modules/kakapo-assets/sounds", "android/app/src/main/res/raw")
-  ]);
-});
+export default async function copy() {
+  await fs.copy('node_modules/kakapo-assets/images', 'android/app/src/main/res/drawable-mdpi', {});
+  await fs.copy('node_modules/kakapo-assets/sounds', 'android/app/src/main/res/raw', {});
+}

@@ -29,7 +29,7 @@ class AudioModule: NSObject {
   @objc func setSound(sound: String, vol: NSNumber) {
     if soundArr[sound] === nil {
       do {
-        let soundObj = try AVAudioPlayer(contentsOfURL: NSBundle.mainBundle().URLForResource(sound, withExtension: "m4a")!)
+        let soundObj = try AVAudioPlayer(contentsOfURL: NSBundle.mainBundle().URLForResource(sound, withExtension: "mp3")!)
         soundArr.updateValue(soundObj, forKey: sound)
         soundArr[sound]!.prepareToPlay()
         soundArr[sound]!.volume = Float(vol) / 100

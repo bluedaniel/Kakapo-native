@@ -1,26 +1,29 @@
-import React from "react-native";
-import Reflux from "reflux";
-import Loading from "./loading";
-import SoundItem from "./soundItem";
-import {Sounds} from "../stores";
+import React, { Component, ListView } from 'react-native';
+import { connect } from 'react-redux/native';
+import Loading from './loading';
+import SoundItem from './soundItem';
 
-const {ListView, View} = React;
+const ds = new ListView.DataSource({
+  rowHasChanged: (r1, r2) => r1 !== r2
+});
 
-export default React.createClass({
-  mixins: [Reflux.connect(Sounds, "sounds")],
-  componentDidMount() {
-    Sounds.getSounds();
-  },
-  getInitialState() {
-    return { loaded: true };
-  },
+class SoundList extends Component {
+  state = { loaded: true }
+
   renderList() {
-    return <ListView
-      dataSource={this.state.sounds}
+    return (<ListView
+      dataSource={ds.cloneWithRows(this.props.sounds.toArray())}
       renderRow={sound => <SoundItem {...sound}/>}
-    />
-  },
+    />);
+  }
+
   render() {
     return this.state.loaded ? this.renderList() : <Loading loaded={this.props.loaded}/>;
   }
+}
+
+const mapStateToProps = state => ({
+  sounds: state.sounds
 });
+
+export default connect(mapStateToProps)(SoundList);

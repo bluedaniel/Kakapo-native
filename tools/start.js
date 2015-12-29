@@ -1,20 +1,16 @@
-/**
-* Usage:
-* `$ npm run start` for iOS
-* `$ npm run start android` for Android
-*/
-import proc from "child_process";
-import task from "./lib/task";
+import { argv } from 'yargs';
+import proc from 'child_process';
+import run from './run';
 
-export default task("start", async () => {
-  await require("./clean")();
-  await require("./copy")();
+export default async function start() {
+  await run(require('./clean'));
+  await run(require('./copy'));
 
-  if (process.argv.slice(2)[2] === "android") {
-    proc.spawn("react-native" , ["run-android"])
-      .stdout.on("data", data => console.log(data.toString()));
+  if (argv.platform === 'android') {
+    proc.spawn('react-native' , [ 'run-android' ])
+      .stdout.on('data', data => console.log(data.toString()));
   } else {
-    proc.spawn("node_modules/react-native/packager/packager.sh")
-      .stdout.on("data", data => console.log(data.toString()));
+    proc.spawn('node_modules/react-native/packager/packager.sh')
+      .stdout.on('data', data => console.log(data.toString()));
   }
-});
+}

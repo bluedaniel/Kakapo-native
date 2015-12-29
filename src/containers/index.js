@@ -1,5 +1,1 @@
-import App from "./app";
-
-export default Modules = {
-  App: App
-}
+export { default as App } from './app';
