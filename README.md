@@ -16,7 +16,7 @@ It's built using:
 - [Babel 6](https://github.com/babel/babel) - Tooling.
 - [RxJS](https://github.com/Reactive-Extensions/RxJS) - State changes use observables.
 
-<img src="https://raw.githubusercontent.com/bluedaniel/Kakapo-assets/master/images/screenshots/web_app.jpg" />
+<img src="https://raw.githubusercontent.com/bluedaniel/Kakapo-assets/master/images/screenshots/iphone.png" />
 
 ## Install and run
 
