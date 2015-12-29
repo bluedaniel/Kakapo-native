@@ -6,23 +6,37 @@ Kakapo native is an ambient sound mixer for relaxation or productivity. Built wi
 
 [Download for Android](https://play.google.com/store/apps/details?id=com.kakaponative).
 
-See also: [Kakapo for Web](https://github.com/bluedaniel/Kakapo-web) - [Kakapo for Desktop](https://github.com/bluedaniel/Kakapo-app) - [Kakapo for Chrome](https://github.com/bluedaniel/Kakapo-chrome).
+See also: [Kakapo for Desktop & Web](https://github.com/bluedaniel/Kakapo-app) - [Kakapo for Chrome](https://github.com/bluedaniel/Kakapo-chrome).
 
-This repo differs from the others as it is built using [React Native](https://facebook.github.io/react-native/) and has some limitations due to rules/hardware/software so it is a somewhat slimmed down version although being a native app it also has some nice advantages.
+It's built using:
 
-- Still achieves the same look and design.
-- Performance is very smooth and it also works offline.
-- Integrates JavaScript, Objective C & Swift.
-- Still able to use [Reflux](https://github.com/reflux/refluxjs) and store/fetch the data with promises.
-- Deployment to the app store is very easy.
+- [React Native](https://github.com/facebook/react) - UI & view components
+- [Redux](https://github.com/rackt/redux) - State management.
+- [ImmutableJs](https://github.com/facebook/immutable-js) - All stores uses immutable maps/lists.
+- [Babel 6](https://github.com/babel/babel) - Tooling.
+- [RxJS](https://github.com/Reactive-Extensions/RxJS) - State changes use observables.
 
-<img src="https://raw.githubusercontent.com/bluedaniel/Kakapo-assets/master/images/screenshots/iphone.png" width="425" height="690" />
+<img src="https://raw.githubusercontent.com/bluedaniel/Kakapo-assets/master/images/screenshots/web_app.jpg" />
 
-## Bugs and Feature Requests
+## Install and run
 
-Have a bug or a feature request? [Please open a new issue here](https://github.com/bluedaniel/Kakapo-native/issues/new).
+``` bash
+# Clone
+$ git clone https://github.com/bluedaniel/Kakapo-native.git
+
+# Install
+$ cd Kakapo-native && npm install
+
+# Run iOS
+$ npm start
+
+# Run Android
+$ npm start -- --platform=android
+```
 
 ## Contribute
 You are most welcome to do with this repo what you will :smile:.
 
-It would be cool to have the app translated into other languages but any types of contribution, be it ideas, bug fixes, fixing typos, will be appreciated !
+## Bugs and Feature Requests
+
+Have a bug or a feature request? [Please open a new issue here](https://github.com/bluedaniel/Kakapo-native/issues/new).
