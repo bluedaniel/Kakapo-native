@@ -22,6 +22,38 @@
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
 		146834051AC3E58100842450 /* libReact.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 146834041AC3E56700842450 /* libReact.a */; };
 		832341BD1AAA6AB300B99B32 /* libRCTText.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 832341B51AAA6A8300B99B32 /* libRCTText.a */; };
+		B17E2FDC1CB19E2E005097C2 /* AudioModule.m in Sources */ = {isa = PBXBuildFile; fileRef = B17E2FDA1CB19E2E005097C2 /* AudioModule.m */; };
+		B17E2FDD1CB19E2E005097C2 /* AudioModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = B17E2FDB1CB19E2E005097C2 /* AudioModule.swift */; };
+		B17E2FFA1CB1A1AF005097C2 /* sf-ui-display-black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B17E2FEB1CB1A1AF005097C2 /* sf-ui-display-black.ttf */; };
+		B17E2FFB1CB1A1AF005097C2 /* sf-ui-display-bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B17E2FEC1CB1A1AF005097C2 /* sf-ui-display-bold.ttf */; };
+		B17E2FFC1CB1A1AF005097C2 /* sf-ui-display-heavy.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B17E2FED1CB1A1AF005097C2 /* sf-ui-display-heavy.ttf */; };
+		B17E2FFD1CB1A1AF005097C2 /* sf-ui-display-light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B17E2FEE1CB1A1AF005097C2 /* sf-ui-display-light.ttf */; };
+		B17E2FFE1CB1A1AF005097C2 /* sf-ui-display-medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B17E2FEF1CB1A1AF005097C2 /* sf-ui-display-medium.ttf */; };
+		B17E2FFF1CB1A1AF005097C2 /* sf-ui-display-regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B17E2FF01CB1A1AF005097C2 /* sf-ui-display-regular.ttf */; };
+		B17E30001CB1A1AF005097C2 /* sf-ui-display-semibold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B17E2FF11CB1A1AF005097C2 /* sf-ui-display-semibold.ttf */; };
+		B17E30011CB1A1AF005097C2 /* sf-ui-display-thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B17E2FF21CB1A1AF005097C2 /* sf-ui-display-thin.ttf */; };
+		B17E30021CB1A1AF005097C2 /* sf-ui-display-ultralight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B17E2FF31CB1A1AF005097C2 /* sf-ui-display-ultralight.ttf */; };
+		B17E30031CB1A1AF005097C2 /* sf-ui-text-bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B17E2FF41CB1A1AF005097C2 /* sf-ui-text-bold.ttf */; };
+		B17E30041CB1A1AF005097C2 /* sf-ui-text-heavy.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B17E2FF51CB1A1AF005097C2 /* sf-ui-text-heavy.ttf */; };
+		B17E30051CB1A1AF005097C2 /* sf-ui-text-light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B17E2FF61CB1A1AF005097C2 /* sf-ui-text-light.ttf */; };
+		B17E30061CB1A1AF005097C2 /* sf-ui-text-medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B17E2FF71CB1A1AF005097C2 /* sf-ui-text-medium.ttf */; };
+		B17E30071CB1A1AF005097C2 /* sf-ui-text-regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B17E2FF81CB1A1AF005097C2 /* sf-ui-text-regular.ttf */; };
+		B17E30081CB1A1AF005097C2 /* sf-ui-text-semibold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B17E2FF91CB1A1AF005097C2 /* sf-ui-text-semibold.ttf */; };
+		B17E30191CB1A1CA005097C2 /* birds.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B17E300A1CB1A1CA005097C2 /* birds.mp3 */; };
+		B17E301A1CB1A1CA005097C2 /* bonfire.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B17E300B1CB1A1CA005097C2 /* bonfire.mp3 */; };
+		B17E301B1CB1A1CA005097C2 /* cafe.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B17E300C1CB1A1CA005097C2 /* cafe.mp3 */; };
+		B17E301C1CB1A1CA005097C2 /* cat_purr.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B17E300D1CB1A1CA005097C2 /* cat_purr.mp3 */; };
+		B17E301D1CB1A1CA005097C2 /* chimes.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B17E300E1CB1A1CA005097C2 /* chimes.mp3 */; };
+		B17E301E1CB1A1CA005097C2 /* fan.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B17E300F1CB1A1CA005097C2 /* fan.mp3 */; };
+		B17E301F1CB1A1CA005097C2 /* leaves.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B17E30101CB1A1CA005097C2 /* leaves.mp3 */; };
+		B17E30201CB1A1CA005097C2 /* paris_cafe.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B17E30111CB1A1CA005097C2 /* paris_cafe.mp3 */; };
+		B17E30211CB1A1CA005097C2 /* paris_street_corner.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B17E30121CB1A1CA005097C2 /* paris_street_corner.mp3 */; };
+		B17E30221CB1A1CA005097C2 /* rain.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B17E30131CB1A1CA005097C2 /* rain.mp3 */; };
+		B17E30231CB1A1CA005097C2 /* stream.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B17E30141CB1A1CA005097C2 /* stream.mp3 */; };
+		B17E30241CB1A1CA005097C2 /* thunder.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B17E30151CB1A1CA005097C2 /* thunder.mp3 */; };
+		B17E30251CB1A1CA005097C2 /* train.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B17E30161CB1A1CA005097C2 /* train.mp3 */; };
+		B17E30261CB1A1CA005097C2 /* waves.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B17E30171CB1A1CA005097C2 /* waves.mp3 */; };
+		B17E30271CB1A1CA005097C2 /* wind.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B17E30181CB1A1CA005097C2 /* wind.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -105,17 +137,17 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		008F07F21AC5B25A0029DE68 /* main.jsbundle */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = main.jsbundle; path = main.jsbundle; sourceTree = "<group>"; };
-		00C302A71ABCB8CE00DB3ED1 /* RCTActionSheet.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTActionSheet.xcodeproj; path = ../node_modules/react-native/Libraries/ActionSheetIOS/RCTActionSheet.xcodeproj; sourceTree = "<group>"; };
-		00C302B51ABCB90400DB3ED1 /* RCTGeolocation.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTGeolocation.xcodeproj; path = ../node_modules/react-native/Libraries/Geolocation/RCTGeolocation.xcodeproj; sourceTree = "<group>"; };
-		00C302BB1ABCB91800DB3ED1 /* RCTImage.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTImage.xcodeproj; path = ../node_modules/react-native/Libraries/Image/RCTImage.xcodeproj; sourceTree = "<group>"; };
-		00C302D31ABCB9D200DB3ED1 /* RCTNetwork.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTNetwork.xcodeproj; path = ../node_modules/react-native/Libraries/Network/RCTNetwork.xcodeproj; sourceTree = "<group>"; };
-		00C302DF1ABCB9EE00DB3ED1 /* RCTVibration.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTVibration.xcodeproj; path = ../node_modules/react-native/Libraries/Vibration/RCTVibration.xcodeproj; sourceTree = "<group>"; };
+		008F07F21AC5B25A0029DE68 /* main.jsbundle */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = main.jsbundle; sourceTree = "<group>"; };
+		00C302A71ABCB8CE00DB3ED1 /* RCTActionSheet.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTActionSheet.xcodeproj; path = "../node_modules/react-native/Libraries/ActionSheetIOS/RCTActionSheet.xcodeproj"; sourceTree = "<group>"; };
+		00C302B51ABCB90400DB3ED1 /* RCTGeolocation.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTGeolocation.xcodeproj; path = "../node_modules/react-native/Libraries/Geolocation/RCTGeolocation.xcodeproj"; sourceTree = "<group>"; };
+		00C302BB1ABCB91800DB3ED1 /* RCTImage.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTImage.xcodeproj; path = "../node_modules/react-native/Libraries/Image/RCTImage.xcodeproj"; sourceTree = "<group>"; };
+		00C302D31ABCB9D200DB3ED1 /* RCTNetwork.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTNetwork.xcodeproj; path = "../node_modules/react-native/Libraries/Network/RCTNetwork.xcodeproj"; sourceTree = "<group>"; };
+		00C302DF1ABCB9EE00DB3ED1 /* RCTVibration.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTVibration.xcodeproj; path = "../node_modules/react-native/Libraries/Vibration/RCTVibration.xcodeproj"; sourceTree = "<group>"; };
 		00E356EE1AD99517003FC87E /* KakapoNativeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KakapoNativeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		00E356F11AD99517003FC87E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		00E356F21AD99517003FC87E /* KakapoNativeTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KakapoNativeTests.m; sourceTree = "<group>"; };
-		139105B61AF99BAD00B5F7CC /* RCTSettings.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTSettings.xcodeproj; path = ../node_modules/react-native/Libraries/Settings/RCTSettings.xcodeproj; sourceTree = "<group>"; };
-		139FDEE61B06529A00C62182 /* RCTWebSocket.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTWebSocket.xcodeproj; path = ../node_modules/react-native/Libraries/WebSocket/RCTWebSocket.xcodeproj; sourceTree = "<group>"; };
+		139105B61AF99BAD00B5F7CC /* RCTSettings.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTSettings.xcodeproj; path = "../node_modules/react-native/Libraries/Settings/RCTSettings.xcodeproj"; sourceTree = "<group>"; };
+		139FDEE61B06529A00C62182 /* RCTWebSocket.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTWebSocket.xcodeproj; path = "../node_modules/react-native/Libraries/WebSocket/RCTWebSocket.xcodeproj"; sourceTree = "<group>"; };
 		13B07F961A680F5B00A75B9A /* KakapoNative.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KakapoNative.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		13B07FAF1A68108700A75B9A /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = KakapoNative/AppDelegate.h; sourceTree = "<group>"; };
 		13B07FB01A68108700A75B9A /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = KakapoNative/AppDelegate.m; sourceTree = "<group>"; };
@@ -123,9 +155,42 @@
 		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = KakapoNative/Images.xcassets; sourceTree = "<group>"; };
 		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = KakapoNative/Info.plist; sourceTree = "<group>"; };
 		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = KakapoNative/main.m; sourceTree = "<group>"; };
-		146833FF1AC3E56700842450 /* React.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = React.xcodeproj; path = ../node_modules/react-native/React/React.xcodeproj; sourceTree = "<group>"; };
-		78C398B01ACF4ADC00677621 /* RCTLinking.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTLinking.xcodeproj; path = ../node_modules/react-native/Libraries/LinkingIOS/RCTLinking.xcodeproj; sourceTree = "<group>"; };
-		832341B01AAA6A8300B99B32 /* RCTText.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTText.xcodeproj; path = ../node_modules/react-native/Libraries/Text/RCTText.xcodeproj; sourceTree = "<group>"; };
+		146833FF1AC3E56700842450 /* React.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = React.xcodeproj; path = "../node_modules/react-native/React/React.xcodeproj"; sourceTree = "<group>"; };
+		78C398B01ACF4ADC00677621 /* RCTLinking.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTLinking.xcodeproj; path = "../node_modules/react-native/Libraries/LinkingIOS/RCTLinking.xcodeproj"; sourceTree = "<group>"; };
+		832341B01AAA6A8300B99B32 /* RCTText.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTText.xcodeproj; path = "../node_modules/react-native/Libraries/Text/RCTText.xcodeproj"; sourceTree = "<group>"; };
+		B17E2FD91CB19E2D005097C2 /* KakapoNative-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "KakapoNative-Bridging-Header.h"; sourceTree = "<group>"; };
+		B17E2FDA1CB19E2E005097C2 /* AudioModule.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AudioModule.m; path = KakapoNative/AudioModule.m; sourceTree = "<group>"; };
+		B17E2FDB1CB19E2E005097C2 /* AudioModule.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AudioModule.swift; path = KakapoNative/AudioModule.swift; sourceTree = "<group>"; };
+		B17E2FEB1CB1A1AF005097C2 /* sf-ui-display-black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "sf-ui-display-black.ttf"; path = "../src/fonts/sf-ui/sf-ui-display-black.ttf"; sourceTree = "<group>"; };
+		B17E2FEC1CB1A1AF005097C2 /* sf-ui-display-bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "sf-ui-display-bold.ttf"; path = "../src/fonts/sf-ui/sf-ui-display-bold.ttf"; sourceTree = "<group>"; };
+		B17E2FED1CB1A1AF005097C2 /* sf-ui-display-heavy.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "sf-ui-display-heavy.ttf"; path = "../src/fonts/sf-ui/sf-ui-display-heavy.ttf"; sourceTree = "<group>"; };
+		B17E2FEE1CB1A1AF005097C2 /* sf-ui-display-light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "sf-ui-display-light.ttf"; path = "../src/fonts/sf-ui/sf-ui-display-light.ttf"; sourceTree = "<group>"; };
+		B17E2FEF1CB1A1AF005097C2 /* sf-ui-display-medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "sf-ui-display-medium.ttf"; path = "../src/fonts/sf-ui/sf-ui-display-medium.ttf"; sourceTree = "<group>"; };
+		B17E2FF01CB1A1AF005097C2 /* sf-ui-display-regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "sf-ui-display-regular.ttf"; path = "../src/fonts/sf-ui/sf-ui-display-regular.ttf"; sourceTree = "<group>"; };
+		B17E2FF11CB1A1AF005097C2 /* sf-ui-display-semibold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "sf-ui-display-semibold.ttf"; path = "../src/fonts/sf-ui/sf-ui-display-semibold.ttf"; sourceTree = "<group>"; };
+		B17E2FF21CB1A1AF005097C2 /* sf-ui-display-thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "sf-ui-display-thin.ttf"; path = "../src/fonts/sf-ui/sf-ui-display-thin.ttf"; sourceTree = "<group>"; };
+		B17E2FF31CB1A1AF005097C2 /* sf-ui-display-ultralight.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "sf-ui-display-ultralight.ttf"; path = "../src/fonts/sf-ui/sf-ui-display-ultralight.ttf"; sourceTree = "<group>"; };
+		B17E2FF41CB1A1AF005097C2 /* sf-ui-text-bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "sf-ui-text-bold.ttf"; path = "../src/fonts/sf-ui/sf-ui-text-bold.ttf"; sourceTree = "<group>"; };
+		B17E2FF51CB1A1AF005097C2 /* sf-ui-text-heavy.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "sf-ui-text-heavy.ttf"; path = "../src/fonts/sf-ui/sf-ui-text-heavy.ttf"; sourceTree = "<group>"; };
+		B17E2FF61CB1A1AF005097C2 /* sf-ui-text-light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "sf-ui-text-light.ttf"; path = "../src/fonts/sf-ui/sf-ui-text-light.ttf"; sourceTree = "<group>"; };
+		B17E2FF71CB1A1AF005097C2 /* sf-ui-text-medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "sf-ui-text-medium.ttf"; path = "../src/fonts/sf-ui/sf-ui-text-medium.ttf"; sourceTree = "<group>"; };
+		B17E2FF81CB1A1AF005097C2 /* sf-ui-text-regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "sf-ui-text-regular.ttf"; path = "../src/fonts/sf-ui/sf-ui-text-regular.ttf"; sourceTree = "<group>"; };
+		B17E2FF91CB1A1AF005097C2 /* sf-ui-text-semibold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "sf-ui-text-semibold.ttf"; path = "../src/fonts/sf-ui/sf-ui-text-semibold.ttf"; sourceTree = "<group>"; };
+		B17E300A1CB1A1CA005097C2 /* birds.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = birds.mp3; path = "../node_modules/kakapo-assets/sounds/birds.mp3"; sourceTree = "<group>"; };
+		B17E300B1CB1A1CA005097C2 /* bonfire.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = bonfire.mp3; path = "../node_modules/kakapo-assets/sounds/bonfire.mp3"; sourceTree = "<group>"; };
+		B17E300C1CB1A1CA005097C2 /* cafe.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = cafe.mp3; path = "../node_modules/kakapo-assets/sounds/cafe.mp3"; sourceTree = "<group>"; };
+		B17E300D1CB1A1CA005097C2 /* cat_purr.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = cat_purr.mp3; path = "../node_modules/kakapo-assets/sounds/cat_purr.mp3"; sourceTree = "<group>"; };
+		B17E300E1CB1A1CA005097C2 /* chimes.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = chimes.mp3; path = "../node_modules/kakapo-assets/sounds/chimes.mp3"; sourceTree = "<group>"; };
+		B17E300F1CB1A1CA005097C2 /* fan.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = fan.mp3; path = "../node_modules/kakapo-assets/sounds/fan.mp3"; sourceTree = "<group>"; };
+		B17E30101CB1A1CA005097C2 /* leaves.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = leaves.mp3; path = "../node_modules/kakapo-assets/sounds/leaves.mp3"; sourceTree = "<group>"; };
+		B17E30111CB1A1CA005097C2 /* paris_cafe.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = paris_cafe.mp3; path = "../node_modules/kakapo-assets/sounds/paris_cafe.mp3"; sourceTree = "<group>"; };
+		B17E30121CB1A1CA005097C2 /* paris_street_corner.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = paris_street_corner.mp3; path = "../node_modules/kakapo-assets/sounds/paris_street_corner.mp3"; sourceTree = "<group>"; };
+		B17E30131CB1A1CA005097C2 /* rain.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = rain.mp3; path = "../node_modules/kakapo-assets/sounds/rain.mp3"; sourceTree = "<group>"; };
+		B17E30141CB1A1CA005097C2 /* stream.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = stream.mp3; path = "../node_modules/kakapo-assets/sounds/stream.mp3"; sourceTree = "<group>"; };
+		B17E30151CB1A1CA005097C2 /* thunder.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = thunder.mp3; path = "../node_modules/kakapo-assets/sounds/thunder.mp3"; sourceTree = "<group>"; };
+		B17E30161CB1A1CA005097C2 /* train.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = train.mp3; path = "../node_modules/kakapo-assets/sounds/train.mp3"; sourceTree = "<group>"; };
+		B17E30171CB1A1CA005097C2 /* waves.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = waves.mp3; path = "../node_modules/kakapo-assets/sounds/waves.mp3"; sourceTree = "<group>"; };
+		B17E30181CB1A1CA005097C2 /* wind.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = wind.mp3; path = "../node_modules/kakapo-assets/sounds/wind.mp3"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -232,6 +297,10 @@
 		13B07FAE1A68108700A75B9A /* KakapoNative */ = {
 			isa = PBXGroup;
 			children = (
+				B17E30091CB1A1B8005097C2 /* sounds */,
+				B17E2FEA1CB1A18A005097C2 /* fonts */,
+				B17E2FDA1CB19E2E005097C2 /* AudioModule.m */,
+				B17E2FDB1CB19E2E005097C2 /* AudioModule.swift */,
 				008F07F21AC5B25A0029DE68 /* main.jsbundle */,
 				13B07FAF1A68108700A75B9A /* AppDelegate.h */,
 				13B07FB01A68108700A75B9A /* AppDelegate.m */,
@@ -239,6 +308,7 @@
 				13B07FB61A68108700A75B9A /* Info.plist */,
 				13B07FB11A68108700A75B9A /* LaunchScreen.xib */,
 				13B07FB71A68108700A75B9A /* main.m */,
+				B17E2FD91CB19E2D005097C2 /* KakapoNative-Bridging-Header.h */,
 			);
 			name = KakapoNative;
 			sourceTree = "<group>";
@@ -305,6 +375,50 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		B17E2FEA1CB1A18A005097C2 /* fonts */ = {
+			isa = PBXGroup;
+			children = (
+				B17E2FEB1CB1A1AF005097C2 /* sf-ui-display-black.ttf */,
+				B17E2FEC1CB1A1AF005097C2 /* sf-ui-display-bold.ttf */,
+				B17E2FED1CB1A1AF005097C2 /* sf-ui-display-heavy.ttf */,
+				B17E2FEE1CB1A1AF005097C2 /* sf-ui-display-light.ttf */,
+				B17E2FEF1CB1A1AF005097C2 /* sf-ui-display-medium.ttf */,
+				B17E2FF01CB1A1AF005097C2 /* sf-ui-display-regular.ttf */,
+				B17E2FF11CB1A1AF005097C2 /* sf-ui-display-semibold.ttf */,
+				B17E2FF21CB1A1AF005097C2 /* sf-ui-display-thin.ttf */,
+				B17E2FF31CB1A1AF005097C2 /* sf-ui-display-ultralight.ttf */,
+				B17E2FF41CB1A1AF005097C2 /* sf-ui-text-bold.ttf */,
+				B17E2FF51CB1A1AF005097C2 /* sf-ui-text-heavy.ttf */,
+				B17E2FF61CB1A1AF005097C2 /* sf-ui-text-light.ttf */,
+				B17E2FF71CB1A1AF005097C2 /* sf-ui-text-medium.ttf */,
+				B17E2FF81CB1A1AF005097C2 /* sf-ui-text-regular.ttf */,
+				B17E2FF91CB1A1AF005097C2 /* sf-ui-text-semibold.ttf */,
+			);
+			name = fonts;
+			sourceTree = "<group>";
+		};
+		B17E30091CB1A1B8005097C2 /* sounds */ = {
+			isa = PBXGroup;
+			children = (
+				B17E300A1CB1A1CA005097C2 /* birds.mp3 */,
+				B17E300B1CB1A1CA005097C2 /* bonfire.mp3 */,
+				B17E300C1CB1A1CA005097C2 /* cafe.mp3 */,
+				B17E300D1CB1A1CA005097C2 /* cat_purr.mp3 */,
+				B17E300E1CB1A1CA005097C2 /* chimes.mp3 */,
+				B17E300F1CB1A1CA005097C2 /* fan.mp3 */,
+				B17E30101CB1A1CA005097C2 /* leaves.mp3 */,
+				B17E30111CB1A1CA005097C2 /* paris_cafe.mp3 */,
+				B17E30121CB1A1CA005097C2 /* paris_street_corner.mp3 */,
+				B17E30131CB1A1CA005097C2 /* rain.mp3 */,
+				B17E30141CB1A1CA005097C2 /* stream.mp3 */,
+				B17E30151CB1A1CA005097C2 /* thunder.mp3 */,
+				B17E30161CB1A1CA005097C2 /* train.mp3 */,
+				B17E30171CB1A1CA005097C2 /* waves.mp3 */,
+				B17E30181CB1A1CA005097C2 /* wind.mp3 */,
+			);
+			name = sounds;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -350,12 +464,20 @@
 		83CBB9F71A601CBA00E9B192 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0610;
+				LastUpgradeCheck = 0730;
 				ORGANIZATIONNAME = Facebook;
 				TargetAttributes = {
 					00E356ED1AD99517003FC87E = {
 						CreatedOnToolsVersion = 6.2;
 						TestTargetID = 13B07F861A680F5B00A75B9A;
+					};
+					13B07F861A680F5B00A75B9A = {
+						DevelopmentTeam = A6K3VKBW43;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -505,8 +627,38 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B17E30001CB1A1AF005097C2 /* sf-ui-display-semibold.ttf in Resources */,
+				B17E301B1CB1A1CA005097C2 /* cafe.mp3 in Resources */,
+				B17E301C1CB1A1CA005097C2 /* cat_purr.mp3 in Resources */,
+				B17E30011CB1A1AF005097C2 /* sf-ui-display-thin.ttf in Resources */,
+				B17E2FFA1CB1A1AF005097C2 /* sf-ui-display-black.ttf in Resources */,
+				B17E2FFE1CB1A1AF005097C2 /* sf-ui-display-medium.ttf in Resources */,
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
+				B17E2FFF1CB1A1AF005097C2 /* sf-ui-display-regular.ttf in Resources */,
+				B17E301A1CB1A1CA005097C2 /* bonfire.mp3 in Resources */,
 				13B07FBD1A68108700A75B9A /* LaunchScreen.xib in Resources */,
+				B17E30071CB1A1AF005097C2 /* sf-ui-text-regular.ttf in Resources */,
+				B17E30251CB1A1CA005097C2 /* train.mp3 in Resources */,
+				B17E30201CB1A1CA005097C2 /* paris_cafe.mp3 in Resources */,
+				B17E30051CB1A1AF005097C2 /* sf-ui-text-light.ttf in Resources */,
+				B17E30031CB1A1AF005097C2 /* sf-ui-text-bold.ttf in Resources */,
+				B17E2FFB1CB1A1AF005097C2 /* sf-ui-display-bold.ttf in Resources */,
+				B17E301E1CB1A1CA005097C2 /* fan.mp3 in Resources */,
+				B17E30191CB1A1CA005097C2 /* birds.mp3 in Resources */,
+				B17E301F1CB1A1CA005097C2 /* leaves.mp3 in Resources */,
+				B17E30021CB1A1AF005097C2 /* sf-ui-display-ultralight.ttf in Resources */,
+				B17E2FFC1CB1A1AF005097C2 /* sf-ui-display-heavy.ttf in Resources */,
+				B17E30231CB1A1CA005097C2 /* stream.mp3 in Resources */,
+				B17E30221CB1A1CA005097C2 /* rain.mp3 in Resources */,
+				B17E30061CB1A1AF005097C2 /* sf-ui-text-medium.ttf in Resources */,
+				B17E30271CB1A1CA005097C2 /* wind.mp3 in Resources */,
+				B17E30081CB1A1AF005097C2 /* sf-ui-text-semibold.ttf in Resources */,
+				B17E30241CB1A1CA005097C2 /* thunder.mp3 in Resources */,
+				B17E30261CB1A1CA005097C2 /* waves.mp3 in Resources */,
+				B17E30211CB1A1CA005097C2 /* paris_street_corner.mp3 in Resources */,
+				B17E30041CB1A1AF005097C2 /* sf-ui-text-heavy.ttf in Resources */,
+				B17E2FFD1CB1A1AF005097C2 /* sf-ui-display-light.ttf in Resources */,
+				B17E301D1CB1A1CA005097C2 /* chimes.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -526,7 +678,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "export NODE_BINARY=node\n../node_modules/react-native/packager/react-native-xcode.sh";
-			showEnvVarsInLog = 1;
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -543,8 +694,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B17E2FDD1CB19E2E005097C2 /* AudioModule.swift in Sources */,
 				13B07FBC1A68108700A75B9A /* AppDelegate.m in Sources */,
 				13B07FC11A68108700A75B9A /* main.m in Sources */,
+				B17E2FDC1CB19E2E005097C2 /* AudioModule.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -586,6 +739,7 @@
 				INFOPLIST_FILE = KakapoNativeTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/KakapoNative.app/KakapoNative";
 			};
@@ -603,6 +757,7 @@
 				INFOPLIST_FILE = KakapoNativeTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/KakapoNative.app/KakapoNative";
 			};
@@ -612,16 +767,22 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				DEAD_CODE_STRIPPING = NO;
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
 					"$(SRCROOT)/../node_modules/react-native/React/**",
 				);
-				INFOPLIST_FILE = "KakapoNative/Info.plist";
+				INFOPLIST_FILE = KakapoNative/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_BUNDLE_IDENTIFIER = com.supercerebral.kakapo;
 				PRODUCT_NAME = KakapoNative;
+				SWIFT_OBJC_BRIDGING_HEADER = "KakapoNative-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -629,15 +790,20 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
 					"$(SRCROOT)/../node_modules/react-native/React/**",
 				);
-				INFOPLIST_FILE = "KakapoNative/Info.plist";
+				INFOPLIST_FILE = KakapoNative/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_BUNDLE_IDENTIFIER = com.supercerebral.kakapo;
 				PRODUCT_NAME = KakapoNative;
+				SWIFT_OBJC_BRIDGING_HEADER = "KakapoNative-Bridging-Header.h";
 			};
 			name = Release;
 		};
@@ -661,6 +827,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
