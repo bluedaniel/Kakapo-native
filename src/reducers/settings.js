@@ -1,4 +1,4 @@
-import { StatusBarIOS, Platform } from 'react-native';
+import { StatusBar, Platform } from 'react-native';
 import constants from '../constants';
 import { createReducer } from '../utils';
 
@@ -7,7 +7,7 @@ let initialState = {};
 const settingReducers = {
   toggleMenu(state, bool) {
     if (Platform.OS === 'ios') {
-      StatusBarIOS.setHidden(bool, 'slide');
+      StatusBar.setHidden(bool, 'slide');
     }
     return state;
   }

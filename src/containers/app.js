@@ -1,4 +1,4 @@
-import React, { Component, StyleSheet, View, StatusBarIOS, Platform } from 'react-native';
+import React, { Component, StyleSheet, View, StatusBar, Platform } from 'react-native';
 import Drawer from 'react-native-drawer';
 import { bindActionCreators } from 'redux';
 import { connect } from 'react-redux/native';
@@ -10,7 +10,7 @@ class App extends Component {
   state = { title: 'Kakapo' }
 
   componentDidMount() {
-    if (Platform.OS === 'ios') StatusBarIOS.setStyle('light-content');
+    if (Platform.OS === 'ios') StatusBar.setBarStyle('light-content');
     this.props.soundActions.soundsInit();
     this.props.themeActions.getTheme();
   }

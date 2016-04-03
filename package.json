@@ -23,7 +23,6 @@
     "immutable": "^3.7.5",
     "kakapo-assets": "^5.2.0",
     "lodash": "^3.10.1",
-    "react-native": "^0.17.0",
     "react-native-drawer": "^1.10.2",
     "react-native-icons": "^0.7.0",
     "react-native-material-kit": "^0.2.4",
@@ -32,5 +31,9 @@
     "redux-logger": "^2.3.1",
     "redux-thunk": "^1.0.3",
     "rx": "^4.0.7"
+  },
+  "dependencies": {
+    "react": "^0.14.8",
+    "react-native": "^0.22.2"
   }
 }

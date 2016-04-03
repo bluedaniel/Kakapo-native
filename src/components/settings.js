@@ -1,4 +1,4 @@
-import React, { NativeModules, LinkingIOS, ScrollView, ToastAndroid, AlertIOS, TouchableOpacity, StyleSheet, Text, View, Platform, Component } from 'react-native';
+import React, { NativeModules, Linking, ScrollView, ToastAndroid, AlertIOS, TouchableOpacity, StyleSheet, Text, View, Platform, Component } from 'react-native';
 import { bindActionCreators } from 'redux';
 import { connect } from 'react-redux/native';
 import { Icon } from 'react-native-icons';
@@ -38,7 +38,7 @@ class Settings extends Component {
 
   openURL() {
     if (Platform.OS === 'ios') {
-      LinkingIOS.openURL(githubRepo);
+      Linking.openURL(githubRepo);
     } else {
       KDSocialShare.openURL(githubRepo);
     }
