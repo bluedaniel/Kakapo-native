@@ -14,13 +14,13 @@ const soundReducers = {
   init(state, sounds) {
     let data = kakapoAssets.sounds;
     if (sounds) data = JSON.parse(sounds);
-    data.map(_s => {
-      state = state.set(data[_s].file, ({ ...data[_s], ...{
-        recentlyDownloaded: false
-      } }));
-      AudioModule.setSound(data[_s].file, data[_s].volume);
-      if (data[_s].playing) AudioModule.togglePlay(data[_s].file);
-    });
+    for (const _s in data) {
+      if ({}.hasOwnProperty.call(data, _s)) {
+        state = state.set(data[_s].file, ({ ...data[_s], recentlyDownloaded: false }));
+        AudioModule.setSound(data[_s].file, data[_s].volume);
+        if (data[_s].playing) AudioModule.togglePlay(data[_s].file);
+      }
+    }
     this.saveToStorage();
     return state;
   },
@@ -28,6 +28,7 @@ const soundReducers = {
   toggleAll(state) {
     state.map(_s => {
       if (_s.playing) state = this.togglePlay(state, _s);
+      return state;
     });
     return state;
   },

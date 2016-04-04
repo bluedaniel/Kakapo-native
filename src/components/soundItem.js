@@ -68,7 +68,7 @@ class SoundItem extends Component {
   }
 
   render() {
-    const { img, themes, playing } = this.props;
+    const { img, themes, playing, name } = this.props;
     return (
       <View style={[ styles.container, playing && {
         backgroundColor: new Color(themes.get('palette').first()).lighten(0.15).hexString()

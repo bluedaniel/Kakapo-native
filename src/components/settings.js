@@ -5,7 +5,7 @@ import React, {
 } from 'react-native';
 import { bindActionCreators } from 'redux';
 import { connect } from 'react-redux';
-import { Icon } from 'react-native-icons';
+import Icon from 'react-native-vector-icons/FontAwesome';
 import Color from 'color';
 import { settingActions } from '../actions';
 import ColorPicker from './colorPicker';
@@ -92,19 +92,21 @@ class Settings extends Component {
       <View>
         <TouchableOpacity style={styles.optWrap} onPress={this.facebook}>
           <Icon
-            name="material|facebook"
+            name="share"
             size={30}
             color="#fff"
             style={styles.optWrapIcon}
           />
+          <Text style={styles.opt}>Share on Facebook</Text>
         </TouchableOpacity>
         <TouchableOpacity style={styles.optWrap} onPress={this.tweet}>
           <Icon
-            name="material|twitter"
+            name="share"
             size={30}
             color="#fff"
             style={styles.optWrapIcon}
           />
+          <Text style={styles.opt}>Share on Twitter</Text>
         </TouchableOpacity>
       </View>
     );
@@ -115,11 +117,12 @@ class Settings extends Component {
       <View>
         <TouchableOpacity style={styles.optWrap} onPress={this.shareIntent}>
           <Icon
-            name="material|share"
+            name="share"
             size={30}
             color="#fff"
             style={styles.optWrapIcon}
           />
+        <Text style={styles.opt}>Share Kakapo</Text>
         </TouchableOpacity>
       </View>
     );
@@ -144,11 +147,12 @@ class Settings extends Component {
           onPress={this.openURL}
         >
           <Icon
-            name="material|github"
+            name="github"
             size={30}
             color="#fff"
             style={styles.optWrapIcon}
           />
+          <Text style={styles.opt}>Fork on GitHub!</Text>
         </TouchableOpacity>
       </ScrollView>
     );

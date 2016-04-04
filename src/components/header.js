@@ -1,10 +1,10 @@
 import React, {
-  Component, TouchableOpacity, Image, StyleSheet,
+  TouchableOpacity, Image, StyleSheet,
   Text, View, Platform
 } from 'react-native';
 import { bindActionCreators } from 'redux';
 import { connect } from 'react-redux';
-import { Icon } from 'react-native-icons';
+import Icon from 'react-native-vector-icons/MaterialIcons';
 import { settingActions, soundActions } from '../actions';
 
 const styles = StyleSheet.create({
@@ -45,40 +45,42 @@ const styles = StyleSheet.create({
   }
 });
 
-class Header extends Component {
-  render() {
-    return (
-      <View style={[ styles.header, this.props.themes.getIn([ 'nav', 'navbar' ]).toJS() ]}>
-        <TouchableOpacity onPress={this.props.toggleMenu}>
-          <Icon
-            name="material|menu"
-            size={30}
-            color="#fff"
-            style={[
-              styles.menu,
-              this.props.themes.getIn([ 'nav', 'tab' ]).toJS() && styles.menuActive
-            ]}
-          />
-        </TouchableOpacity>
-        <View style={styles.title}>
-          <Image style={styles.logo} source={require('kakapo-assets/images/kakapo.png')} />
-          <Text style={styles.headerText}>{this.props.title}</Text>
-        </View>
-        <TouchableOpacity onPress={this.props.soundActions.soundsToggleAll}>
-          <Icon
-            name={'material|stop'}
-            size={30}
-            color="#fff"
-            style={[
-              styles.multiple,
-              !this.props.sounds.filter(_s => _s.playing).count() && styles.multipleHide
-            ]}
-          />
-        </TouchableOpacity>
-      </View>
-    );
-  }
-}
+const Header = ({
+  themes,
+  sounds,
+  soundActions,
+  title,
+  toggleMenu
+}) => (
+  <View style={[ styles.header, themes.getIn([ 'nav', 'navbar' ]).toJS() ]}>
+    <TouchableOpacity onPress={toggleMenu}>
+      <Icon
+        name="menu"
+        size={30}
+        color="#fff"
+        style={[
+          styles.menu,
+          themes.getIn([ 'nav', 'tab' ]).toJS() && styles.menuActive
+        ]}
+      />
+    </TouchableOpacity>
+    <View style={styles.title}>
+      <Image style={styles.logo} source={require('kakapo-assets/images/kakapo.png')} />
+      <Text style={styles.headerText}>{title}</Text>
+    </View>
+    <TouchableOpacity onPress={soundActions.soundsToggleAll}>
+      <Icon
+        name="stop"
+        size={30}
+        color="#fff"
+        style={[
+          styles.multiple,
+          !sounds.filter(_s => _s.playing).count() && styles.multipleHide
+        ]}
+      />
+    </TouchableOpacity>
+  </View>
+);
 
 const mapStateToProps = state => ({
   themes: state.themes,
