@@ -31,7 +31,9 @@ class App extends Component {
         onClose={() => this.props.settingActions.menuToggle(false)}
         onOpen={() => this.props.settingActions.menuToggle(true)}
         openDrawerOffset={100}
-        panCloseMask={1}
+        captureGestures
+        negotiatePan
+        acceptDoubleTap
         ref="drawer"
         styles={{ main: {
           shadowColor: '#000',
