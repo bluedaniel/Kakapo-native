@@ -2,10 +2,8 @@ import React, {
   TouchableOpacity, Image, StyleSheet,
   Text, View, Platform
 } from 'react-native';
-import { bindActionCreators } from 'redux';
-import { connect } from 'react-redux';
 import Icon from 'react-native-vector-icons/MaterialIcons';
-import { settingActions, soundActions } from '../actions';
+import { soundActions } from '../actions';
 
 const styles = StyleSheet.create({
   header: {
@@ -45,11 +43,10 @@ const styles = StyleSheet.create({
   }
 });
 
-const Header = ({
+export default ({
   themes,
   sounds,
-  soundActions,
-  title,
+  dispatch,
   toggleMenu
 }) => (
   <View style={[ styles.header, themes.getIn([ 'nav', 'navbar' ]).toJS() ]}>
@@ -66,9 +63,9 @@ const Header = ({
     </TouchableOpacity>
     <View style={styles.title}>
       <Image style={styles.logo} source={require('kakapo-assets/images/kakapo.png')} />
-      <Text style={styles.headerText}>{title}</Text>
+      <Text style={styles.headerText}>Kakapo</Text>
     </View>
-    <TouchableOpacity onPress={soundActions.soundsToggleAll}>
+    <TouchableOpacity onPress={() => dispatch(soundActions.soundsToggleAll)}>
       <Icon
         name="stop"
         size={30}
@@ -81,16 +78,3 @@ const Header = ({
     </TouchableOpacity>
   </View>
 );
-
-const mapStateToProps = state => ({
-  themes: state.themes,
-  settings: state.settings,
-  sounds: state.sounds
-});
-
-const mapDispatchToProps = dispatch => ({
-  settingActions: bindActionCreators(settingActions, dispatch),
-  soundActions: bindActionCreators(soundActions, dispatch)
-});
-
-export default connect(mapStateToProps, mapDispatchToProps)(Header);

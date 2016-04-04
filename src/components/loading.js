@@ -12,16 +12,12 @@ const styles = StyleSheet.create({
   }
 });
 
-export default React.createClass({
-  render() {
-    return (
-      <View style={styles.activityContainer}>
-        <ActivityIndicatorIOS
-          animating={!this.props.loaded}
-          style={styles.activityIndicator}
-          size="large"
-        />
-      </View>
-    );
-  }
-});
+export default ({ loaded }) => (
+  <View style={styles.activityContainer}>
+    <ActivityIndicatorIOS
+      animating={!loaded}
+      style={styles.activityIndicator}
+      size="large"
+    />
+  </View>
+);

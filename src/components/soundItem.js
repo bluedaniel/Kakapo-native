@@ -1,10 +1,9 @@
 import React, { Component, TouchableOpacity, Image, StyleSheet, Text, View } from 'react-native';
-import { bindActionCreators } from 'redux';
 import { connect } from 'react-redux';
 import { throttle } from 'lodash';
 import Color from 'color';
 import { mdl } from 'react-native-material-kit';
-import { soundActions, settingActions } from '../actions';
+import { soundActions } from '../actions';
 
 const SliderWithValue = mdl.Slider.slider()
   .withStyle({
@@ -45,23 +44,20 @@ const styles = StyleSheet.create({
 });
 
 class SoundItem extends Component {
-  componentWillMount() {
-    this.changeVolumeThrottled = throttle(this.changeVolume, 200);
-  }
-
   componentDidMount() {
+    this.changeVolumeThrottled = throttle(this.changeVolume, 200);
     this.updateVolumeTrack();
   }
 
   componentDidUpdate() {
-    this.updateVolumeTrack();
+    // this.updateVolumeTrack();
   }
 
   togglePlay = () => {
-    this.props.soundActions.soundsPlay(this.props);
+    this.props.dispatch(soundActions.soundsPlay(this.props));
   }
 
-  changeVolume = (vol) => this.props.soundActions.soundsVolume(this.props, vol);
+  changeVolume = (vol) => this.props.dispatch(soundActions.soundsVolume(this.props, vol));
 
   updateVolumeTrack = () => {
     this.refs.sliderWithValue.value = this.props.volume;
@@ -98,14 +94,7 @@ class SoundItem extends Component {
   }
 }
 
-const mapStateToProps = state => ({
+export default connect(state => ({
   themes: state.themes,
   settings: state.settings
-});
-
-const mapDispatchToProps = dispatch => ({
-  soundActions: bindActionCreators(soundActions, dispatch),
-  settingActions: bindActionCreators(settingActions, dispatch)
-});
-
-export default connect(mapStateToProps, mapDispatchToProps)(SoundItem);
+}))(SoundItem);

@@ -3,11 +3,9 @@ import React, {
   AlertIOS, TouchableOpacity, StyleSheet, Text,
   View, Platform, Component
 } from 'react-native';
-import { bindActionCreators } from 'redux';
 import { connect } from 'react-redux';
 import Icon from 'react-native-vector-icons/FontAwesome';
 import Color from 'color';
-import { settingActions } from '../actions';
 import ColorPicker from './colorPicker';
 
 const styles = StyleSheet.create({
@@ -129,17 +127,18 @@ class Settings extends Component {
   }
 
   render() {
+    const { themes, dispatch } = this.props;
     return (
       <ScrollView
         automaticallyAdjustContentInsets={false}
         style={[
           styles.settings, { backgroundColor:
-            new Color(this.props.themes.get('palette').first()).lighten(0.15).hexString()
+            new Color(themes.get('palette').first()).lighten(0.15).hexString()
           } ]}
       >
         <Text style={[ styles.header, styles.headerFirst ]}>Settings</Text>
         <Text style={styles.opt}>Color</Text>
-        <ColorPicker color={this.props.themes.get('palette').first()} />
+        <ColorPicker { ...{ dispatch, color: themes.get('palette').first() }} />
         <Text style={styles.header}>Extra</Text>
         {Platform.OS === 'ios' ? this.renderShareios() : this.renderShareAndroid()}
         <TouchableOpacity
@@ -159,12 +158,6 @@ class Settings extends Component {
   }
 }
 
-const mapStateToProps = state => ({
+export default connect(state => ({
   themes: state.themes
-});
-
-const mapDispatchToProps = dispatch => ({
-  settingActions: bindActionCreators(settingActions, dispatch)
-});
-
-export default connect(mapStateToProps, mapDispatchToProps)(Settings);
+}))(Settings);
