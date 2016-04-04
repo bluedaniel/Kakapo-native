@@ -2,7 +2,7 @@ import { StatusBar, Platform } from 'react-native';
 import constants from '../constants';
 import { createReducer } from '../utils';
 
-let initialState = {};
+const initialState = {};
 
 const settingReducers = {
   toggleMenu(state, bool) {

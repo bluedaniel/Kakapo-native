@@ -1,14 +1,17 @@
 {
-  "extends": "rackt",
-  "globals": {
-    "__DEV__": true
-  },
+  "extends": "airbnb",
+  "parser": "babel-eslint",
   "rules": {
-    "no-var": 0,
+    "react/prop-types": 0,
     "react/jsx-uses-react": 1,
-    "react/jsx-no-undef": 2,
-    "react/wrap-multilines": 2,
-    "semi": [2, "always"]
+    "react/jsx-no-bind": 0,
+    "array-bracket-spacing": [2, "always"],
+    "semi": [2, "always"],
+    "comma-dangle": [2, "never"],
+    "no-shadow": 0,
+    "no-param-reassign": 0,
+    "newline-per-chained-call": 0,
+    "no-confusing-arrow": 0
   },
   "plugins": [
     "react"

@@ -1,9 +1,15 @@
 import React, { Component, StyleSheet, View, StatusBar, Platform } from 'react-native';
 import Drawer from 'react-native-drawer';
 import { bindActionCreators } from 'redux';
-import { connect } from 'react-redux/native';
+import { connect } from 'react-redux';
 import { Header, Settings, SoundList, Loading } from '../components';
 import { settingActions, soundActions, themeActions } from '../actions';
+
+const styles = StyleSheet.create({
+  container: {
+    flex: 1
+  }
+});
 
 class App extends Component {
 
@@ -17,11 +23,11 @@ class App extends Component {
 
   render() {
     if (!this.props.themes.count()) {
-      return (<Loading/>);
+      return (<Loading />);
     }
     return (
       <Drawer
-        content={<Settings/>}
+        content={<Settings />}
         onClose={() => this.props.settingActions.menuToggle(false)}
         onOpen={() => this.props.settingActions.menuToggle(true)}
         openDrawerOffset={100}
@@ -36,19 +42,13 @@ class App extends Component {
         type="static"
       >
         <View style={styles.container}>
-          <Header title={this.state.title} toggleMenu={() => this.refs.drawer.toggle()}/>
-          <SoundList/>
+          <Header title={this.state.title} toggleMenu={() => this.refs.drawer.toggle()} />
+          <SoundList />
         </View>
       </Drawer>
     );
   }
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1
-  }
-});
 
 const mapStateToProps = state => ({
   themes: state.themes

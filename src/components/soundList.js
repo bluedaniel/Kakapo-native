@@ -1,5 +1,5 @@
 import React, { Component, ListView } from 'react-native';
-import { connect } from 'react-redux/native';
+import { connect } from 'react-redux';
 import Loading from './loading';
 import SoundItem from './soundItem';
 
@@ -13,12 +13,12 @@ class SoundList extends Component {
   renderList() {
     return (<ListView
       dataSource={ds.cloneWithRows(this.props.sounds.toArray())}
-      renderRow={sound => <SoundItem {...sound}/>}
+      renderRow={sound => <SoundItem {...sound} />}
     />);
   }
 
   render() {
-    return this.state.loaded ? this.renderList() : <Loading loaded={this.props.loaded}/>;
+    return this.state.loaded ? this.renderList() : <Loading loaded={this.props.loaded} />;
   }
 }
 

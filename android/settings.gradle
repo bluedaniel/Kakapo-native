@@ -1,9 +1,3 @@
 rootProject.name = 'KakapoNative'
 
 include ':app'
-
-include ':react-native-icons'
-project(':react-native-icons').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-icons/android')
-
-include ':RNMaterialKit'
-project(':RNMaterialKit').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-material-kit/android')

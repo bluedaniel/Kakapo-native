@@ -1,7 +1,7 @@
 import React, { Component, TouchableOpacity, Image, StyleSheet, Text, View } from 'react-native';
 import { bindActionCreators } from 'redux';
-import { connect } from 'react-redux/native';
-import throttle from 'lodash/function/throttle';
+import { connect } from 'react-redux';
+import { throttle } from 'lodash';
 import Color from 'color';
 import { mdl } from 'react-native-material-kit';
 import { soundActions, settingActions } from '../actions';
@@ -16,52 +16,6 @@ const SliderWithValue = mdl.Slider.slider()
   .withMin(0)
   .withMax(1)
   .build();
-
-class SoundItem extends Component {
-  componentDidUpdate() {
-    this.updateVolumeTrack();
-  }
-
-  componentDidMount() {
-    this.updateVolumeTrack();
-  }
-
-  componentWillMount() {
-    this.changeVolumeThrottled = throttle(this.changeVolume, 200);
-  }
-
-  togglePlay = () => {
-    this.props.soundActions.soundsPlay(this.props);
-  }
-
-  changeVolume = (vol) => this.props.soundActions.soundsVolume(this.props, vol);
-
-  updateVolumeTrack = () => this.refs.sliderWithValue.value = this.props.volume;
-
-  render() {
-    return (
-      <View style={[ styles.container, this.props.playing && { backgroundColor: Color(this.props.themes.get('palette').first()).lighten(0.15).hexString() } ]}>
-        <TouchableOpacity onPress={this.togglePlay}>
-          <Image style={styles.img} source={{ uri: (this.props.playing ? 'light' : 'dark') + `_${this.props.img}`, isStatic: true }}/>
-        </TouchableOpacity>
-        <View style={styles.rightContainer}>
-          <TouchableOpacity onPress={this.togglePlay}>
-          <Text style={[ styles.title, this.props.playing && styles.titlePlaying ]}>
-            {this.props.name}
-          </Text>
-          </TouchableOpacity>
-          <SliderWithValue
-            ref="sliderWithValue"
-            upperTrackColor={this.props.playing ? '#fff' : '#f9f9f9'}
-            lowerTrackColor={this.props.playing ? '#fff' : '#f9f9f9'}
-            onChange={vol => this.changeVolumeThrottled(vol)}
-            trackSize={4}
-          />
-        </View>
-      </View>
-    );
-  }
-}
 
 const styles = StyleSheet.create({
   container: {
@@ -89,6 +43,60 @@ const styles = StyleSheet.create({
     color: '#fff'
   }
 });
+
+class SoundItem extends Component {
+  componentWillMount() {
+    this.changeVolumeThrottled = throttle(this.changeVolume, 200);
+  }
+
+  componentDidMount() {
+    this.updateVolumeTrack();
+  }
+
+  componentDidUpdate() {
+    this.updateVolumeTrack();
+  }
+
+  togglePlay = () => {
+    this.props.soundActions.soundsPlay(this.props);
+  }
+
+  changeVolume = (vol) => this.props.soundActions.soundsVolume(this.props, vol);
+
+  updateVolumeTrack = () => {
+    this.refs.sliderWithValue.value = this.props.volume;
+  }
+
+  render() {
+    const { img, themes, playing } = this.props;
+    return (
+      <View style={[ styles.container, playing && {
+        backgroundColor: new Color(themes.get('palette').first()).lighten(0.15).hexString()
+      } ]}
+      >
+        <TouchableOpacity onPress={this.togglePlay}>
+          <Image style={styles.img} source={{ uri: `${playing ?
+            'light' : 'dark'}_${img}`, isStatic: true }}
+          />
+        </TouchableOpacity>
+        <View style={styles.rightContainer}>
+          <TouchableOpacity onPress={this.togglePlay}>
+            <Text style={[ styles.title, playing && styles.titlePlaying ]}>
+              {name}
+            </Text>
+          </TouchableOpacity>
+          <SliderWithValue
+            ref="sliderWithValue"
+            upperTrackColor={playing ? '#fff' : '#f9f9f9'}
+            lowerTrackColor={playing ? '#fff' : '#f9f9f9'}
+            onChange={vol => this.changeVolumeThrottled(vol)}
+            trackSize={4}
+          />
+        </View>
+      </View>
+    );
+  }
+}
 
 const mapStateToProps = state => ({
   themes: state.themes,

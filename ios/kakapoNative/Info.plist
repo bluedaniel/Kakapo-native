@@ -29,6 +29,12 @@
 	</dict>
 	<key>NSLocationWhenInUseUsageDescription</key>
 	<string></string>
+	<key>UIAppFonts</key>
+	<array>
+		<string>sf-ui-display-bold.ttf</string>
+		<string>sf-ui-display-medium.ttf</string>
+		<string>sf-ui-text-regular.ttf</string>
+	</array>
 	<key>UIBackgroundModes</key>
 	<array>
 		<string>audio</string>
