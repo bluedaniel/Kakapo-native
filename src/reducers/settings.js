@@ -14,5 +14,5 @@ const settingReducers = {
 };
 
 export default createReducer(initialState, {
-  [constants.SETTINGS_MENU]: (state, action) => settingReducers.toggleMenu(state, action.bool)
+  [constants.SETTINGS_MENU]: (state, { bool }) => settingReducers.toggleMenu(state, bool)
 });
