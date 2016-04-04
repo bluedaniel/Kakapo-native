@@ -1,9 +1,10 @@
-import React, { Component, TouchableOpacity, Image, StyleSheet, Text, View } from 'react-native';
+import React, { Component, TouchableOpacity, Image, Text, View } from 'react-native';
 import { connect } from 'react-redux';
 import { throttle } from 'lodash';
 import Color from 'color';
 import { mdl } from 'react-native-material-kit';
 import { soundActions } from '../actions';
+import styles from '../styles/soundItem';
 
 const SliderWithValue = mdl.Slider.slider()
   .withStyle({
@@ -15,33 +16,6 @@ const SliderWithValue = mdl.Slider.slider()
   .withMin(0)
   .withMax(1)
   .build();
-
-const styles = StyleSheet.create({
-  container: {
-    alignItems: 'center',
-    backgroundColor: '#fff',
-    flexDirection: 'row',
-    justifyContent: 'flex-start'
-  },
-  img: {
-    width: 48,
-    height: 48,
-    margin: 15
-  },
-  rightContainer: {
-    flex: 1
-  },
-  title: {
-    fontFamily: 'SFUIText-Regular',
-    fontSize: 18,
-    marginLeft: 14,
-    textAlign: 'left',
-    marginTop: 6
-  },
-  titlePlaying: {
-    color: '#fff'
-  }
-});
 
 class SoundItem extends Component {
   componentDidMount() {

@@ -1,51 +1,12 @@
 import React, {
-  NativeModules, Linking, ScrollView, ToastAndroid,
-  AlertIOS, TouchableOpacity, StyleSheet, Text,
-  View, Platform, Component
+  NativeModules, Linking, ScrollView, ToastAndroid, AlertIOS,
+  TouchableOpacity, Text, View, Platform, Component
 } from 'react-native';
 import { connect } from 'react-redux';
 import Icon from 'react-native-vector-icons/FontAwesome';
 import Color from 'color';
 import ColorPicker from './colorPicker';
-
-const styles = StyleSheet.create({
-  settings: {
-    flex: 1,
-    flexDirection: 'column',
-    paddingTop: 20,
-    paddingLeft: 25,
-    paddingRight: 20
-  },
-  header: {
-    fontFamily: 'SFUIDisplay-Bold',
-    color: '#fff',
-    fontSize: 22,
-    marginBottom: 13,
-    marginTop: 30
-  },
-  headerFirst: {
-    marginTop: 0
-  },
-  optWrap: {
-    flex: 1,
-    flexDirection: 'row',
-    alignItems: 'center'
-  },
-  optWrapIcon: {
-    height: 34,
-    left: -5,
-    marginTop: -8,
-    position: 'relative',
-    width: 34
-  },
-  opt: {
-    fontFamily: 'SFUIDisplay-Medium',
-    color: '#fff',
-    fontSize: 16,
-    marginTop: 7,
-    marginBottom: 13
-  }
-});
+import styles from '../styles/settings';
 
 const { KDSocialShare } = NativeModules;
 
