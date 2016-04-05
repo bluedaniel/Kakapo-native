@@ -1,16 +1,18 @@
-import React, { TouchableOpacity, Image, Text, View } from 'react-native';
+import React, { PropTypes, TouchableOpacity, Image, Text, View } from 'react-native';
 import Icon from 'react-native-vector-icons/MaterialIcons';
 import { soundActions } from '../actions';
 import styles from '../styles/header';
 
-export default ({
+const Header = ({
   themes,
   sounds,
   dispatch,
   toggleMenu
+}, {
+  drawer
 }) => (
   <View style={[ styles.header, themes.getIn([ 'nav', 'navbar' ]).toJS() ]}>
-    <TouchableOpacity onPress={toggleMenu}>
+    <TouchableOpacity onPress={drawer.toggle}>
       <Icon
         name="menu"
         size={30}
@@ -38,3 +40,7 @@ export default ({
     </TouchableOpacity>
   </View>
 );
+
+Header.contextTypes = { drawer: PropTypes.object };
+
+export default Header;

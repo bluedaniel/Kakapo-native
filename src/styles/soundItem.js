@@ -5,12 +5,16 @@ export default StyleSheet.create({
     alignItems: 'center',
     backgroundColor: '#fff',
     flexDirection: 'row',
-    justifyContent: 'flex-start'
+    justifyContent: 'flex-start',
+    paddingLeft: 15,
+    paddingRight: 40,
+    paddingBottom: 13,
+    paddingTop: 13
   },
   img: {
     width: 48,
     height: 48,
-    margin: 15
+    marginRight: 30
   },
   rightContainer: {
     flex: 1
@@ -18,11 +22,23 @@ export default StyleSheet.create({
   title: {
     fontFamily: 'SFUIText-Regular',
     fontSize: 18,
-    marginLeft: 14,
-    textAlign: 'left',
-    marginTop: 6
+    textAlign: 'left'
   },
   titlePlaying: {
     color: '#fff'
+  },
+  track: {
+    height: 4,
+    borderRadius: 2,
+    paddingTop: 5,
+    backgroundColor: '#efefef'
+  },
+  thumb: {
+    width: 25,
+    height: 25,
+    borderRadius: 30 / 2,
+    borderWidth: 2,
+    borderColor: '#efefef',
+    backgroundColor: 'white'
   }
 });

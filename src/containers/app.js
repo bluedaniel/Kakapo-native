@@ -1,4 +1,4 @@
-import React, { Component, StyleSheet, View, StatusBar, Platform } from 'react-native';
+import React, { StyleSheet, View, StatusBar, Platform } from 'react-native';
 import Drawer from 'react-native-drawer';
 import { connect } from 'react-redux';
 import { Header, Settings, SoundList, Loading } from '../components';
@@ -10,44 +10,38 @@ const styles = StyleSheet.create({
   }
 });
 
-class App extends Component {
-  componentDidMount() {
+const App = ({ sounds, themes, dispatch }) => {
+  if (!themes.count() || !sounds.count()) {
     if (Platform.OS === 'ios') StatusBar.setBarStyle('light-content');
-    this.props.dispatch(soundActions.soundsInit());
-    this.props.dispatch(themeActions.getTheme());
+    if (!sounds.count()) dispatch(soundActions.soundsInit());
+    if (!themes.count()) dispatch(themeActions.getTheme());
+    return (<Loading />);
   }
 
-  render() {
-    const { sounds, themes, dispatch } = this.props;
-
-    if (!themes.count()) return (<Loading />);
-
-    return (
-      <Drawer
-        content={<Settings themeActions={this.props.themeActions} />}
-        onClose={() => dispatch(settingActions.menuToggle(false))}
-        onOpen={() => dispatch(settingActions.menuToggle(true))}
-        openDrawerOffset={100}
-        captureGestures
-        negotiatePan
-        acceptDoubleTap
-        ref="drawer"
-        styles={{ main: {
-          shadowColor: '#000',
-          shadowOpacity: 0.4,
-          shadowRadius: 10
-        } }}
-        tweenHandler={Drawer.tweenPresets.parallax}
-        type="static"
-      >
-        <View style={styles.container}>
-          <Header { ...{ themes, sounds, dispatch, toggleMenu: () => this.refs.drawer.toggle() }} />
-          <SoundList sounds={this.props.sounds} />
-        </View>
-      </Drawer>
-    );
-  }
-}
+  return (
+    <Drawer
+      content={<Settings { ...{ themes, dispatch }} />}
+      onClose={() => dispatch(settingActions.menuToggle(false))}
+      onOpen={() => dispatch(settingActions.menuToggle(true))}
+      openDrawerOffset={100}
+      captureGestures
+      negotiatePan
+      acceptDoubleTap
+      styles={{ main: {
+        shadowColor: '#000',
+        shadowOpacity: 0.4,
+        shadowRadius: 10
+      } }}
+      tweenHandler={Drawer.tweenPresets.parallax}
+      type="static"
+    >
+      <View style={styles.container}>
+        <Header { ...{ themes, sounds, dispatch }} />
+        <SoundList { ...{ themes, sounds, dispatch }} />
+      </View>
+    </Drawer>
+  );
+};
 
 export default connect(state => ({
   themes: state.themes,
