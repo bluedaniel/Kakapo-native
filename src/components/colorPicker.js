@@ -1,6 +1,6 @@
 import React, { TouchableOpacity, View } from 'react-native';
 import { themeActions } from '../actions';
-import Swatches from '../utils/swatches';
+import { swatches } from '../utils';
 import styles from '../styles/colorPicker';
 
 export default ({ color, dispatch }) => {
@@ -8,7 +8,7 @@ export default ({ color, dispatch }) => {
 
   return (
     <View style={styles.colorPicker}>
-      {Swatches.all().map(swatch =>
+      {swatches().map(swatch =>
         <TouchableOpacity key={swatch} onPress={() => changeColor(swatch)}>
           <View style={[
             styles.swatches, {

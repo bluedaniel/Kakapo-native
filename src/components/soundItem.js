@@ -1,12 +1,19 @@
 import React, { TouchableOpacity, Image, Text, View } from 'react-native';
+import Rx from 'rxjs';
 import Color from 'color';
 import Slider from 'react-native-slider';
 import { soundActions } from '../actions';
 import styles from '../styles/soundItem';
 
-export default ({ themes, sound, dispatch }) => {
-  const changeVolume = (vol) => dispatch(soundActions.soundsVolume(sound, vol));
+const subject = new Rx.Subject()
+.debounceTime(33)
+.distinctUntilChanged();
 
+subject.subscribe({
+  next: ({ dispatch, sound, vol }) => dispatch(soundActions.soundsVolume(sound, vol))
+});
+
+export default ({ themes, sound, dispatch }) => {
   const togglePlay = () => dispatch(soundActions.soundsPlay(sound));
 
   const { img, playing, name, volume } = sound;
@@ -36,7 +43,7 @@ export default ({ themes, sound, dispatch }) => {
           } ]}
           minimumTrackTintColor={playing ? 'white' : '#efefef'}
           value={volume}
-          onSlidingComplete={changeVolume}
+          onValueChange={(vol) => subject.next({ dispatch, sound, vol: parseFloat(vol) })}
         />
       </View>
     </View>
