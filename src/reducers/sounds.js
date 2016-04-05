@@ -14,13 +14,11 @@ const soundReducers = {
   init(state, sounds) {
     let data = kakapoAssets.sounds;
     if (sounds) data = JSON.parse(sounds);
-    for (const _s in data) {
-      if ({}.hasOwnProperty.call(data, _s)) {
-        state = state.set(data[_s].file, ({ ...data[_s], recentlyDownloaded: false }));
-        AudioModule.setSound(data[_s].file, data[_s].volume);
-        if (data[_s].playing) AudioModule.togglePlay(data[_s].file);
-      }
-    }
+    state = Object.values(data).reduce((acc, sound) => {
+      AudioModule.setSound(sound.file, Math.round(sound.volume * 100));
+      if (sound.playing) AudioModule.togglePlay(sound.file);
+      return acc.set(sound.file, ({ ...sound, recentlyDownloaded: false }));
+    }, state);
     this.saveToStorage();
     return state;
   },
