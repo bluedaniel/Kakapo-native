@@ -1,7 +1,6 @@
 package com.kakaponative;
 
 import com.facebook.react.ReactActivity;
-import com.github.xinthink.rnmk.ReactMaterialKitPackage;
 import com.oblador.vectoricons.VectorIconsPackage;
 import com.facebook.react.ReactPackage;
 import com.facebook.react.shell.MainReactPackage;
@@ -37,8 +36,8 @@ public class MainActivity extends ReactActivity {
     protected List<ReactPackage> getPackages() {
         return Arrays.<ReactPackage>asList(
             new MainReactPackage(),
-            new ReactMaterialKitPackage(),
-            new VectorIconsPackage()
+            new VectorIconsPackage(),
+            new AudioPackage(this)
         );
     }
 }
