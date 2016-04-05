@@ -24,17 +24,17 @@ export default StyleSheet.create({
     alignItems: 'center'
   },
   optWrapIcon: {
-    height: 34,
-    left: -5,
-    marginTop: -8,
+    height: 40,
+    left: -13,
     position: 'relative',
-    width: 34
+    width: 40,
+    fontSize: 50
   },
   opt: {
     fontFamily: 'SFUIDisplay-Medium',
     color: '#fff',
     fontSize: 16,
-    marginTop: 7,
+    marginTop: 17,
     marginBottom: 13
   }
 });

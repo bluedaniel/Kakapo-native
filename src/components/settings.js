@@ -1,5 +1,5 @@
 import React, { Linking, ScrollView, TouchableOpacity, Text } from 'react-native';
-import Icon from 'react-native-vector-icons/FontAwesome';
+import Icon from 'react-native-vector-icons/EvilIcons';
 import Color from 'color';
 import ColorPicker from './colorPicker';
 import styles from '../styles/settings';
@@ -35,9 +35,9 @@ export default ({ themes, dispatch }) => {
       <Text style={styles.opt}>Color</Text>
       <ColorPicker { ...{ dispatch, color: themes.get('palette').first() }} />
       <Text style={styles.header}>Extra</Text>
-      {share(facebookLink, 'share', 'Share on Facebook')}
-      {share(twitterLink, 'share', 'Share on Twitter')}
-      {share(githubLink, 'github', 'Fork on GitHub!')}
+      {share(facebookLink, 'sc-facebook', 'Share on Facebook')}
+      {share(twitterLink, 'sc-twitter', 'Share on Twitter')}
+      {share(githubLink, 'sc-github', 'Fork on GitHub!')}
     </ScrollView>
   );
 };

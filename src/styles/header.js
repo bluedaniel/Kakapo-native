@@ -17,9 +17,6 @@ export default StyleSheet.create({
     marginRight: 15,
     width: 30
   },
-  multipleHide: {
-    opacity: 0
-  },
   title: {
     flex: 1,
     flexDirection: 'row',
