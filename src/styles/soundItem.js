@@ -23,6 +23,11 @@ export default StyleSheet.create({
     fontSize: 18,
     textAlign: 'left'
   },
+  icon: {
+    fontSize: 50,
+    marginRight: 20,
+    marginLeft: 5
+  },
   track: {
     height: 4,
     borderRadius: 2,

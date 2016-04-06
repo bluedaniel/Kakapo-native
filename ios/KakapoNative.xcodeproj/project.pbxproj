@@ -48,6 +48,7 @@
 		B17E30251CB1A1CA005097C2 /* train.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B17E30161CB1A1CA005097C2 /* train.mp3 */; };
 		B17E30261CB1A1CA005097C2 /* waves.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B17E30171CB1A1CA005097C2 /* waves.mp3 */; };
 		B17E30271CB1A1CA005097C2 /* wind.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B17E30181CB1A1CA005097C2 /* wind.mp3 */; };
+		B1ABE64A1CB5BDAD00DC17BC /* icomoon.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B1ABE6491CB5BDAD00DC17BC /* icomoon.ttf */; };
 		D43980D20E1548519B579DFA /* Zocial.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FC964029106744FC97BDCF15 /* Zocial.ttf */; };
 		D8E94899FC0D44C1BBE9D917 /* Foundation.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9245C67FBAA24DE4BC0B3CEC /* Foundation.ttf */; };
 		F3C466BDB7CB4E3CAA36A77E /* Entypo.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AA321FA967484852A53C0B01 /* Entypo.ttf */; };
@@ -191,6 +192,7 @@
 		B17E30161CB1A1CA005097C2 /* train.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = train.mp3; path = "../node_modules/kakapo-assets/sounds/train.mp3"; sourceTree = "<group>"; };
 		B17E30171CB1A1CA005097C2 /* waves.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = waves.mp3; path = "../node_modules/kakapo-assets/sounds/waves.mp3"; sourceTree = "<group>"; };
 		B17E30181CB1A1CA005097C2 /* wind.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = wind.mp3; path = "../node_modules/kakapo-assets/sounds/wind.mp3"; sourceTree = "<group>"; };
+		B1ABE6491CB5BDAD00DC17BC /* icomoon.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = icomoon.ttf; path = "../node_modules/kakapo-assets/icomoon/fonts/icomoon.ttf"; sourceTree = "<group>"; };
 		BEED79BEDC4B4F84A3CD8808 /* Octicons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Octicons.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Octicons.ttf"; sourceTree = "<group>"; };
 		CE4D9E094D404C3595AE2C64 /* RNVectorIcons.xcodeproj */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = "wrapper.pb-project"; name = RNVectorIcons.xcodeproj; path = "../node_modules/react-native-vector-icons/RNVectorIcons.xcodeproj"; sourceTree = "<group>"; };
 		DDDE90B3E66E433FB53D1896 /* libRCTMaterialKit.a */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = archive.ar; path = libRCTMaterialKit.a; sourceTree = "<group>"; };
@@ -401,6 +403,7 @@
 		B17E2FEA1CB1A18A005097C2 /* fonts */ = {
 			isa = PBXGroup;
 			children = (
+				B1ABE6491CB5BDAD00DC17BC /* icomoon.ttf */,
 				B17E2FEC1CB1A1AF005097C2 /* sf-ui-display-bold.ttf */,
 				B17E2FEF1CB1A1AF005097C2 /* sf-ui-display-medium.ttf */,
 				B17E2FF81CB1A1AF005097C2 /* sf-ui-text-regular.ttf */,
@@ -657,6 +660,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B1ABE64A1CB5BDAD00DC17BC /* icomoon.ttf in Resources */,
 				B17E301B1CB1A1CA005097C2 /* cafe.mp3 in Resources */,
 				B17E301C1CB1A1CA005097C2 /* cat_purr.mp3 in Resources */,
 				B17E2FFE1CB1A1AF005097C2 /* sf-ui-display-medium.ttf in Resources */,

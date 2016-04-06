@@ -1,9 +1,14 @@
-import React, { TouchableOpacity, Image, Text, View, Animated } from 'react-native';
+import React, { TouchableOpacity, Text, View, Animated } from 'react-native';
 import Rx from 'rxjs';
 import Color from 'color';
 import Slider from 'react-native-slider';
+import { createIconSetFromIcoMoon } from 'react-native-vector-icons';
 import { soundActions } from '../actions';
 import styles from '../styles/soundItem';
+import icoMoonConfig from 'kakapo-assets/icomoon/selection.json';
+
+const Icon = createIconSetFromIcoMoon(icoMoonConfig);
+const AnimatedIcon = Animated.createAnimatedComponent(Icon);
 
 const subject = new Rx.Subject()
 .debounceTime(33)
@@ -37,9 +42,7 @@ export default ({ themes, sound, dispatch }) => {
   return (
     <Animated.View style={[ styles.container, { backgroundColor: bgColor } ]}>
       <TouchableOpacity onPress={togglePlay}>
-        <Image style={styles.img} source={{ uri: `${playing ?
-          'light' : 'dark'}_${img}`, isStatic: true }}
-        />
+        <AnimatedIcon name={img} style={[ styles.icon, { color: txtColor } ]} />
       </TouchableOpacity>
       <View style={styles.rightContainer}>
         <TouchableOpacity onPress={togglePlay}>
