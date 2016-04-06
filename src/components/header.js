@@ -31,7 +31,7 @@ const Header = ({
         />
       </TouchableOpacity>
       <View style={styles.title}>
-        <Image style={styles.logo} source={require('kakapo-assets/images/kakapo.png')} />
+        <Image style={styles.logo} source={require('kakapo-assets/images/kakapo_border.png')} />
         <Text style={styles.headerText}>Kakapo</Text>
       </View>
       <TouchableOpacity onPress={() => dispatch(soundActions.soundsToggleAll)}>
