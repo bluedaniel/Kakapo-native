@@ -36,7 +36,7 @@ export default ({ themes, sound, dispatch }) => {
   const txtColor = styleAnim.interpolate(interpolateValues);
   const bgColor = styleAnim.interpolate({
     ...interpolateValues,
-    outputRange: [ bg.alpha(0).rgbaString(), bg.alpha(1).rgbaString() ]
+    outputRange: [ 'rgba(255, 255, 255, 1)', bg.alpha(1).rgbaString() ]
   });
 
   return (
