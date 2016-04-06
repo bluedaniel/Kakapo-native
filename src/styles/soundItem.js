@@ -3,7 +3,6 @@ import { StyleSheet } from 'react-native';
 export default StyleSheet.create({
   container: {
     alignItems: 'center',
-    backgroundColor: '#fff',
     flexDirection: 'row',
     justifyContent: 'flex-start',
     paddingLeft: 15,
@@ -23,9 +22,6 @@ export default StyleSheet.create({
     fontFamily: 'SFUIText-Regular',
     fontSize: 18,
     textAlign: 'left'
-  },
-  titlePlaying: {
-    color: '#fff'
   },
   track: {
     height: 4,
