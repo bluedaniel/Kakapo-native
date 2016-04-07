@@ -44,3 +44,5 @@ android/app/my-release-key.keystore
 android/app/src/main/assets/index.android.bundle
 
 android/gradle.properties
+
+ios/keys.xcconfig

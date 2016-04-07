@@ -27,6 +27,8 @@
 		832341BD1AAA6AB300B99B32 /* libRCTText.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 832341B51AAA6A8300B99B32 /* libRCTText.a */; };
 		9813FD9B6AF147E5A26A21C6 /* Ionicons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 560AACBF3A3B47A58B3F3345 /* Ionicons.ttf */; };
 		9A0DD00FF101466CBEFACFD0 /* MaterialIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 288C23850C804E1D9CE0A29A /* MaterialIcons.ttf */; };
+		B110D0E51CB7192900DA90CF /* Fabric.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B110D0E31CB7192900DA90CF /* Fabric.framework */; };
+		B110D0E61CB7192900DA90CF /* Crashlytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B110D0E41CB7192900DA90CF /* Crashlytics.framework */; };
 		B17E2FDC1CB19E2E005097C2 /* AudioModule.m in Sources */ = {isa = PBXBuildFile; fileRef = B17E2FDA1CB19E2E005097C2 /* AudioModule.m */; };
 		B17E2FDD1CB19E2E005097C2 /* AudioModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = B17E2FDB1CB19E2E005097C2 /* AudioModule.swift */; };
 		B17E2FFB1CB1A1AF005097C2 /* sf-ui-display-bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B17E2FEC1CB1A1AF005097C2 /* sf-ui-display-bold.ttf */; };
@@ -170,6 +172,9 @@
 		832341B01AAA6A8300B99B32 /* RCTText.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTText.xcodeproj; path = "../node_modules/react-native/Libraries/Text/RCTText.xcodeproj"; sourceTree = "<group>"; };
 		9245C67FBAA24DE4BC0B3CEC /* Foundation.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Foundation.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Foundation.ttf"; sourceTree = "<group>"; };
 		AA321FA967484852A53C0B01 /* Entypo.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Entypo.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Entypo.ttf"; sourceTree = "<group>"; };
+		B110D0E31CB7192900DA90CF /* Fabric.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Fabric.framework; sourceTree = "<group>"; };
+		B110D0E41CB7192900DA90CF /* Crashlytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Crashlytics.framework; sourceTree = "<group>"; };
+		B110D0F21CB71B9D00DA90CF /* keys.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = keys.xcconfig; sourceTree = "<group>"; };
 		B17E2FD91CB19E2D005097C2 /* KakapoNative-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "KakapoNative-Bridging-Header.h"; sourceTree = "<group>"; };
 		B17E2FDA1CB19E2E005097C2 /* AudioModule.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AudioModule.m; path = KakapoNative/AudioModule.m; sourceTree = "<group>"; };
 		B17E2FDB1CB19E2E005097C2 /* AudioModule.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AudioModule.swift; path = KakapoNative/AudioModule.swift; sourceTree = "<group>"; };
@@ -211,6 +216,7 @@
 			files = (
 				146834051AC3E58100842450 /* libReact.a in Frameworks */,
 				00C302E51ABCBA2D00DB3ED1 /* libRCTActionSheet.a in Frameworks */,
+				B110D0E61CB7192900DA90CF /* Crashlytics.framework in Frameworks */,
 				00C302E71ABCBA2D00DB3ED1 /* libRCTGeolocation.a in Frameworks */,
 				00C302E81ABCBA2D00DB3ED1 /* libRCTImage.a in Frameworks */,
 				133E29F31AD74F7200F7D852 /* libRCTLinking.a in Frameworks */,
@@ -220,6 +226,7 @@
 				00C302EA1ABCBA2D00DB3ED1 /* libRCTVibration.a in Frameworks */,
 				139FDEF61B0652A700C62182 /* libRCTWebSocket.a in Frameworks */,
 				1CCB2BB0FE224BF983562D37 /* libRNVectorIcons.a in Frameworks */,
+				B110D0E51CB7192900DA90CF /* Fabric.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -363,6 +370,7 @@
 		83CBB9F61A601CBA00E9B192 = {
 			isa = PBXGroup;
 			children = (
+				B110D0F21CB71B9D00DA90CF /* keys.xcconfig */,
 				13B07FAE1A68108700A75B9A /* KakapoNative */,
 				832341AE1AAA6A7D00B99B32 /* Libraries */,
 				00E356EF1AD99517003FC87E /* KakapoNativeTests */,
@@ -385,6 +393,8 @@
 		A5E77403DE134E1F89D3E96D /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				B110D0E31CB7192900DA90CF /* Fabric.framework */,
+				B110D0E41CB7192900DA90CF /* Crashlytics.framework */,
 				AA321FA967484852A53C0B01 /* Entypo.ttf */,
 				4E6F74C726654CB1B03FA9DB /* EvilIcons.ttf */,
 				6F1DEDC4F10E4EC092DF62EB /* FontAwesome.ttf */,
@@ -467,6 +477,7 @@
 				13B07F8C1A680F5B00A75B9A /* Frameworks */,
 				13B07F8E1A680F5B00A75B9A /* Resources */,
 				00DD1BFF1BD5951E006B06BC /* Bundle React Native code and images */,
+				B110D0D71CB7186A00DA90CF /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -706,6 +717,19 @@
 			shellPath = /bin/sh;
 			shellScript = "export NODE_BINARY=node\n../node_modules/react-native/packager/react-native-xcode.sh";
 		};
+		B110D0D71CB7186A00DA90CF /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "./Fabric.framework/run $FABRIC_APIKey 9b56a5b23ebe7873c1872c81fcd0b0d0566202a7834b4e5ee142d3e2341e5abb";
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -807,6 +831,10 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				DEAD_CODE_STRIPPING = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
@@ -831,6 +859,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
@@ -850,6 +882,7 @@
 		};
 		83CBBA201A601CBA00E9B192 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B110D0F21CB71B9D00DA90CF /* keys.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
@@ -899,6 +932,7 @@
 		};
 		83CBBA211A601CBA00E9B192 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B110D0F21CB71B9D00DA90CF /* keys.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
