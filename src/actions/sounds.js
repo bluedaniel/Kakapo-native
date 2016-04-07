@@ -10,7 +10,7 @@ const actions = {
   },
   soundsPlay: (sound) => ({ type: constants.SOUNDS_PLAY, sound }),
   soundsVolume: (sound, volume) => ({ type: constants.SOUNDS_VOLUME, sound, volume }),
-  soundsToggleAll: () => ({ type: constants.SOUNDS_TOGGLE_ALL }),
+  soundsToggleAll: ({ type: constants.SOUNDS_TOGGLE_ALL }),
 
   fetchSoundsComplete: resp => ({ type: constants.SOUNDS_RECEIVED, resp })
 };

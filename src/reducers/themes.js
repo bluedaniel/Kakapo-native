@@ -23,10 +23,10 @@ const themeReducers = {
   generateStyles(state, swatch) {
     state = state.updateIn([ 'palette', 0 ], () => swatch); // Update swatch
     const _c = this.colorVars(state.get('palette').get(0)); // Get color vals
-    const darkUI = swatches.light.indexOf(state.get('palette').get(0)) !== -1; // DarkUI switch
+    const darkUI = swatches('light').indexOf(state.get('palette').get(0)) !== -1; // DarkUI switch
 
     return state.mergeDeep(fromJS({
-      darkUI: darkUI,
+      darkUI,
       colorPickerActive: false, // Close the color picker
       base: {
         btnPrimary: {
@@ -67,8 +67,8 @@ const themeReducers = {
 };
 
 export default createReducer(initialState, {
-  [constants.THEMES_CHANGE]: (state, action) => {
+  [constants.THEMES_CHANGE]: (state, { swatch }) => {
     themeReducers.saveToStorage();
-    return themeReducers.generateStyles(state, action.swatch);
+    return themeReducers.generateStyles(state, swatch);
   }
 });

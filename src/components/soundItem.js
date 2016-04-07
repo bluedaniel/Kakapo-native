@@ -1,103 +1,65 @@
-import React, { Component, TouchableOpacity, Image, StyleSheet, Text, View } from 'react-native';
-import { bindActionCreators } from 'redux';
-import { connect } from 'react-redux/native';
-import throttle from 'lodash/function/throttle';
+import React, { TouchableOpacity, Text, View, Animated } from 'react-native';
+import Rx from 'rxjs';
 import Color from 'color';
-import { mdl } from 'react-native-material-kit';
-import { soundActions, settingActions } from '../actions';
+import Slider from 'react-native-slider';
+import { createIconSetFromIcoMoon } from 'react-native-vector-icons';
+import { soundActions } from '../actions';
+import styles from '../styles/soundItem';
+import icoMoonConfig from 'kakapo-assets/icomoon/selection.json';
 
-const SliderWithValue = mdl.Slider.slider()
-  .withStyle({
-    flex: 1,
-    marginRight: 30,
-    marginBottom: 6,
-    marginLeft: 0
-  })
-  .withMin(0)
-  .withMax(1)
-  .build();
+const Icon = createIconSetFromIcoMoon(icoMoonConfig);
+const AnimatedIcon = Animated.createAnimatedComponent(Icon);
 
-class SoundItem extends Component {
-  componentDidUpdate() {
-    this.updateVolumeTrack();
-  }
+const subject = new Rx.Subject()
+.debounceTime(33)
+.distinctUntilChanged();
 
-  componentDidMount() {
-    this.updateVolumeTrack();
-  }
+subject.subscribe({
+  next: ({ dispatch, sound, vol }) => dispatch(soundActions.soundsVolume(sound, vol))
+});
 
-  componentWillMount() {
-    this.changeVolumeThrottled = throttle(this.changeVolume, 200);
-  }
+export default ({ themes, sound, dispatch }) => {
+  const { img, playing, name, volume } = sound;
 
-  togglePlay = () => {
-    this.props.soundActions.soundsPlay(this.props);
-  }
+  const styleAnim = new Animated.Value(playing ? 150 : 0);
 
-  changeVolume = (vol) => this.props.soundActions.soundsVolume(this.props, vol);
+  const togglePlay = () => {
+    Animated.timing(styleAnim, { toValue: !playing ? 150 : 0, duration: 250 }).start();
+    setTimeout(() => dispatch(soundActions.soundsPlay(sound)), 250);
+  };
 
-  updateVolumeTrack = () => this.refs.sliderWithValue.value = this.props.volume;
+  const bg = new Color(themes.get('palette').first());
+  const interpolateValues = {
+    inputRange: [ 0, 150 ],
+    outputRange: [ 'rgba(0, 0, 0, 1)', 'rgba(255, 255, 255, 1)' ]
+  };
+  const txtColor = styleAnim.interpolate(interpolateValues);
+  const bgColor = styleAnim.interpolate({
+    ...interpolateValues,
+    outputRange: [ 'rgba(255, 255, 255, 1)', bg.alpha(1).rgbaString() ]
+  });
 
-  render() {
-    return (
-      <View style={[ styles.container, this.props.playing && { backgroundColor: Color(this.props.themes.get('palette').first()).lighten(0.15).hexString() } ]}>
-        <TouchableOpacity onPress={this.togglePlay}>
-          <Image style={styles.img} source={{ uri: (this.props.playing ? 'light' : 'dark') + `_${this.props.img}`, isStatic: true }}/>
+  return (
+    <Animated.View style={[ styles.container, { backgroundColor: bgColor } ]}>
+      <TouchableOpacity onPress={togglePlay}>
+        <AnimatedIcon name={img} style={[ styles.icon, { color: txtColor } ]} />
+      </TouchableOpacity>
+      <View style={styles.rightContainer}>
+        <TouchableOpacity onPress={togglePlay}>
+          <Animated.Text style={[ styles.title, { color: txtColor } ]}>
+            {name}
+          </Animated.Text>
         </TouchableOpacity>
-        <View style={styles.rightContainer}>
-          <TouchableOpacity onPress={this.togglePlay}>
-          <Text style={[ styles.title, this.props.playing && styles.titlePlaying ]}>
-            {this.props.name}
-          </Text>
-          </TouchableOpacity>
-          <SliderWithValue
-            ref="sliderWithValue"
-            upperTrackColor={this.props.playing ? '#fff' : '#f9f9f9'}
-            lowerTrackColor={this.props.playing ? '#fff' : '#f9f9f9'}
-            onChange={vol => this.changeVolumeThrottled(vol)}
-            trackSize={4}
-          />
-        </View>
+        <Slider
+          trackStyle={[ styles.track ]}
+          thumbStyle={[ styles.thumb, {
+            borderColor: '#efefef'
+          } ]}
+          minimumTrackTintColor={'#efefef'}
+          value={volume}
+          onValueChange={(vol) => subject.next({ dispatch, sound, vol: parseFloat(vol) })}
+        />
       </View>
-    );
-  }
-}
-
-const styles = StyleSheet.create({
-  container: {
-    alignItems: 'center',
-    backgroundColor: '#fff',
-    flexDirection: 'row',
-    justifyContent: 'flex-start'
-  },
-  img: {
-    width: 48,
-    height: 48,
-    margin: 15
-  },
-  rightContainer: {
-    flex: 1
-  },
-  title: {
-    fontFamily: 'SFUIText-Regular',
-    fontSize: 18,
-    marginLeft: 14,
-    textAlign: 'left',
-    marginTop: 6
-  },
-  titlePlaying: {
-    color: '#fff'
-  }
-});
-
-const mapStateToProps = state => ({
-  themes: state.themes,
-  settings: state.settings
-});
-
-const mapDispatchToProps = dispatch => ({
-  soundActions: bindActionCreators(soundActions, dispatch),
-  settingActions: bindActionCreators(settingActions, dispatch)
-});
-
-export default connect(mapStateToProps, mapDispatchToProps)(SoundItem);
+    </Animated.View>
+  );
+};

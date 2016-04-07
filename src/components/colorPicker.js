@@ -1,53 +1,23 @@
-import React, { Component, NativeModules, TouchableOpacity, StyleSheet, View } from 'react-native';
-import { bindActionCreators } from 'redux';
-import { connect } from 'react-redux/native';
-import Dimensions from 'Dimensions';
+import React, { TouchableOpacity, View } from 'react-native';
 import { themeActions } from '../actions';
-import Swatches from '../utils/swatches';
+import { swatches } from '../utils';
+import styles from '../styles/colorPicker';
 
-const { KDSocialShare } = NativeModules;
+export default ({ color, dispatch }) => {
+  const changeColor = (hex) => dispatch(themeActions.themesChange(hex, 0));
 
-class ColorPicker extends Component {
-  changeColor = (hex) => this.props.themeActions.themesChange(hex, 0)
-
-  render() {
-    return (
-      <View style={styles.colorPicker}>
-        {Swatches.all().map(swatch => <TouchableOpacity key={swatch} onPress={() => this.changeColor(swatch)}>
+  return (
+    <View style={styles.colorPicker}>
+      {swatches().map(swatch =>
+        <TouchableOpacity key={swatch} onPress={() => changeColor(swatch)}>
           <View style={[
             styles.swatches, {
               backgroundColor: swatch
             },
-            swatch === this.props.color && styles.colorSelected
-          ]}/>
-        </TouchableOpacity>, this)}
-      </View>
-    );
-  }
-}
-
-const styles = StyleSheet.create({
-  colorPicker: {
-    flexDirection: 'row',
-    flexWrap: 'wrap',
-    justifyContent: 'space-around'
-  },
-  swatches: {
-    width: 38,
-    height: 38,
-    marginBottom: 6,
-    marginRight: Dimensions.get('window').width === 320
-      ? 2
-      : 6
-  },
-  colorSelected: {
-    borderWidth: 2,
-    borderColor: '#fff'
-  }
-});
-
-const mapDispatchToProps = dispatch => ({
-  themeActions: bindActionCreators(themeActions, dispatch)
-});
-
-export default connect(() => ({}), mapDispatchToProps)(ColorPicker);
+            swatch === color && styles.colorSelected
+          ]}
+          />
+        </TouchableOpacity>)}
+    </View>
+  );
+};

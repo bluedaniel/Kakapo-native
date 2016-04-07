@@ -1,12 +1,12 @@
-import { Observable } from 'rx';
+import {
+  FromEventPatternObservable
+} from 'rxjs/observable/FromEventPatternObservable';
 import { applyMiddleware, compose, createStore } from 'redux';
 import thunk from 'redux-thunk';
 import createLogger from 'redux-logger';
 import rootReducer from '../reducers';
 
 function configureStore(debug = false) {
-  let createStoreWithMiddleware;
-
   let middleware = applyMiddleware(thunk);
 
   if (debug) {
@@ -14,7 +14,7 @@ function configureStore(debug = false) {
     middleware = applyMiddleware(thunk, logger);
   }
 
-  createStoreWithMiddleware = compose(middleware);
+  const createStoreWithMiddleware = compose(middleware);
 
   const store = createStoreWithMiddleware(createStore)(
     rootReducer,
@@ -32,9 +32,9 @@ function configureStore(debug = false) {
   return store;
 }
 
-export const store = configureStore(__DEV__);
+export const store = configureStore();
 
-export const observableStore = Observable.fromEventPattern(
+export const observableStore = new FromEventPatternObservable(
   handler => store.subscribe(handler),
   (handler, unsubscribe) => unsubscribe(),
   () => store.getState());
