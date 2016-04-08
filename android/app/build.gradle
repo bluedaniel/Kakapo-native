@@ -95,7 +95,7 @@ buildscript {
 }
 
 Properties props = new Properties()
-props.load(new FileInputStream(file("./fabric.properties")))
+props.load(new FileInputStream(file("keys.properties")))
 
 android {
     compileSdkVersion 23
@@ -110,7 +110,7 @@ android {
         ndk {
             abiFilters "armeabi-v7a", "x86"
         }
-        manifestPlaceholders = [ fabricApiKey: props['fabricApiKey'] ]
+        manifestPlaceholders = [ fabricApiKey: props['FABRIC_APIKey'] ]
     }
     splits {
         abi {
