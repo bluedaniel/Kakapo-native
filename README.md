@@ -1,4 +1,4 @@
-<img src="https://raw.githubusercontent.com/bluedaniel/Kakapo-assets/master/icons/social/kakapo.png" width="128" height="128" align="right" />
+<img src="https://raw.githubusercontent.com/bluedaniel/Kakapo-assets/master/images/kakapo_border.png" width="128" height="128" align="right" />
 
 Kakapo native is an ambient sound mixer for relaxation or productivity. Built with React Native it is available in both the Apple App Store and Google Play Store.
 
