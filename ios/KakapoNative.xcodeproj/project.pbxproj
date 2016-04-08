@@ -847,7 +847,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = com.supercerebral.kakapo;
-				PRODUCT_NAME = KakapoNative;
+				PRODUCT_NAME = Kakapo;
 				SWIFT_OBJC_BRIDGING_HEADER = "KakapoNative-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
@@ -875,7 +875,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = com.supercerebral.kakapo;
-				PRODUCT_NAME = KakapoNative;
+				PRODUCT_NAME = Kakapo;
 				SWIFT_OBJC_BRIDGING_HEADER = "KakapoNative-Bridging-Header.h";
 			};
 			name = Release;
