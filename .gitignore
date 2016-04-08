@@ -45,4 +45,6 @@ android/app/src/main/assets/index.android.bundle
 
 android/gradle.properties
 
+# API Keys
 ios/keys.xcconfig
+android/app/keys.properties
